@@ -1,0 +1,6 @@
+Run :PackerUpdate to ensure all plugins are installed
+For Java it is required to have in your system a Java LSP (language server provider), just run :MasonInstall jdtls
+Neovim is just a text editor but it offers integration with external LSPs to provide features like error highlighting or autocompletion. In order to integrate those external LSPs (intalled with Mason), it is necessary to create a configuration.
+The most practical way is to use lspconfig plugin, however for Java the best way is to use nvim-jdtls plugin. Both plugins are ways to connect the native Neovim LSP support with the external LSP. In my configs I use nvim-jdtls for Java and Lspconfig for the rest.
+I have added a config for mason where I set the exact location for mason downloads. Later, I can use this variable (the path where the resources are) to properly configure LSPs.
+I have also attached jdtls to be started when a *.java file is loaded. It will start a instance of Java LSP (JDT) that will provide the error hightlighting and other features to Neovim.

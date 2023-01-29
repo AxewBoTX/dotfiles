@@ -32,9 +32,8 @@ packer.startup(function(use)
 	}
 	use { -- Make Sure To Install RipGrep Before Installing Telescope
 		'nvim-telescope/telescope.nvim', tag = '0.1.0', --Telescope
-		requires = { {'nvim-lua/plenary.nvim'} }
+		requires = { {'nvim-lua/plenary.nvim', 'nvim-telescope/telescope-file-browser.nvim'} }
 	}
-	use 'nvim-telescope/telescope-file-browser.nvim' --Telescope File Browser Extension
 	use 'akinsho/bufferline.nvim' --BufferLine For Tabs
     use { --Treesitter For Syntax Highlighting
         'nvim-treesitter/nvim-treesitter',
@@ -45,10 +44,19 @@ packer.startup(function(use)
 		requires = {'nvim-lua/plenary.nvim'}
 	}
 	use { --Langage Server Protocol; LSP
-		'williamboman/mason.nvim',
-		'williamboman/mason-lspconfig.nvim',
 		'neovim/nvim-lspconfig',
 		"glepnir/lspsaga.nvim",
+		"mfussenegger/nvim-jdtls"
+	}
+	use {
+        "williamboman/mason.nvim",
+		requires = {"williamboman/mason-lspconfig.nvim"},
+    }
+	use {
+        "hrsh7th/nvim-cmp",
+        requires = {
+            "hrsh7th/cmp-nvim-lsp",
+        }
 	}
 end)
 
@@ -62,4 +70,5 @@ require('packer-plugins/telescope')
 require('packer-plugins/treesitter')
 require('packer-plugins/bufferline')
 require('packer-plugins/code_runner')
+require('packer-plugins/mason')
 require('packer-plugins/lsp')
