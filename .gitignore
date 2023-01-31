@@ -1,3 +1,4 @@
 scoop/
 nvim/plugin/
 nvim/plugins
+/coc

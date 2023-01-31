@@ -44,11 +44,15 @@ packer.startup(function(use)
 		'CRAG666/code_runner.nvim',
 		requires = {'nvim-lua/plenary.nvim'}
 	}
-	use { --Langage Server Protocol; LSP
-		'williamboman/mason.nvim',
-		'williamboman/mason-lspconfig.nvim',
-		'neovim/nvim-lspconfig',
-		'glepnir/lspsaga.nvim',
+	use { --Language Server Protocol; LSP
+		'williamboman/mason.nvim', --Mason
+		'williamboman/mason-lspconfig.nvim', --Mason LSP Config
+		'neovim/nvim-lspconfig', --LSP Config
+		'glepnir/lspsaga.nvim', --LSP Saga
+	}
+	use { --COC
+		'neoclide/coc.nvim',
+		branch = 'release'
 	}
 end)
 

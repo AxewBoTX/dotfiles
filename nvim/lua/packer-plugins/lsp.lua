@@ -24,6 +24,14 @@ if (not lsp_saga_status) then
 	return
 end
 
+--COC Setup
+vim.g.coc_global_extensions = {"coc-java"}
+vim.cmd([[
+nmap <silent> [d <Plug>(coc-diagnostic-prev)
+nmap <silent> ]d <Plug>(coc-diagnostic-next)
+nmap <silent> gr <Plug>(coc-references)
+]])
+
 --Mason Setup
 mason.setup({
 	PATH = "prepend",
@@ -52,9 +60,9 @@ lsp_saga.setup({
 })
 
 --LSP-Config Setup
-local keymap = vim.keymap
 -- Keybinds For LSP Servers
 local on_attach = function(client, bufnr)
+  local keymap = vim.keymap
   -- keybind Options
   local opts = { noremap = true, silent = true, buffer = bufnr }
   -- Keybinds
