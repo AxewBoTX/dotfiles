@@ -16,5 +16,5 @@ keymap.set('n',';m',':noh <Return>',{silent = true})
 --Running Code With Code-Runner
 keymap.set('n',';q',':RunCode <Return>',{silent = true})
 --Changing The Home And End Key
-keymap.set('n','<','<HOME>')
-keymap.set('n','>','<END>')
+keymap.set({'n','v'},'<','<HOME>')
+keymap.set({'n','v'},'>','<END>')
