@@ -11,7 +11,7 @@ cr.setup{
 	},
 	mode = "float",
 	float = {
-		close_key = '<ESC>',
+		close_key = 'q',
 		border = 'single',
 		blend = 1,
 	},
