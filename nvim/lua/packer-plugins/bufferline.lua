@@ -9,10 +9,31 @@ end
 bufferline.setup{
 	options = {
 		mode = 'tabs',
-		separator_style = 'thin',
+		separator_style = 'padded_slant',
 		always_show_bufferline = false,
 		show_buffer_close_icons = false,
 		show_close_icon = false,
-		color_icons = true
+		color_icons = true,
+	},
+	highlights = {
+		separator = {
+			fg = '#1a1b26',
+			bg = '#16161e'
+		},
+		separator_selected = {
+			fg = '#1a1b26',
+			bg = '#0c0c0c'
+		},
+		background = {
+			bg = '#16161e'
+		},
+		buffer_selected = {
+			bg = '#0c0c0c',
+			bold = true,
+			italic = false
+		},
+		fill = {
+			bg = '#1a1b26'
+		},
 	}
 }

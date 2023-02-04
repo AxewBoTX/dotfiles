@@ -1,6 +1,6 @@
 --Ensuring TokyoNight Is Working
 local status,n = pcall(require,"tokyonight")
-if (not status) then 
+if (not status) then
 	print("TokyoNight Is Not Working")
 	return
 end
