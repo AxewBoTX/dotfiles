@@ -1,7 +1,7 @@
---Ensuring Code-Runner Is Installed
+--Ensuring Code-Runner Is Working 
 local status,cr = pcall(require,"code_runner")
 if (not status) then
-	print("Code-Runner Is Not Installe")
+	print("Code-Runner Is Not Working")
 end
 
 --Code-Runner Setup

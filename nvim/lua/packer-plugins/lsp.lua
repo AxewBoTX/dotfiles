@@ -77,7 +77,7 @@ end
 
 --Lua Setup
 lsp_config.sumneko_lua.setup({
-	on_attach = on_attach,
+	on_attach = on_attach, --Attaching The LSP Keybinds
 	settings = {
 		Lua = {
 			diagnostics = {

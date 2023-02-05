@@ -27,9 +27,10 @@ telescope.setup{
 		}
 	}
 }
-
+--Loading File-Browser Extension
 telescope.load_extension("file_browser")
 
+--Telescope Keymaps
 vim.keymap.set('n', ';f',
   function()
     builtin.find_files()
