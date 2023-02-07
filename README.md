@@ -1,11 +1,11 @@
 ![Screenshot_20230203_082353](https://user-images.githubusercontent.com/84615670/216635317-b8b4f522-df7b-48da-9a44-10a76983529d.png)
 ![Screenshot_20230203_082528](https://user-images.githubusercontent.com/84615670/216635634-d1dcf68c-4602-4e96-98d0-7c732b0aaf94.png)
 
-#Axew's dotfiles
+# Axew's dotfiles
 
 **Warning** Dont use these files blindly unless you know what they are meant for or what their function is.
 
-##Contents
+## Contents
 - Neovim Config
 - Powershell Config
 
@@ -38,7 +38,7 @@ Watch These Video Tutorials:-
 
 - [How To Install Neovim On Windows](https://www.youtube.com/watch?v=7Yhd_sBD75E)
 - [How To Setup Neovim On Windows](https://www.youtube.com/watch?v=a7QWjlVhedw&t=1441s)
-- [How TO Setup Windows Terminal With Powershell - DevAsLife](https://youtu.be/5-aK2_WwrmM?t=532)
+- [How To Setup Windows Terminal With Powershell - DevAsLife](https://youtu.be/5-aK2_WwrmM?t=532)
 
 ## About Me
 - [My Website](https://axewbotx-links.netlify.app/)
