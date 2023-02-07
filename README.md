@@ -26,6 +26,7 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 - [akinsho/nvim-bufferline.lua](https://github.com/akinsho/nvim-bufferline.lua) - A snazzy bufferline
 
 ## PowerShell setup (Windows)
+*NOTE*: The code inside Microsoft.Powershell_Profile.ps1 does not go inside the .config folder. It is just to set the environment var that sets the location of powershell config to the new location in .config/powershell folder that is the user_profile.ps1 file.
 - [Scoop](https://scoop.sh/) - A command-line installer
 - [Git for Windows](https://gitforwindows.org/)
 - [Oh My Posh](https://ohmyposh.dev/) - Prompt theme engine
@@ -37,6 +38,7 @@ Watch These Video Tutorials:-
 
 - [How To Install Neovim On Windows](https://www.youtube.com/watch?v=7Yhd_sBD75E)
 - [How To Setup Neovim On Windows](https://www.youtube.com/watch?v=a7QWjlVhedw&t=1441s)
+- [How TO Setup Windows Terminal With Powershell - DevAsLife](https://youtu.be/5-aK2_WwrmM?t=532)
 
 ## About Me
 - [My Website](https://axewbotx-links.netlify.app/)
