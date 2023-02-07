@@ -59,7 +59,6 @@ end)
 --Plugins Setup
 require('packer-plugins/colorschemes/tokyonight')
 require('packer-plugins/colorschemes/gruvbox')
-require('packer-plugins/colorschemes/onedark')
 require('packer-plugins/colorschemes/onemonokai')
 require('packer-plugins/lualine')
 require('packer-plugins/telescope')
