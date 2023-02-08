@@ -11,3 +11,10 @@ Set-Alias rm Remove-Item
 
 #Terminal Icons Setup
 Import-Module -Name Terminal-Icons
+
+#Utilities
+# Utilities
+function which ($command) {
+  Get-Command -Name $command -ErrorAction SilentlyContinue |
+    Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
+}
