@@ -22,8 +22,8 @@ packer.startup(function(use)
 	use { --ColorSchemes
 		'folke/tokyonight.nvim', --TokyoNight
 		"ellisonleao/gruvbox.nvim", --Gruvbox
-		'navarasu/onedark.nvim', --OneDark
 		'cpea2506/one_monokai.nvim', --OneMonokai
+		'tanvirtin/monokai.nvim', --Monokai
 	}
 	use 'kyazdani42/nvim-web-devicons' --Web Dev Icons
 	use {
@@ -56,10 +56,12 @@ packer.startup(function(use)
 	}
 end)
 
+--Colorschemes Setup
+require('colorschemes/tokyonight')
+require('colorschemes/gruvbox')
+require('colorschemes/onemonokai')
+require('colorschemes/monokai')
 --Plugins Setup
-require('packer-plugins/colorschemes/tokyonight')
-require('packer-plugins/colorschemes/gruvbox')
-require('packer-plugins/colorschemes/onemonokai')
 require('packer-plugins/lualine')
 require('packer-plugins/telescope')
 require('packer-plugins/treesitter')
