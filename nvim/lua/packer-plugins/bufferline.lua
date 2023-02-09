@@ -7,29 +7,31 @@ end
 
 --Tokyonight Color Config 
 local tokyonight_config = {
-	--Deafult Seperator 
-	separator = {
+	separator = { --Deafult Seperator
 		fg = '#1a1b26',
 		bg = '#16161e'
 	},
-	--Separators Of The Buffer That Is Selected
-	separator_selected = {
+	separator_selected = { --Separators Of The Buffer That Is Selected
 		fg = '#1a1b26',
 		bg = '#0c0c0c'
 	},
-	--Main Color Of The Buffer In Background
-	background = {
+	background = { --Main Color Of The Buffer In Background
 		bg = '#16161e'
 	},
-	--Main Config Of Selected Buffer
-	buffer_selected = {
+	buffer_selected = { --Main Config Of Selected Buffer
 		bg = '#0c0c0c',
 		bold = true,
 		italic = false
 	},
-	--Main Fill Of The Bufferline
-	fill = {
+	fill = { --Main Fill Of The Bufferline
 		bg = '#1a1b26'
+	}
+}
+--Monokai Color Config
+local monokai_config = {
+	buffer_selected = {
+		bold = true,
+		italic = false
 	}
 }
 
@@ -37,6 +39,8 @@ local tokyonight_config = {
 local highlights_config = function()
 	if (vim.g.colors_name == 'tokyonight') then
 		return tokyonight_config
+	elseif (vim.g.colors_name == 'monokai') then
+		return monokai_config
 	end
 end
 
