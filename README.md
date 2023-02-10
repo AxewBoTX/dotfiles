@@ -38,7 +38,15 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 - [Oh My Posh](https://ohmyposh.dev/) - Prompt theme engine
 - [Terminal Icons](https://github.com/devblackops/Terminal-Icons) - Folder and file icons
 
+## Ubuntu Setup
+- [Git](https://git-scm.com/) - Git
+- [Oh My Zsh](https://ohmyz.sh/) - Prompt theme engine for Linux
+- [Powerlevel10k](https://github.com/romkatv/powerlevel10k) - Oh My Posh theme
+- [Exa](https://github.com/ogham/exa) -- Modern replacement for `ls` command
+
 ## How To Setup
+
+Check out [UbuntuSetup](https://github.com/AxewBoTX/dotfiles-public/blob/main/UbuntuSetup.md) in order to setup Ubuntu/WSL.
 
 Watch These Video Tutorials:-
 
