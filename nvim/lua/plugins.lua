@@ -26,6 +26,7 @@ packer.startup(function(use)
 		'tanvirtin/monokai.nvim', --Monokai
 	}
 	use 'kyazdani42/nvim-web-devicons' --Web Dev Icons
+	use 'norcalli/nvim-colorizer.lua' --Colorizer For Color Highlighting
 	use {
 		'nvim-lualine/lualine.nvim', -- LuaLine As The StatusLine
 		requires = { 'kyazdani42/nvim-web-devicons', opt = true }
@@ -68,3 +69,4 @@ require('packer-plugins/treesitter')
 require('packer-plugins/bufferline')
 require('packer-plugins/code_runner')
 require('packer-plugins/lsp')
+require('packer-plugins/colorizer')
