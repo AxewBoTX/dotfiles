@@ -29,6 +29,7 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 - [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - A highly extendable fuzzy finder over lists
 - [nvim-telescope/telescope-file-browser.nvim](https://github.com/nvim-telescope/telescope-file-browser.nvim) - File Browser extension for telescope.nvim
 - [akinsho/nvim-bufferline.lua](https://github.com/akinsho/nvim-bufferline.lua) - A snazzy bufferline
+- [norcalli/nvim-colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua) - Color Code Highlighter
 
 ## PowerShell setup (Windows)
 **NOTE:**`The code inside Microsoft.Powershell_Profile.ps1 does not go inside the .config folder. It is just to set the environment var that sets the location of powershell config to the new location in .config/powershell folder that is the user_profile.ps1 file.`

@@ -26,7 +26,7 @@ packer.startup(function(use)
 		'tanvirtin/monokai.nvim', --Monokai
 	}
 	use 'kyazdani42/nvim-web-devicons' --Web Dev Icons
-	use 'norcalli/nvim-colorizer.lua' --Colorizer For Color Highlighting
+	use 'norcalli/nvim-colorizer.lua' --Colorizer For Color Code Highlighting
 	use {
 		'nvim-lualine/lualine.nvim', -- LuaLine As The StatusLine
 		requires = { 'kyazdani42/nvim-web-devicons', opt = true }
