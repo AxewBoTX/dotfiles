@@ -3,7 +3,7 @@
 
 # Axew's dotfiles
 
-`Warning` Dont use these files blindly unless you know what they are meant for or what their function is.
+>Warning: Dont use these files blindly unless you know what they are meant for or what their function is.
 
 ## Contents
 - Neovim Config
