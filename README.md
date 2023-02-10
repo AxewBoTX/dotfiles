@@ -39,7 +39,7 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 - [Terminal Icons](https://github.com/devblackops/Terminal-Icons) - Folder and file icons
 
 ## Ubuntu Setup
-- [Git](https://git-scm.com/) - Git
+- [Git](https://git-scm.com/)
 - [Oh My Zsh](https://ohmyz.sh/) - Prompt theme engine for Linux
 - [Powerlevel10k](https://github.com/romkatv/powerlevel10k) - Oh My Posh theme
 - [Exa](https://github.com/ogham/exa) -- Modern replacement for `ls` command
