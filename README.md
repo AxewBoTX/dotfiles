@@ -42,6 +42,7 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 - [Terminal Icons](https://github.com/devblackops/Terminal-Icons) - Folder and file icons
 
 ## Ubuntu Setup
+>NOTE: The code inside .zshrc does not go inside the .config folder. You need to put the copy of this file in the home directory.
 - [Git](https://git-scm.com/)
 - [Oh My Zsh](https://ohmyz.sh/) - Prompt theme engine for Linux
 - [Powerlevel10k](https://github.com/romkatv/powerlevel10k) - Oh My Posh theme
