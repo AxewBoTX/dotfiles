@@ -29,7 +29,10 @@ In order to install git run the following commands:-
 5. `sudo apt-get install git -y`
 
 ## Oh-My-Zsh
-In order to install oh-my-zsh, we need zsh shell installed. Install it using `sudo apt install zsh` command. Then run the following command to install oh-my-zsh:-
+In order to install oh-my-zsh follow the following steps:-
+- Run `sudo apt install zsh` in order to install zsh.
+- Run `chsh` and enther the code `/bin/zsh` after entering your password. Now restart your terminal and hit 2 if asked to config. 
+- Now run the following commmand to install oh-my-zsh
 ```shel
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
