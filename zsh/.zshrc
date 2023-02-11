@@ -115,8 +115,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 #Sourcing The zsh_config.zsh file
-if [ -f ~/.config/zsh_config.zsh ]; then
-	source ~/.config/zsh_config.zsh
+if [ -f ~/.config/zsh/zsh_config.zsh ]; then
+	source ~/.config/zsh/zsh_config.zsh
 else 
-	print "ERROR; ~/.config/zsh_config not found!"
+	print "ERROR; ~/.config/zsh/zsh_config not found!"
 fi
