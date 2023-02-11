@@ -32,3 +32,6 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 - After that just run `source ~/.zshrc`
 - Now you will be asked to configure powerlevel10 theme and if not then run `p10k configure` to configure it.
 - Now configure it according to your need.
+
+## Tmux
+The [tmux.conf]
