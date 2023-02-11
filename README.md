@@ -45,7 +45,7 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 >NOTE: The code inside .zshrc does not go inside the .config folder. You need to put the copy of this file in the home directory.
 - [Git](https://git-scm.com/)
 - [Oh My Zsh](https://ohmyz.sh/) - Prompt theme engine for Linux
-- [Powerlevel10k](https://github.com/romkatv/powerlevel10k) - Oh My Posh theme
+- [Powerlevel10k](https://github.com/romkatv/powerlevel10k) - Oh My Zsh theme
 - [Exa](https://github.com/ogham/exa) -- Modern replacement for `ls` command
 
 ## How To Setup
