@@ -46,3 +46,15 @@ In order to install **gcc** and **g++** run `sudo apt update; sudo apt upgrade` 
 ```shell
 sudo apt install gcc g++
 ```
+
+## Neovim
+In order to install Neovim run `sudo apt update; sudo apt upgrade` command then run the followig commands:-
+```shell
+sudo add-apt-repository ppa:neovim-ppa/unstable
+```
+```shell
+sudo apt-get update
+```
+```shell
+sudo apt-get install neovim
+```
