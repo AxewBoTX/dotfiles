@@ -9,6 +9,8 @@
 ## Contents
 - Neovim Config
 - Powershell Config
+- Ubuntu Config
+- Tmux Config
 
 ## Neovim Setup
 
@@ -47,7 +49,7 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 
 ## How To Setup
 
-Check out [UbuntuSetup](https://github.com/AxewBoTX/dotfiles-public/blob/main/UbuntuSetup.md) in order to setup Ubuntu/WSL.
+Check out [UbuntuSetup](https://github.com/AxewBoTX/dotfiles-public/blob/main/UbuntuSetup.md) in order to setup Ubuntu/WSL. Also, check out [Setup](https://github.com/AxewBoTX/dotfiles-public/blob/main/Setup.md) in order to know how to setup the components in a briefly explained manner.
 
 Watch These Video Tutorials:-
 
