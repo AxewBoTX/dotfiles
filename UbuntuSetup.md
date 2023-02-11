@@ -58,3 +58,9 @@ sudo apt-get update
 ```shell
 sudo apt-get install neovim
 ```
+
+## Tmux
+In order to install Tmux run `sudo apt update; sudo apt upgrade` then run the following commands:-
+```shell
+sudo apt-get install tmux
+```
