@@ -69,7 +69,7 @@ sudo apt-get install tmux
 ```
 
 ## Java
-In order to install java firstly download `x64 Debian Package` from [Java Oracle] website and put it in the home directory. The run the following commands to install it and configure it:-
+In order to install java firstly download `x64 Debian Package` from [Java Oracle](https://www.oracle.com/java/technologies/downloads/) website and put it in the home directory. The run the following commands to install it and configure it:-
 ```shell
 sudo apt install ~/jdk-19_linux-x64_bin.deb
 ```
