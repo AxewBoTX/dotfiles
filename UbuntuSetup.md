@@ -20,7 +20,7 @@ sudo apt-get update; sudo apt-get upgrade
 ```
 - Run `sudo apt autoremove` to remove unwanted packages.
 
-### Git
+## Git
 In order to install git run the following commands:-
 1. `sudo apt remove git`
 2. `sudo apt autoremove`
@@ -28,12 +28,21 @@ In order to install git run the following commands:-
 4. `sudo apt-get update`
 5. `sudo apt-get install git -y`
 
-### Oh-My-Zsh
-In order to install oh-my-zsh, we need zsh shell installed. Install it using `sudo apt install zsh` command.
+## Oh-My-Zsh
+In order to install oh-my-zsh, we need zsh shell installed. Install it using `sudo apt install zsh` command. Then run the following command to install oh-my-zsh:-
+```shel
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
 
-### NodeJs
-In order to install nodejs firstly install node-version-manager. Install it using the following command
+## NodeJs
+In order to install nodejs firstly install node-version-manager. Install it using the following command:-
 ```shell
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 ```
-After installing nvm run `source ~/.zshrc`
+After installing nvm run `source ~/.zshrc`run the `nvm install latest` to install latest version or nodejs.
+
+## C-Compiler
+In order to install **gcc** and **g++** run `sudo apt update; sudo apt upgrade` command and then run the following command:-
+```shell
+sudo apt install gcc g++
+```
