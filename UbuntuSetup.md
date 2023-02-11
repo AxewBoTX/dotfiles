@@ -67,3 +67,31 @@ In order to install Tmux run `sudo apt update; sudo apt upgrade` then run the fo
 ```shell
 sudo apt-get install tmux
 ```
+
+## Java
+In order to install java firstly download `x64 Debian Package` from [Java Oracle] website and put it in the home directory. The run the following commands to install it and configure it:-
+```shell
+sudo apt install ~/jdk-19_linux-x64_bin.deb
+```
+This command will install Java 19 into your system.
+>NOTE:You can change the version according to your need.
+Now run the follownig commands to configure it:-
+```shell
+sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk-19/bin/java 1
+```
+```shell
+sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk-19/bin/javac 1
+```
+```shell
+sudo update-alternatives --install /usr/bin/jar jar /usr/lib/jvm/jdk-19/bin/jar 1
+```
+Now run the following commands to update the shell according to Java 19:-
+```shell
+sudo update-alternatives --config java
+```
+```shell
+sudo update-alternatives --config javac
+```
+```shell
+sudo update-alternatives --config jar
+```
