@@ -2,3 +2,5 @@ scoop/
 nvim/plugin/
 nvim/plugins
 /coc
+tmux/plugin
+tmux/plugins
