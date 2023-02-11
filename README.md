@@ -1,5 +1,6 @@
 ![Screenshot_20230203_082353](https://user-images.githubusercontent.com/84615670/216635317-b8b4f522-df7b-48da-9a44-10a76983529d.png)
 ![Screenshot_20230203_082528](https://user-images.githubusercontent.com/84615670/216635634-d1dcf68c-4602-4e96-98d0-7c732b0aaf94.png)
+![Screenshot_20230211_023309](https://user-images.githubusercontent.com/84615670/218249901-5e25ffd6-88f7-40ae-9ffd-a8472df63774.png)
 
 # Axew's dotfiles
 
