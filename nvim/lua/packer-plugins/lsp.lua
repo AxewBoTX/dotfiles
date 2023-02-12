@@ -26,7 +26,11 @@ end
 
 --Mason Setup
 mason.setup({
-	PATH = "prepend",
+	ui = {
+		icons = {
+			package_installed = "✓"
+		}
+	}
 })
 
 --Mason-LSP Setup
