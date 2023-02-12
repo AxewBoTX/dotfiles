@@ -21,6 +21,7 @@ You are going to need to install python,gcc and nodejs before configuring Neovim
 - After that is finished you can just use `:PackerInstall` in Neovim to install Neovim plugins.
 - After all the plugins are installed, just do `:PackerSync` to make sure all the plugins are up to date.
 Now you can just use Neovim as you please.
+>NOTE: If coc gives any errors and the solution cannot be found, just remove coc and its files from ~/.config and ~/.config/nvim and remove the plugin and its setup from [plugins.lua](https://github.com/AxewBoTX/dotfiles-public/blob/main/nvim/lua/plugins.lua) and [lsp.lua](https://github.com/AxewBoTX/dotfiles-public/blob/main/nvim/lua/packer-plugins/lsp.lua) and then reinstall coc and its extensions.
 
 ## Oh-My-Zsh
 You can use [UbuntuSetup](https://github.com/AxewBoTX/dotfiles-public/blob/main/UbuntuSetup.md) to install zsh and oh-my-zsh on Ubuntu. After that follow these steps to configure it:-
