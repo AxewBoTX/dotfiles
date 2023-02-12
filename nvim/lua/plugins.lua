@@ -51,6 +51,10 @@ packer.startup(function(use)
 		'neovim/nvim-lspconfig', --LSP Config
 		'glepnir/lspsaga.nvim', --LSP Saga
 	}
+	use { --COC
+		'neoclide/coc.nvim',
+		branch = 'release'
+	}
 end)
 
 --Colorschemes Setup

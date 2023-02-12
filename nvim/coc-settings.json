@@ -1,0 +1,5 @@
+{
+    "suggest.autoTrigger": "none",
+    "diagnostic.enable": true,
+	"inlayHint.enable": false,
+}

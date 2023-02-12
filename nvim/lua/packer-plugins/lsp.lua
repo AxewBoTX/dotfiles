@@ -24,8 +24,19 @@ if (not lsp_saga_status) then
 	return
 end
 
+--COC Setup
+vim.g.coc_global_extensions = {"coc-java"}
+vim.cmd([[
+nmap <silent> [d <Plug>(coc-diagnostic-prev)
+nmap <silent> ]d <Plug>(coc-diagnostic-next)
+nmap <silent> gr <Plug>(coc-references)
+]])
+
 --Mason Setup
+INSTALL_ROOT_PATH = os.getenv("HOME") .. "/.local/share/nvim/mason"
+LSP_ROOT_PATH = INSTALL_ROOT_PATH .. "/packages"
 mason.setup({
+	install_root_dir = INSTALL_ROOT_PATH,
 	ui = {
 		icons = {
 			package_installed = "✓"
@@ -34,7 +45,9 @@ mason.setup({
 })
 
 --Mason-LSP Setup
-mason_lsp.setup({})
+mason_lsp.setup({
+	ensure_installed = {"jdtls"}
+})
 
 --LSP Saga Setup
 lsp_saga.setup({
@@ -67,4 +80,12 @@ local on_attach = function(client, bufnr)
   keymap.set("n", "[d", "<cmd>Lspsaga diagnostic_jump_prev<CR>", opts) -- jump to previous diagnostic in buffer
   keymap.set("n", "]d", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts) -- jump to next diagnostic in buffer
   keymap.set("n", ";.", "<cmd>Lspsaga hover_doc<CR>", opts) -- show documentation for what is under cursor
+end
+--Starting Language Server
+local function start_language_server(pattern, callback)
+	vim.api.nvim_create_autocmd({ "FileType" }, {
+        pattern = pattern,
+        callback = callback,
+        desc = "Start language server: " .. pattern
+    })
 end
