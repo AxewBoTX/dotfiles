@@ -1,6 +1,6 @@
 Follow these steps to configure Ubuntu/WSL according to this repository
 
-## WSL
+## WSL(System Drive)
 1. Open **Turn Windows Features on or off**
 2. A dialog box will open, turn on **Virtual Machine Platform** and **Windows Subsystem For Linux** and click Ok.
 3. Restart your computer.
@@ -9,6 +9,16 @@ Follow these steps to configure Ubuntu/WSL according to this repository
 6. Restart Your Computer
 7. Either open **Ubuntu** straight up by searching it or open it through Windows Terminal.
 8. Setup your profile and follow the next steps.
+
+## WSL(Other Drive)
+1. Make a folder called **WSL** in whichever directory you want.
+2. Make a another folder and name it to the name of distro that you want to install.
+3. Go to [this](https://learn.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions) page and download whichever distro you want.
+4. Extract the downloaded file. You will see many files, just extract the the file with **x64** in its name into a new folder.
+5. Go into the new folder and make sure there is a .exe file in it, if there isnt you messed up somwehere, dont worry try again.
+6. If there is a .exe file then cut all the contents of that folder and paste it in the distro folder in WSL directory that you created.
+7. Now just click the .exe and wait untill it installs.
+8. After its installed just setup your profile and follow the next steps.
 
 ## Ubuntu
 - Run following commands to update all the packages:-
