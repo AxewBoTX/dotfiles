@@ -7,10 +7,10 @@
 >Warning: Dont use these files blindly unless you know what they are meant for or what their function is.
 
 ## Contents
-- Neovim Config
-- Powershell Config
-- Ubuntu Config
-- Tmux Config
+- [Neovim](https://neovim.io/) Config
+- [Powershell](https://learn.microsoft.com/en-us/powershell/) Config
+- [Ubuntu(On WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) Config
+- [Tmux](https://github.com/tmux/tmux/wiki) Config
 
 ## Neovim Setup
 
@@ -35,7 +35,7 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 - [akinsho/nvim-bufferline.lua](https://github.com/akinsho/nvim-bufferline.lua) - A snazzy bufferline
 - [norcalli/nvim-colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua) - Color Code Highlighter
 
-## PowerShell setup (Windows)
+## PowerShell Setup (Windows)
 >NOTE: The code inside Microsoft.Powershell_Profile.ps1 does not go inside the .config folder. It is just to set the environment var that sets the location of powershell config to the new location in .config/powershell folder that is the user_profile.ps1 file.
 - [Scoop](https://scoop.sh/) - A command-line installer
 - [Git for Windows](https://gitforwindows.org/)
@@ -48,6 +48,11 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 - [Oh My Zsh](https://ohmyz.sh/) - Prompt theme engine for Linux
 - [Powerlevel10k](https://github.com/romkatv/powerlevel10k) - Oh My Zsh theme
 - [Exa](https://github.com/ogham/exa) -- Modern replacement for `ls` command
+
+## Tmux Setup
+>NOTE The code inside .tmux.conf does not go inside the .config folder. You need to put the copy of this file in the home directory.
+- [tmux-plugins/tpm](https://github.com/tmux-plugins/tpm) - Tmux Plugin Manager
+- [jimeh/tmux-themepack](https://github.com/jimeh/tmux-themepack) - Collection Of Variety Of Good Looking Themes For Tmux
 
 ## How To Setup
 
