@@ -63,7 +63,7 @@ sudo apt install gcc g++
 ## Neovim
 In order to install Neovim run `sudo apt update; sudo apt upgrade` command then run the followig commands:-
 ```shell
-sudo add-apt-repository ppa:neovim-ppa/stable
+sudo add-apt-repository ppa:neovim-ppa/untable
 ```
 ```shell
 sudo apt-get update
