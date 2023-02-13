@@ -45,9 +45,7 @@ mason.setup({
 })
 
 --Mason-LSP Setup
-mason_lsp.setup({
-	ensure_installed = {"jdtls"}
-})
+mason_lsp.setup()
 
 --LSP Saga Setup
 lsp_saga.setup({
