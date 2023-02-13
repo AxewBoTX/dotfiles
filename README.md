@@ -45,9 +45,12 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 ## Ubuntu Setup
 >NOTE: The code inside .zshrc does not go inside the .config folder. You need to put the copy of this file in the home directory.
 - [Git](https://git-scm.com/)
+- [zsh](https://www.zsh.org/) --Bash but better
 - [Oh My Zsh](https://ohmyz.sh/) - Prompt theme engine for Linux
 - [Powerlevel10k](https://github.com/romkatv/powerlevel10k) - Oh My Zsh theme
 - [Exa](https://github.com/ogham/exa) -- Modern replacement for `ls` command
+- [zsh-users/zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) - Command Suggestions for zsh
+- [zsh-users/zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) Syntax Highlighting For zsh comamnds
 
 ## Tmux Setup
 >NOTE The code inside .tmux.conf does not go inside the .config folder. You need to put the copy of this file in the home directory.
