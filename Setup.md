@@ -16,7 +16,8 @@ winget install JanDeDobbeleer.OhMyPosh -s winget
 Now you can refresh the Windows terminal config by either restarting it or running `.$PROFILE` command.
 
 ## Neovim
-You are going to need to install python,gcc and nodejs before configuring Neovim. If you are on Ubuntu then refer to [UbuntuSetup](https://github.com/AxewBoTX/dotfiles-public/blob/main/UbuntuSetup.md) for help. You need to install packer before installing Neovim. In order to install packer run the following command:-
+You are going to need to install python,gcc and nodejs before configuring Neovim. If you are on Ubuntu then refer to [UbuntuSetup](https://github.com/AxewBoTX/dotfiles-public/blob/main/UbuntuSetup.md) for help. You need to install [wbthomason/packer.nvim](https://github.com/wbthomason/packer.nvim) before installing Neovim. In order to install packer run the following command:-
+<br></br>
 On Windows:-
 ```shell
 git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
