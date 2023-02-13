@@ -39,6 +39,15 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 In order to install tmux you can follow [UbuntuSetup](https://github.com/AxewBoTX/dotfiles-public/blob/main/UbuntuSetup.md) file. After installing tmux copy the [.tmux.conf](https://github.com/AxewBoTX/dotfiles-public/blob/main/tmux/.tmux.conf) into your Home directory or copy the code from it into the .tmux.conf file in your Home directory. After that just follow the following steps to setup Tmux:-
 - Launch tmux using `tmux` command. 
 - Run `tmux source-file ~/.tmux.conf` command.
+- Install [tmux-plugins/tpm](https://github.com/tmux-plugins/tpm) using following command:-
+```shell
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+- Install [jimeh/tmux-themepack](https://github.com/jimeh/tmux-themepack) using following command:-
+```shell
+git clone https://github.com/jimeh/tmux-themepack.git ~/.tmux-themepack
+```
+- Run `tmux source-file ~/.tmux.conf` command.
 - Exit tmux using `exit` command and enter it again using `tmux command`
 - Press `<Ctrl-s>` then `<Shift-i>` keys to install the plugins.
 - Now exit tmux and restart your Terminal.
