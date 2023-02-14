@@ -57,7 +57,6 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 ## Tmux Setup
 >NOTE The code inside .tmux.conf does not go inside the .config folder. You need to put the copy of this file in the home directory.
 - [tmux-plugins/tpm](https://github.com/tmux-plugins/tpm) - Tmux Plugin Manager
-- [jimeh/tmux-themepack](https://github.com/jimeh/tmux-themepack) - Collection Of Variety Of Good Looking Themes For Tmux
 
 ## How To Setup
 
