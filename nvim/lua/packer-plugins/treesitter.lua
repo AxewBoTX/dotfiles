@@ -9,7 +9,7 @@ ts.setup{
 	ensure_installed = {
 		"lua","help","c","vim","html",
 		"css","javascript","python",
-		"java","markdown"
+		"java","markdown","markdown_inline"
 	},
 	highlight = {
 		enable = true

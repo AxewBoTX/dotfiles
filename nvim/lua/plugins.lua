@@ -45,6 +45,9 @@ packer.startup(function(use)
 		'CRAG666/code_runner.nvim',
 		requires = {'nvim-lua/plenary.nvim'}
 	}
+	use { --Git Related Plugins
+		'lewis6991/gitsigns.nvim', --Git Sign
+	}
 	use { --Language Server Protocol; LSP
 		'williamboman/mason.nvim', --Mason
 		'williamboman/mason-lspconfig.nvim', --Mason LSP Config

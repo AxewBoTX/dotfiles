@@ -45,7 +45,9 @@ mason.setup({
 })
 
 --Mason-LSP Setup
-mason_lsp.setup()
+mason_lsp.setup({
+	ensure_installed = {"lua_ls"}
+})
 
 --LSP Saga Setup
 lsp_saga.setup({
@@ -87,3 +89,24 @@ local function start_language_server(pattern, callback)
         desc = "Start language server: " .. pattern
     })
 end
+
+--Lua Setup
+lsp_config.lua_ls.setup {
+	on_attach = on_attach,
+	settings = {
+		Lua = {
+			runtime = {
+				version = 'LuaJIT',
+			},
+			diagnostics = {
+				globals = {'vim'},
+			},
+			workspace = {
+				library = vim.api.nvim_get_runtime_file("", true),
+			},
+			telemetry = {
+				enable = false,
+			},
+		},
+	},
+}
