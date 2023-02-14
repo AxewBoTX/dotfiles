@@ -5,3 +5,4 @@ nvim/lua/.luarc.json
 /coc
 tmux/plugin
 tmux/plugins
+yarn/
