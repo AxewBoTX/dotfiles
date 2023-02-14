@@ -58,10 +58,6 @@ In order to install tmux you can follow [UbuntuSetup](https://github.com/AxewBoT
 ```shell
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
-- Install [jimeh/tmux-themepack](https://github.com/jimeh/tmux-themepack) using following command:-
-```shell
-git clone https://github.com/jimeh/tmux-themepack.git ~/.tmux-themepack
-```
 - Run `tmux source-file ~/.tmux.conf` command.
 - Exit tmux using `exit` command and enter it again using `tmux command`
 - Press `<Ctrl-s>` then `<Shift-i>` keys to install the plugins, this can take some time and nothing will show up on your screen for some time, you must wait atleast 2 mins for it install plugins. If it takes alot of time then exit tmux then repeat the process.
