@@ -37,6 +37,10 @@ Now you can just use Neovim as you please.
 ## Oh-My-Zsh
 You can use [UbuntuSetup](https://github.com/AxewBoTX/dotfiles-public/blob/main/UbuntuSetup.md) to install zsh and oh-my-zsh on Ubuntu. After that follow these steps to configure it:-
 - Install [exa](https://github.com/ogham/exa) using the command `sudo apt install exa`
+- Install [zsh-users/zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) by running the following command:-
+```shell
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
 - Install [romkatv/powerlevel10k](https://github.com/romkatv/powerlevel10k) using the following command:-
 ```shell
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
