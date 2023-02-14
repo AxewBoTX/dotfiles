@@ -1,6 +1,8 @@
-![Screenshot_20230211_023309](https://user-images.githubusercontent.com/84615670/218249901-5e25ffd6-88f7-40ae-9ffd-a8472df63774.png)
-![Screenshot_20230203_082353](https://user-images.githubusercontent.com/84615670/216635317-b8b4f522-df7b-48da-9a44-10a76983529d.png)
-![Screenshot_20230203_082528](https://user-images.githubusercontent.com/84615670/216635634-d1dcf68c-4602-4e96-98d0-7c732b0aaf94.png)
+![Screenshot_20230214_011811](https://user-images.githubusercontent.com/84615670/218673342-6a23ade9-4202-4213-9b98-fb8fabdd5113.png)
+![Screenshot_20230214_012058](https://user-images.githubusercontent.com/84615670/218673353-25ab0298-3dc5-4d65-92e8-0cc2a8a2bc9e.png)
+![Screenshot_20230214_012137](https://user-images.githubusercontent.com/84615670/218673366-a1e9a433-ce8f-4e49-81f4-71a4886f882e.png)
+![Screenshot_20230214_012151](https://user-images.githubusercontent.com/84615670/218673381-c4cf5bec-2d8f-468c-a6c1-f475df1168ab.png)
+![Screenshot_20230214_012242](https://user-images.githubusercontent.com/84615670/218673397-fe650dc6-0a73-44fb-9d24-b35384472de2.png)
 
 # Axew's dotfiles
 
