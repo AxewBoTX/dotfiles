@@ -52,7 +52,13 @@ In order to install nodejs firstly install node-version-manager. Install it usin
 ```shell
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 ```
-After installing nvm run `source ~/.zshrc`run the `nvm install latest` to install latest version or nodejs.
+After installing nvm run `source ~/.zshrc` and run the `nvm install latest` to install latest version or nodejs. 
+
+## Yarn
+Just run the following command to install yarn:-
+```shell
+npm install --global yarn
+```
 
 ## C-Compiler
 In order to install **gcc** and **g++** run `sudo apt update; sudo apt upgrade` command and then run the following command:-
