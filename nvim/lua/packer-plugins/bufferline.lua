@@ -41,6 +41,8 @@ local highlights_config = function()
 		return tokyonight_config
 	elseif (vim.g.colors_name == 'monokai') then
 		return monokai_config
+	elseif (vim.g.colors_name == 'gruvbox') then
+		return tokyonight_config
 	end
 end
 
