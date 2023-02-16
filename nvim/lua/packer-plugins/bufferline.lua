@@ -34,6 +34,28 @@ local monokai_config = {
 		italic = false
 	}
 }
+--Gruvbox Color Config
+local gruvbox_config = {
+	separator = {
+		fg = 'NONE',
+		bg = 'NONE'
+	},
+	separator_selected = {
+		fg = 'NONE',
+		bg = 'NONE'
+	},
+	background = {
+		bg = 'NONE'
+	},
+	buffer_selected = {
+		bg = 'NONE',
+		bold = true,
+		italic = false
+	},
+	fill = {
+		bg = 'NONE'
+	}
+}
 
 --Highlights Config Loader
 local highlights_config = function()
@@ -42,7 +64,7 @@ local highlights_config = function()
 	elseif (vim.g.colors_name == 'monokai') then
 		return monokai_config
 	elseif (vim.g.colors_name == 'gruvbox') then
-		return tokyonight_config
+		return gruvbox_config
 	end
 end
 
