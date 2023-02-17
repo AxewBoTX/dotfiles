@@ -81,14 +81,6 @@ local on_attach = function(client, bufnr)
   keymap.set("n", "]d", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts) -- jump to next diagnostic in buffer
   keymap.set("n", ";.", "<cmd>Lspsaga hover_doc<CR>", opts) -- show documentation for what is under cursor
 end
---Starting Language Server
-local function start_language_server(pattern, callback)
-	vim.api.nvim_create_autocmd({ "FileType" }, {
-        pattern = pattern,
-        callback = callback,
-        desc = "Start language server: " .. pattern
-    })
-end
 
 --Lua Setup
 lsp_config.lua_ls.setup {
