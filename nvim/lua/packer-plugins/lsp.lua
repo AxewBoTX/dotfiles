@@ -24,19 +24,8 @@ if (not lsp_saga_status) then
 	return
 end
 
---COC Setup
-vim.g.coc_global_extensions = {"coc-java"}
-vim.cmd([[
-nmap <silent> [d <Plug>(coc-diagnostic-prev)
-nmap <silent> ]d <Plug>(coc-diagnostic-next)
-nmap <silent> gr <Plug>(coc-references)
-]])
-
 --Mason Setup
-INSTALL_ROOT_PATH = os.getenv("HOME") .. "/.local/share/nvim/mason"
-LSP_ROOT_PATH = INSTALL_ROOT_PATH .. "/packages"
 mason.setup({
-	install_root_dir = INSTALL_ROOT_PATH,
 	ui = {
 		icons = {
 			package_installed = "✓"
@@ -102,3 +91,4 @@ lsp_config.lua_ls.setup {
 		},
 	},
 }
+

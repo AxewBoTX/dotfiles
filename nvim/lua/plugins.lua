@@ -53,10 +53,7 @@ packer.startup(function(use)
 		'williamboman/mason-lspconfig.nvim', --Mason LSP Config
 		'neovim/nvim-lspconfig', --LSP Config
 		'glepnir/lspsaga.nvim', --LSP Saga
-	}
-	use { --COC
-		'neoclide/coc.nvim',
-		branch = 'release'
+		'mfussenegger/nvim-jdtls' -- JDTLS For Java
 	}
 end)
 
