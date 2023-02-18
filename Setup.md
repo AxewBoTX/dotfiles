@@ -32,6 +32,7 @@ Now install jdtls using the following command(Unix only):-
 curl https://raw.githubusercontent.com/eruizc-dev/jdtls-launcher/master/install.sh | bash
 ```
 Check out [eruizc-dev/jdtls-launcher](https://github.com/eruizc-dev/jdtls-launcher) for info on how to install jdtls on other OS.
+<br></br>
 After installing the required things and the rquired version neovim, follow these steps to setup Neovim:-
 - Open Neovim by using nvim command. This will start a process that will install some required things. Let it finish.
 - After that is finished you can just use `:PackerInstall` in Neovim to install Neovim plugins.
