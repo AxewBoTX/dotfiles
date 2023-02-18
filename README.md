@@ -29,7 +29,7 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 - [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim) - Portable LSP Manager
 - [williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim) - Extionsion to use lspconfig for mason.nvim
 - [glepnir/lspsaga.nvim](https://github.com/glepnir/lspsaga.nvim) - A light-weight lsp plugin based on neovim's built-in lsp with a highly performant UI
-- [neoclide/coc.nvim](https://github.com/neoclide/coc.nvim) - COC
+- [mfussenegger/nvim-jdtls](https://github.com/mfussenegger/nvim-jdtls) - LSP plugin specially for java.
 - [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - [Treesitter](https://github.com/tree-sitter/tree-sitter) configurations and abstraction layer for Neovim
 - [kyazdani42/nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons) - Lua `fork` of vim-web-devicons for neovim
 - [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - A highly extendable fuzzy finder over lists
@@ -53,6 +53,7 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 - [Powerlevel10k](https://github.com/romkatv/powerlevel10k) - Oh My Zsh theme
 - [Exa](https://github.com/ogham/exa) -- Modern replacement for `ls` command
 - [zsh-users/zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) - Command Suggestions for zsh
+- [eruizc-dev/jdtls-launcher](https://github.com/eruizc-dev/jdtls-launcher) - Automatic JDTLS installer
 
 ## Tmux Setup
 >NOTE The code inside .tmux.conf does not go inside the .config folder. You need to put the copy of this file in the home directory.
