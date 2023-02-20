@@ -55,9 +55,6 @@ packer.startup(function(use)
 		'glepnir/lspsaga.nvim', --LSP Saga
 		'mfussenegger/nvim-jdtls', -- JDTLS For Java
 	}
-	use {
-		'j-hui/fidget.nvim' -- LSP Progress UI
-	}
 end)
 
 --Colorschemes Setup
@@ -73,4 +70,3 @@ require('packer-plugins/bufferline')
 require('packer-plugins/code_runner')
 require('packer-plugins/lsp')
 require('packer-plugins/colorizer')
-require('packer-plugins/fidget')
