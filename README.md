@@ -37,6 +37,7 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 - [akinsho/nvim-bufferline.lua](https://github.com/akinsho/nvim-bufferline.lua) - A snazzy bufferline
 - [norcalli/nvim-colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua) - Color Code Highlighter
 - [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) - Git integration for buffers
+- [j-hui/fidget.nvim](https://github.com/j-hui/fidget.nvim) - UI for LSP progress
 
 ## PowerShell Setup (Windows)
 >NOTE: The code inside Microsoft.Powershell_Profile.ps1 does not go inside the .config folder. It is just to set the environment var that sets the location of powershell config to the new location in .config/powershell folder that is the user_profile.ps1 file.
