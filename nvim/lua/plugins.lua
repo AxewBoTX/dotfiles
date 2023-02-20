@@ -53,7 +53,10 @@ packer.startup(function(use)
 		'williamboman/mason-lspconfig.nvim', --Mason LSP Config
 		'neovim/nvim-lspconfig', --LSP Config
 		'glepnir/lspsaga.nvim', --LSP Saga
-		'mfussenegger/nvim-jdtls' -- JDTLS For Java
+		'mfussenegger/nvim-jdtls', -- JDTLS For Java
+	}
+	use {
+		'j-hui/fidget.nvim' -- LSP Progress UI
 	}
 end)
 
@@ -70,3 +73,4 @@ require('packer-plugins/bufferline')
 require('packer-plugins/code_runner')
 require('packer-plugins/lsp')
 require('packer-plugins/colorizer')
+require('packer-plugins/fidget')
