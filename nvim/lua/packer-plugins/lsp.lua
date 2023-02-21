@@ -52,6 +52,11 @@ lsp_saga.setup({
 	},
 	symbol_in_winbar = {
 		enable = false
+	},
+	diagnostic = {
+		on_insert = false,
+		on_insert_follow = false,
+		insert_winblend = 0,
 	}
 })
 
