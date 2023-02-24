@@ -34,13 +34,4 @@ telescope.load_extension("file_browser")
 vim.keymap.set('n', ';f',
   function()
     builtin.find_files()
-  end)
-vim.keymap.set("n", "sf", function()
-  telescope.extensions.file_browser.file_browser({
-    respect_gitignore = false,
-    hidden = true,
-    grouped = true,
-    previewer = false,
-    initial_mode = "normal",
-  })
 end)

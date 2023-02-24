@@ -25,17 +25,18 @@ packer.startup(function(use)
 		'cpea2506/one_monokai.nvim', --OneMonokai
 		'tanvirtin/monokai.nvim', --Monokai
 	}
+	use 'nvim-lua/plenary.nvim' --Plenary Includes Usefull Functions For Plugins
 	use 'kyazdani42/nvim-web-devicons' --Web Dev Icons
 	use 'norcalli/nvim-colorizer.lua' --Colorizer For Color Code Highlighting
 	use {
 		'nvim-lualine/lualine.nvim', -- LuaLine As The StatusLine
 		requires = { 'kyazdani42/nvim-web-devicons', opt = true }
 	}
+	use 'nvim-tree/nvim-tree.lua' --NvimTree For File Explorer
 	use { -- Make Sure To Install RipGrep Before Installing Telescope
 		'nvim-telescope/telescope.nvim', tag = '0.1.0', --Telescope
-		requires = { {'nvim-lua/plenary.nvim'} }
+		'nvim-telescope/telescope-file-browser.nvim' --Telescope File Browser Extension
 	}
-	use 'nvim-telescope/telescope-file-browser.nvim' --Telescope File Browser Extension
 	use 'akinsho/bufferline.nvim' --BufferLine For Tabs
     use { --Treesitter For Syntax Highlighting
         'nvim-treesitter/nvim-treesitter',
@@ -43,7 +44,6 @@ packer.startup(function(use)
     }
 	use { --Code-Runner For Compiling And Running Code
 		'CRAG666/code_runner.nvim',
-		requires = {'nvim-lua/plenary.nvim'}
 	}
 	use { --Git Related Plugins
 		'lewis6991/gitsigns.nvim', --Git Sign
@@ -70,3 +70,4 @@ require('packer-plugins/bufferline')
 require('packer-plugins/code_runner')
 require('packer-plugins/lsp')
 require('packer-plugins/colorizer')
+require('packer-plugins/nvim_tree')

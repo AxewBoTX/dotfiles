@@ -15,6 +15,9 @@ keymap.set('n','<S-Tab>',':tabprevious <Return>',{silent = true})
 keymap.set('n',';m',':noh <Return>',{silent = true})
 --Running Code With Code-Runner
 keymap.set('n',';q',':RunCode <Return>',{silent = true})
+--Changing The J and K key
+keymap.set('n','j','k')
+keymap.set('n','k','j')
 --Changing The Home And End Key
 keymap.set({'n','v'},'<','<HOME>')
 keymap.set({'n','v'},'>','<END>')
