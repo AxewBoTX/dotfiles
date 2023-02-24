@@ -35,7 +35,6 @@ packer.startup(function(use)
 	use 'nvim-tree/nvim-tree.lua' --NvimTree For File Explorer
 	use { -- Make Sure To Install RipGrep Before Installing Telescope
 		'nvim-telescope/telescope.nvim', tag = '0.1.0', --Telescope
-		'nvim-telescope/telescope-file-browser.nvim' --Telescope File Browser Extension
 	}
 	use 'akinsho/bufferline.nvim' --BufferLine For Tabs
     use { --Treesitter For Syntax Highlighting

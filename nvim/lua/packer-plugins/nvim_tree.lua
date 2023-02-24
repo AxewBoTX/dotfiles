@@ -8,12 +8,10 @@ end
 --NvimTree Setup
 nvim_tree.setup({
 	disable_netrw = true,
-	hijack_netrw = false,
+	hijack_netrw = true,
 	view = {
 		mappings = {
 			list = {
-				{key = "J",action = "first_sibling"},
-				{key = "K",action = "last_sibling"},
 				{key = "<Tab>",action = "edit"},
 			}
 		},
@@ -35,4 +33,4 @@ nvim_tree.setup({
 		}
 	}
 })
-vim.keymap.set("n","sf",":NvimTreeToggle <Return>",{silent = true})
+vim.keymap.set("n","sf",":NvimTreeFindFileToggle <Return>",{silent = true})

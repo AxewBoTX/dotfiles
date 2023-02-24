@@ -8,27 +8,7 @@ end
 --Telescope Setup
 local builtin = require("telescope.builtin")
 
-local fb_actions = require "telescope".extensions.file_browser.actions
-
-telescope.setup{
-	extensions = {
-		file_browser = {
-			theme = 'dropdown',
-			hijack_netrw = true,
-			previewer = false,
-			mappings = {
-				["i"] = { --Insert Mode
-					["<C-n>"] = fb_actions.create, --Creating New Files
-				},
-				["n"] = { --Normal Mode
-					["<C-n>"] = fb_actions.create, --Creating New Files
-				}
-			}
-		}
-	}
-}
---Loading File-Browser Extension
-telescope.load_extension("file_browser")
+telescope.setup{}
 
 --Telescope Keymaps
 vim.keymap.set('n', ';f',
