@@ -60,10 +60,20 @@ Just run the following command to install yarn:-
 npm install --global yarn
 ```
 
-## C-Compiler
-In order to install **gcc** and **g++** run `sudo apt update; sudo apt upgrade` command and then run the following command:-
+## C/C++ Full Package
+In order to install all the C/C++ related things run `sudo apt update; sudo apt upgrade` command and then run the following command:-
+<br></br>
+- gcc and g++
 ```shell
 sudo apt install gcc g++
+```
+- Clang and GDB
+```shell
+sudo apt install clang gdb
+```
+- Cmake
+```shell
+sudo apt install cmake
 ```
 
 ## Neovim
