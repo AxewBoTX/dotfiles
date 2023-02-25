@@ -33,6 +33,10 @@ curl https://raw.githubusercontent.com/eruizc-dev/jdtls-launcher/master/install.
 ```
 Check out [eruizc-dev/jdtls-launcher](https://github.com/eruizc-dev/jdtls-launcher) for info on how to install jdtls on other OS.
 <br></br>
+Now install unzip using the following command:-
+```shell
+sudo apt-get install unzip
+```
 After installing the required things and the rquired version neovim, follow these steps to setup Neovim:-
 - Open Neovim by using nvim command. This will start a process that will install some required things. Let it finish.
 - After that is finished you can just use `:PackerInstall` in Neovim to install Neovim plugins.
