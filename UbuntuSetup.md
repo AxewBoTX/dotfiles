@@ -60,6 +60,16 @@ Just run the following command to install yarn:-
 npm install --global yarn
 ```
 
+## Python
+In order to install python and it's its corresponding packages we need to first remove any pre-installed version of python on your system. You can do that by running the following command:-
+```shell
+sudo apt-get remove python3
+```
+Now that you have remove pre-installed python from your system, just run the following commands:-
+```shell
+sudo apt install python3 python3-pip
+```
+
 ## C/C++ Full Package
 In order to install all the C/C++ related things run `sudo apt update; sudo apt upgrade` command and then run the following command:-
 <br></br>
