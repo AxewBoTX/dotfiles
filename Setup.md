@@ -57,6 +57,7 @@ After installing the required things and the rquired version neovim, follow thes
 - Open Neovim by using nvim command. This will start a process that will install some required things. Let it finish.
 - After that is finished you can just use `:PackerInstall` in Neovim to install Neovim plugins.
 - After all the plugins are installed, just do `:PackerSync` to make sure all the plugins are up to date.
+<br></br>
 Now you can just use Neovim as you please.
 
 ## Tmux
