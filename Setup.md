@@ -58,7 +58,6 @@ After installing the required things and the rquired version neovim, follow thes
 - After that is finished you can just use `:PackerInstall` in Neovim to install Neovim plugins.
 - After all the plugins are installed, just do `:PackerSync` to make sure all the plugins are up to date.
 Now you can just use Neovim as you please.
->NOTE: If coc gives any errors and the solution cannot be found, just remove coc and its files from ~/.config and ~/.config/nvim and remove the plugin and its setup from [plugins.lua](https://github.com/AxewBoTX/dotfiles-public/blob/main/nvim/lua/plugins.lua) and [lsp.lua](https://github.com/AxewBoTX/dotfiles-public/blob/main/nvim/lua/packer-plugins/lsp.lua) and then reinstall coc and its extensions.
 
 ## Tmux
 In order to install tmux you can follow [UbuntuSetup](https://github.com/AxewBoTX/dotfiles-public/blob/main/UbuntuSetup.md) file. After installing tmux copy the [.tmux.conf](https://github.com/AxewBoTX/dotfiles-public/blob/main/tmux/.tmux.conf) into your Home directory or copy the code from it into the .tmux.conf file in your Home directory. After that just follow the following steps to setup Tmux:-
