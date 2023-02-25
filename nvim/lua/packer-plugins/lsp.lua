@@ -35,7 +35,7 @@ mason.setup({
 
 --Mason-LSP Setup
 mason_lsp.setup({
-	ensure_installed = {"lua_ls"}
+	ensure_installed = {"lua_ls","clangd"}
 })
 
 --LSP Saga Setup
@@ -96,4 +96,7 @@ lsp_config.lua_ls.setup {
 		},
 	},
 }
-
+--C/C++ Setup
+lsp_config.clangd.setup{
+	on_attach = on_attach
+}

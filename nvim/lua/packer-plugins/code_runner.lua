@@ -6,13 +6,11 @@ end
 
 --Code-Runner Setup
 cr.setup{
-	filetype = {
-		java = "cd $dir && javac $fileName && java $fileNameWithoutExt",
-	},
+	filetype = {},
 	mode = "float",
 	float = {
 		close_key = 'q',
 		border = 'single',
-		blend = 1,
+		blend = 0,
 	},
 }
