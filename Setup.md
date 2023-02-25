@@ -15,6 +15,22 @@ winget install JanDeDobbeleer.OhMyPosh -s winget
 ```
 Now you can refresh the Windows terminal config by either restarting it or running `.$PROFILE` command.
 
+## Oh-My-Zsh
+You can use [UbuntuSetup](https://github.com/AxewBoTX/dotfiles-public/blob/main/UbuntuSetup.md) to install zsh and oh-my-zsh on Ubuntu. After that follow these steps to configure it:-
+- Install [exa](https://github.com/ogham/exa) using the command `sudo apt install exa`
+- Install [zsh-users/zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) by running the following command:-
+```shell
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+- Install [romkatv/powerlevel10k](https://github.com/romkatv/powerlevel10k) using the following command:-
+```shell
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+```
+- Copy the [.zshrc](https://github.com/AxewBoTX/dotfiles-public/blob/main/zsh/.zshrc) from zsh folder into the Home directory or copy the code from it to the one that is already in your home directory.
+- After that just run `source ~/.zshrc`
+- Now you will be asked to configure powerlevel10 theme and if not then run `p10k configure` to configure it.
+- Now configure it according to your need.
+
 ## Neovim
 You are going to need to install python,gcc and nodejs before configuring Neovim. If you are on Ubuntu then refer to [UbuntuSetup](https://github.com/AxewBoTX/dotfiles-public/blob/main/UbuntuSetup.md) for help. You need to install [wbthomason/packer.nvim](https://github.com/wbthomason/packer.nvim) before installing Neovim. In order to install packer run the following command:-
 <br></br>
@@ -43,22 +59,6 @@ After installing the required things and the rquired version neovim, follow thes
 - After all the plugins are installed, just do `:PackerSync` to make sure all the plugins are up to date.
 Now you can just use Neovim as you please.
 >NOTE: If coc gives any errors and the solution cannot be found, just remove coc and its files from ~/.config and ~/.config/nvim and remove the plugin and its setup from [plugins.lua](https://github.com/AxewBoTX/dotfiles-public/blob/main/nvim/lua/plugins.lua) and [lsp.lua](https://github.com/AxewBoTX/dotfiles-public/blob/main/nvim/lua/packer-plugins/lsp.lua) and then reinstall coc and its extensions.
-
-## Oh-My-Zsh
-You can use [UbuntuSetup](https://github.com/AxewBoTX/dotfiles-public/blob/main/UbuntuSetup.md) to install zsh and oh-my-zsh on Ubuntu. After that follow these steps to configure it:-
-- Install [exa](https://github.com/ogham/exa) using the command `sudo apt install exa`
-- Install [zsh-users/zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) by running the following command:-
-```shell
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-```
-- Install [romkatv/powerlevel10k](https://github.com/romkatv/powerlevel10k) using the following command:-
-```shell
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-```
-- Copy the [.zshrc](https://github.com/AxewBoTX/dotfiles-public/blob/main/zsh/.zshrc) from zsh folder into the Home directory or copy the code from it to the one that is already in your home directory.
-- After that just run `source ~/.zshrc`
-- Now you will be asked to configure powerlevel10 theme and if not then run `p10k configure` to configure it.
-- Now configure it according to your need.
 
 ## Tmux
 In order to install tmux you can follow [UbuntuSetup](https://github.com/AxewBoTX/dotfiles-public/blob/main/UbuntuSetup.md) file. After installing tmux copy the [.tmux.conf](https://github.com/AxewBoTX/dotfiles-public/blob/main/tmux/.tmux.conf) into your Home directory or copy the code from it into the .tmux.conf file in your Home directory. After that just follow the following steps to setup Tmux:-
