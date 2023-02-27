@@ -6,4 +6,12 @@ if (not status) then
 end
 
 --Colorizer Setup
-colorizer.setup({'*'})
+colorizer.setup({
+	'*',
+	java = {
+		names = false;
+	},
+	lua = {
+		names = false;
+	}
+})
