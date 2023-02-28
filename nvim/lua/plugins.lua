@@ -28,6 +28,7 @@ packer.startup(function(use)
 	use 'nvim-lua/plenary.nvim' --Plenary Includes Usefull Functions For Plugins
 	use 'kyazdani42/nvim-web-devicons' --Web Dev Icons
 	use 'norcalli/nvim-colorizer.lua' --Colorizer For Color Code Highlighting
+	use 'windwp/nvim-autopairs' --Autopairs 
 	use {
 		'nvim-lualine/lualine.nvim', -- LuaLine As The StatusLine
 		requires = { 'kyazdani42/nvim-web-devicons', opt = true }
@@ -70,3 +71,4 @@ require('packer-plugins/code_runner')
 require('packer-plugins/lsp')
 require('packer-plugins/colorizer')
 require('packer-plugins/nvim_tree')
+require('packer-plugins/autopairs')
