@@ -35,7 +35,7 @@ mason.setup({
 
 --Mason-LSP Setup
 mason_lsp.setup({
-	ensure_installed = {"lua_ls","clangd","tsserver","cssls"}
+	ensure_installed = {"lua_ls","clangd"}
 })
 
 --LSP Saga Setup
@@ -98,13 +98,5 @@ lsp_config.lua_ls.setup {
 }
 --C/C++ Setup
 lsp_config.clangd.setup{
-	on_attach = on_attach
-}
---Javascript/Typescript
-lsp_config.tsserver.setup{
-	on_attach = on_attach
-}
---CSS Setup
-lsp_config.cssls.setup{
 	on_attach = on_attach
 }
