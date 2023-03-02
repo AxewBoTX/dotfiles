@@ -120,3 +120,5 @@ if [ -f ~/.config/zsh/zsh_config.zsh ]; then
 else 
 	print "ERROR; ~/.config/zsh/zsh_config not found!"
 fi
+#Open Explorer Shortcut For WSL
+alias open="explorer.exe"
