@@ -64,7 +64,6 @@ lsp_saga.setup({
 --Disabeling The Sign Column In Diagnostics
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
   signs = false,
-  virtual_text = false,
 })
 
 --LSP-Config Setup
