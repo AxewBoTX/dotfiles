@@ -126,3 +126,7 @@ lsp_config.jsonls.setup{
 lsp_config.eslint.setup{
 	on_attach = on_attach
 }
+--Python Setup
+lsp_config.pyright.setup{
+	on_attach = on_attach
+}
