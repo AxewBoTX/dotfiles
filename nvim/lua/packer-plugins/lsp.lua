@@ -36,7 +36,7 @@ mason.setup({
 --Mason-LSP Setup
 mason_lsp.setup({
 	ensure_installed = {
-		"lua_ls","clangd","cssls","eslint","jsonls","tsserver"
+		"lua_ls","clangd","cssls","eslint","jsonls","tsserver","pyright"
 	}
 })
 
