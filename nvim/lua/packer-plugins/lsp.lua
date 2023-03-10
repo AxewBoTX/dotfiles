@@ -36,7 +36,7 @@ mason.setup({
 --Mason-LSP Setup
 mason_lsp.setup({
 	ensure_installed = {
-		"lua_ls","clangd","cssls","eslint","jsonls","tsserver","pyright"
+		"lua_ls","clangd","cssls","jsonls","pyright"
 	}
 })
 
@@ -106,24 +106,12 @@ lsp_config.lua_ls.setup {
 lsp_config.clangd.setup{
 	on_attach = on_attach
 }
---Javascript/Typescript Setup
-lsp_config.tsserver.setup{
-	on_attach = on_attach
-}
---HTML Setup
-lsp_config.html.setup{
-	on_attach = on_attach
-}
 --CSS Setup
 lsp_config.cssls.setup{
 	on_attach = on_attach
 }
 --JSON Setup
 lsp_config.jsonls.setup{
-	on_attach = on_attach
-}
---ESLINT Setup
-lsp_config.eslint.setup{
 	on_attach = on_attach
 }
 --Python Setup
