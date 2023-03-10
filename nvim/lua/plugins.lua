@@ -26,9 +26,11 @@ packer.startup(function(use)
 		'tanvirtin/monokai.nvim', --Monokai
 	}
 	use 'nvim-lua/plenary.nvim' --Plenary Includes Usefull Functions For Plugins
+	use 'MunifTanjim/nui.nvim' --UI Component Library For Neovim
 	use 'kyazdani42/nvim-web-devicons' --Web Dev Icons
 	use 'norcalli/nvim-colorizer.lua' --Colorizer For Color Code Highlighting
 	use 'windwp/nvim-autopairs' --Autopairs 
+	use 'VonHeikemen/searchbox.nvim' --Better Search And Replace
 	use {
 		'nvim-lualine/lualine.nvim', -- LuaLine As The StatusLine
 		requires = { 'kyazdani42/nvim-web-devicons', opt = true }
@@ -72,3 +74,4 @@ require('packer-plugins/lsp')
 require('packer-plugins/colorizer')
 require('packer-plugins/nvim_tree')
 require('packer-plugins/autopairs')
+require('packer-plugins/searchbox')
