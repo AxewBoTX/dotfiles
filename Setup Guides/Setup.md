@@ -16,7 +16,7 @@ winget install JanDeDobbeleer.OhMyPosh -s winget
 Now you can refresh the Windows terminal config by either restarting it or running `.$PROFILE` command.
 
 ## Oh-My-Zsh
-You can use [UbuntuSetup](https://github.com/AxewBoTX/dotfiles-public/blob/main/UbuntuSetup.md) to install zsh and oh-my-zsh on Ubuntu. After that follow these steps to configure it:-
+You can use [UbuntuSetup](https://github.com/AxewBoTX/dotfiles-public/blob/main/Setup%20Guides/UbuntuSetup.md) to install zsh and oh-my-zsh on Ubuntu. After that follow these steps to configure it:-
 - Install [exa](https://github.com/ogham/exa) using the command `sudo apt install exa`
 - Install [zsh-users/zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) by running the following command:-
 ```shell
