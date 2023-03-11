@@ -62,7 +62,7 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 
 ## How To Setup
 
-Check out [UbuntuSetup](https://github.com/AxewBoTX/dotfiles-public/blob/main/UbuntuSetup.md) in order to setup Ubuntu/WSL. Also, check out [Setup](https://github.com/AxewBoTX/dotfiles-public/blob/main/Setup.md) in order to know how to setup the components in a briefly explained manner.
+Check out [UbuntuSetup](https://github.com/AxewBoTX/dotfiles-public/blob/main/Setup%20Guides/UbuntuSetup.md) in order to setup Ubuntu/WSL. Also, check out [Setup](https://github.com/AxewBoTX/dotfiles-public/blob/main/Setup%20Guides/Setup.md) in order to know how to setup the components in a briefly explained manner.
 
 Watch These Video Tutorials:-
 
