@@ -11,6 +11,7 @@ Follow these steps to configure Ubuntu/WSL according to this repository
 8. Setup your profile and follow the next steps.
 
 ## WSL(Other Drive)
+>NOTE: Only Use This Method If You Havnt Already Installed Any WSL Distro On Your System
 1. Make a folder called **WSL** in whichever directory you want.
 2. Make a another folder and name it to the name of distro that you want to install.
 3. Go to [this](https://learn.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions) page and download whichever distro you want.
