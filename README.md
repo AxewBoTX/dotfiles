@@ -24,6 +24,7 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 - [cpea2506/one_monokai.nvim](https://github.com/cpea2506/one_monokai.nvim) - OneMonokai
 ### Plugins
 - [wbthomason/packer.nvim](https://github.com/wbthomason/packer.nvim) - A plugin manager for Neovim
+- [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim) - Plenary Includes Usefull Functoins For Neovim Plugins
 - [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) - A blazing fast and easy to configure Neovim statusline written in Lua
 - [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - A collection of configurations for Neovim's built-in LSP
 - [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim) - Portable LSP Manager
