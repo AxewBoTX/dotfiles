@@ -38,6 +38,14 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 - [norcalli/nvim-colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua) - Color Code Highlighter
 - [nvim-autopairs](https://github.com/windwp/nvim-autopairs) - A super powerful autopair plugin for Neovim
 - [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) - Git integration for buffers
+- [MunifTanjim/nui.nvim](https://github.com/MunifTanjim/nui.nvim) - UI Component Library For Neovim
+- [VonHeikemen/searchbox.nvim](https://github.com/VonHeikemen/searchbox.nvim) - Better Search And Replace
+- [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp) - Code Completion Plugin Written In Lua
+- [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp) - Lsp Snippets For Code Completion
+- [onsails/lspkind.nvim](https://github.com/onsails/lspkind.nvim) - VsCode Like Pictograms For Neovim
+- [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip) - Snippet Engine For Neovim 
+- [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer) - Current Buffer Source For Code COmpletion
+- [hrsh7th/cmp-path](https://github.com/hrsh7th/cmp-path) - Path Source For Code Completion
 
 ## PowerShell Setup (Windows)
 >NOTE: The code inside Microsoft.Powershell_Profile.ps1 does not go inside the .config folder. It is just to set the environment var that sets the location of powershell config to the new location in .config/powershell folder that is the user_profile.ps1 file.
