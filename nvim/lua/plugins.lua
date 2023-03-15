@@ -60,10 +60,10 @@ packer.startup(function(use)
 	use { -- Code Completion
 		'hrsh7th/nvim-cmp', --Code Completion Plugin
 		'hrsh7th/cmp-nvim-lsp', --Lsp Snippets
-		'L3MON4D3/LuaSnip', --Lua Snippets
+		'onsails/lspkind.nvim', --VsCode Like Pictograms
+		'L3MON4D3/LuaSnip', --Lua Snippets Engine
 		'hrsh7th/cmp-buffer', --Current Buffer Source
 		'hrsh7th/cmp-path', --Path Completion
-		'saadparwaiz1/cmp_luasnip', --Another Lua Snippets Engine
 	}
 end)
 
