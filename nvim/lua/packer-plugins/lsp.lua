@@ -36,7 +36,7 @@ mason.setup({
 --Mason-LSP Setup
 mason_lsp.setup({
 	ensure_installed = {
-		"lua_ls","clangd","cssls","jsonls","pyright","tsserver","eslint"
+		"lua_ls","clangd","cssls","jsonls","pyright","tsserver","eslint",
 	}
 })
 
@@ -82,9 +82,13 @@ local on_attach = function(client, bufnr)
   keymap.set("n", ";.", "<cmd>Lspsaga hover_doc<CR>", opts) -- show documentation for what is under cursor
 end
 
+--Capabilities With Nvim-CMP
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
 --Lua Setup
 lsp_config.lua_ls.setup {
 	on_attach = on_attach,
+	capabilities = capabilities,
 	settings = {
 		Lua = {
 			runtime = {
@@ -104,25 +108,31 @@ lsp_config.lua_ls.setup {
 }
 --C/C++ Setup
 lsp_config.clangd.setup{
-	on_attach = on_attach
+	on_attach = on_attach,
+	capabilities = capabilities
 }
 --CSS Setup
 lsp_config.cssls.setup{
-	on_attach = on_attach
+	on_attach = on_attach,
+	capabilities = capabilities
 }
 --JSON Setup
 lsp_config.jsonls.setup{
-	on_attach = on_attach
+	on_attach = on_attach,
+	capabilities = capabilities
 }
 --Python Setup
 lsp_config.pyright.setup{
-	on_attach = on_attach
+	on_attach = on_attach,
+	capabilities = capabilities
 }
 --Javascript/Typescript Setup
 lsp_config.tsserver.setup{
-	on_attach = on_attach
+	on_attach = on_attach,
+	capabilities = capabilities
 }
 --ESLINT Setup
 lsp_config.eslint.setup{
-	on_attach = on_attach
+	on_attach = on_attach,
+	capabilities = capabilities
 }

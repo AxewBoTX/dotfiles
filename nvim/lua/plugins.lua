@@ -57,6 +57,14 @@ packer.startup(function(use)
 		'glepnir/lspsaga.nvim', --LSP Saga
 		'mfussenegger/nvim-jdtls', -- JDTLS For Java
 	}
+	use { -- Code Completion
+		'hrsh7th/nvim-cmp', --Code Completion Plugin
+		'hrsh7th/cmp-nvim-lsp', --Lsp Snippets
+		'L3MON4D3/LuaSnip', --Lua Snippets
+		'hrsh7th/cmp-buffer', --Current Buffer Source
+		'hrsh7th/cmp-path', --Path Completion
+		'saadparwaiz1/cmp_luasnip', --Another Lua Snippets Engine
+	}
 end)
 
 --Colorschemes Setup
@@ -75,3 +83,4 @@ require('packer-plugins/colorizer')
 require('packer-plugins/nvim_tree')
 require('packer-plugins/autopairs')
 require('packer-plugins/searchbox')
+require('packer-plugins/cmp')

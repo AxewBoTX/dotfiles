@@ -20,10 +20,14 @@ local on_attach = function(client, bufnr)
   keymap.set("n", ";.", "<cmd>Lspsaga hover_doc<CR>", opts) -- show documentation for what is under cursor
 end
 
+--Capabilities Setup
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
 --JDTLS Setup
 local jdtls_config = {
 	cmd = {'jdtls'},
 	on_attach = on_attach,
+	capabilities = capabilities,
 	root_dir = require('jdtls.setup').find_root({'.git', 'mvnw', 'gradlew','gradle.build','pom.xml'}),
 }
 jdtls.start_or_attach(jdtls_config)

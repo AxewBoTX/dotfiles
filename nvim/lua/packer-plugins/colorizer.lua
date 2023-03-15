@@ -13,5 +13,11 @@ colorizer.setup({
 	},
 	lua = {
 		names = false;
+	},
+	javascript = {
+		names = false,
+	},
+	python = {
+		names = false
 	}
 })
