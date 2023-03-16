@@ -47,6 +47,9 @@ lspkind.init({
 --Nvim-CMP Setup
 vim.opt.completeopt = "menu,menuone,noselect"
 nvim_cmp.setup({
+	completion = {
+		autocomplete = false,
+	},
 	snippet = {
 		expand = function(args)
 			require('luasnip').lsp_expand(args.body)
