@@ -1,0 +1,22 @@
+live_config_reload: true
+font:
+  size: 15
+  normal: 
+    family: SF Mono
+
+window:
+  decorations: none
+  padding: 
+    x: 2
+    y: 2
+  dimensions:
+    columns: 80
+    lines: 26
+  startup_mode: Fullscreen
+  opacity: 0.8
+  title: Terminal
+
+colors:
+  primary:
+    background: '0x000000'
+    foreground: '0xffffff'
