@@ -6,6 +6,7 @@ font:
 
 window:
   decorations: none
+  startup_mode: Windowed
   padding: 
     x: 2
   dimensions:
