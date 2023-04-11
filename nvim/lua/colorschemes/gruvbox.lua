@@ -7,5 +7,5 @@ end
 
 --Gruvbox Setup
 n.setup({
-	transparent_mode = true,
+	transparent_mode = false,
 })
