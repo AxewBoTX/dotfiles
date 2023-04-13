@@ -42,24 +42,15 @@ mason_lsp.setup({
 
 --LSP Saga Setup
 lsp_saga.setup({
-	scroll_preview = {
-		scroll_down = "<C-f>",
-		scroll_up = "C-b"
+	diagnostic_header_icon = " ",
+	finder_definition_icon =" ",
+	finder_reference_icon = " ",
+	finder_action_keys = {
+		open = "<CR>",
+		vsplit = "v",
+		split = "s",
 	},
-	definition = {edit = "<CR>"},
-	lightbulb = {enable = false},
-	ui = {
-		theme = "round",
-		title = false
-	},
-	symbol_in_winbar = {
-		enable = false
-	},
-	diagnostic = {
-		on_insert = false,
-		on_insert_follow = false,
-		insert_winblend = 0,
-	}
+	border_style = "round",
 })
 --Disabeling The Sign Column In Diagnostics
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
@@ -74,7 +65,11 @@ local on_attach = function(client, bufnr)
   local opts = { noremap = true, silent = true, buffer = bufnr }
   -- Keybinds
   keymap.set("n", "gf", "<cmd>Lspsaga lsp_finder<CR>", opts) -- show definition, references
-  keymap.set("n", "gd", "<cmd>Lspsaga peek_definition<CR>", opts) -- see definition and make edits in window
+  keymap.set("n", "gd", "<cmd>Lspsaga preview_definition<CR>", opts) -- see definition and make edits in window
+  keymap.set("n", ";D", "<cmd>Lspsaga show_line_diagnostics<CR>", opts) -- show  diagnostics for line
+  keymap.set("n", ";d", "<cmd>Lspsaga show_cursor_diagnostics<CR>", opts) -- show diagnostics for cursor
+  keymap.set("n", "[d", "<cmd>Lspsaga diagnostic_jump_prev<CR>", opts) -- jump to previous diagnostic in buffer
+  keymap.set("n", "]d", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts) -- jump to next diagnostic in buffer
   keymap.set("n", ";.", "<cmd>Lspsaga hover_doc<CR>", opts) -- show documentation for what is under cursor
 end
 

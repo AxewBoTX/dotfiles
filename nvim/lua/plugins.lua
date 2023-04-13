@@ -54,7 +54,7 @@ packer.startup(function(use)
 		'williamboman/mason.nvim', --Mason
 		'williamboman/mason-lspconfig.nvim', --Mason LSP Config
 		'neovim/nvim-lspconfig', --LSP Config
-		'glepnir/lspsaga.nvim', --LSP Saga
+		'kkharji/lspsaga.nvim', --LSP Saga
 		'mfussenegger/nvim-jdtls', -- JDTLS For Java
 	}
 	use { -- Code Completion
