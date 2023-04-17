@@ -7,7 +7,8 @@ end
 --Code-Runner Setup
 cr.setup{
 	filetype = {
-		typescript = "tsc $fileName && node $fileNameWithoutExt.js"
+		typescript = "tsc $fileName && node $fileNameWithoutExt.js",
+		rust = "rustc $fileName && ./$fileNameWithoutExt"
 	},
 	mode = "float",
 	float = {
