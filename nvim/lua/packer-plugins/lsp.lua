@@ -133,3 +133,8 @@ lsp_config.html.setup{
 	on_attach = on_attach,
 	capabilities = capabilities
 }
+--RUST Setup
+lsp_config.rust_analyzer.setup{
+	on_attach = on_attach,
+	capabilities = capabilities
+}
