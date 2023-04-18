@@ -36,7 +36,7 @@ mason.setup({
 --Mason-LSP Setup
 mason_lsp.setup({
 	ensure_installed = {
-		"lua_ls","clangd","cssls","jsonls","pyright","tsserver","eslint","html"
+		"lua_ls","clangd","cssls","jsonls","pyright","tsserver","eslint","html","rust_analyzer"
 	}
 })
 

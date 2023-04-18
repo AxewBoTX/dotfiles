@@ -8,7 +8,7 @@ end
 cr.setup{
 	filetype = {
 		typescript = "tsc $fileName && node $fileNameWithoutExt.js",
-		rust = "rustc $fileName && ./$fileNameWithoutExt"
+		rust = "cd $dir && rustc $fileName && $dir/$fileNameWithoutExt"
 	},
 	mode = "float",
 	float = {
