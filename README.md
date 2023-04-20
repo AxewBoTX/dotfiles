@@ -13,6 +13,8 @@
 - [Powershell](https://learn.microsoft.com/en-us/powershell/) Config
 - [Ubuntu(On WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) Config
 - [Tmux](https://github.com/tmux/tmux/wiki) Config
+- [Alacritty](https://github.com/alacritty/alacritty) Config
+- [Neofetch](https://github.com/dylanaraps/neofetch) Config
 
 ## Neovim Setup
 
