@@ -1,6 +1,6 @@
---Ensuring Lualine Is Working 
-local status,lualine = pcall(require,"lualine")
-if (not status) then
+--Ensuring Lualine Is Working
+local status, lualine = pcall(require, "lualine")
+if not status then
 	print("Lualine Is Not Working")
 	return
 end
@@ -12,7 +12,7 @@ lualine.setup({
 		theme = "auto",
 	},
 	sections = {
-		lualine_x = {''},
-		lualine_y = {''}
+		lualine_x = { "" },
+		lualine_y = { "" },
 	},
 })

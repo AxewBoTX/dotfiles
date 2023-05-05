@@ -1,6 +1,6 @@
 --Ensuring TokyoNight Is Working
-local status,n = pcall(require,"tokyonight")
-if (not status) then
+local status, n = pcall(require, "tokyonight")
+if not status then
 	print("TokyoNight Is Not Working")
 	return
 end
@@ -9,5 +9,5 @@ end
 n.setup({
 	style = "night",
 	transparent = true,
-	terminal_colors = true
+	terminal_colors = true,
 })

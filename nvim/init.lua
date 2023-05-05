@@ -1,8 +1,8 @@
 --Plugins
-require('plugins')
+require("plugins")
 --Appearance
-require('looks')
+require("looks")
 --Basic Barebones Config
-require('base')
+require("base")
 --Keymappings
-require('keymaps')
+require("keymaps")

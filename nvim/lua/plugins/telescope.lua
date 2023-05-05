@@ -1,6 +1,6 @@
 --Ensuring Telescope Is Working
-local status,telescope = pcall(require,'telescope')
-if (not status) then
+local status, telescope = pcall(require, "telescope")
+if not status then
 	print("Telescope Is Not Working")
 	return
 end
@@ -8,10 +8,9 @@ end
 --Telescope Setup
 local builtin = require("telescope.builtin")
 
-telescope.setup{}
+telescope.setup({})
 
 --Telescope Keymaps
-vim.keymap.set('n', ';f',
-  function()
-    builtin.find_files()
+vim.keymap.set("n", ";f", function()
+	builtin.find_files()
 end)
