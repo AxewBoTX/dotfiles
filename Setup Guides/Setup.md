@@ -61,7 +61,7 @@ After installing the required things and the rquired version neovim, follow thes
 Now you can just use Neovim as you please.
 
 ## Tmux
-In order to install tmux you can follow [UbuntuSetup](https://github.com/AxewBoTX/dotfiles-public/blob/main/UbuntuSetup.md) file. After installing tmux copy the [.tmux.conf](https://github.com/AxewBoTX/dotfiles-public/blob/main/tmux/.tmux.conf) into your Home directory or copy the code from it into the .tmux.conf file in your Home directory. After that just follow the following steps to setup Tmux:-
+In order to install tmux you can follow [LinuxSetup](https://github.com/AxewBoTX/dotfiles-public/blob/main/LinuxSetup.md) file. After installing tmux copy the [.tmux.conf](https://github.com/AxewBoTX/dotfiles-public/blob/main/tmux/.tmux.conf) into your Home directory or copy the code from it into the .tmux.conf file in your Home directory. After that just follow the following steps to setup Tmux:-
 - Launch tmux using `tmux` command. 
 - Run `tmux source-file ~/.tmux.conf` command.
 - Install [tmux-plugins/tpm](https://github.com/tmux-plugins/tpm) using following command:-
