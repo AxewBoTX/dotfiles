@@ -12,6 +12,7 @@ lualine.setup({
 		theme = "auto",
 	},
 	sections = {
+		lualine_b = { "branch" },
 		lualine_x = { "" },
 		lualine_y = { "" },
 	},
