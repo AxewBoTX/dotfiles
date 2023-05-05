@@ -32,7 +32,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 - Now configure it according to your need.
 
 ## Neovim
-You are going to need to install python,gcc and nodejs before configuring Neovim. If you are on Linux then refer to [LinuxSetup](https://github.com/AxewBoTX/dotfiles-public/blob/main/LinuxSetup.md) for help. You need to install [wbthomason/packer.nvim](https://github.com/wbthomason/packer.nvim) before installing Neovim. In order to install packer run the following command:-
+You are going to need to install python,gcc and nodejs before configuring Neovim. If you are on Linux then refer to [LinuxSetup](https://github.com/AxewBoTX/dotfiles-public/blob/main/Setup%20Guides/LinuxSetup.md) for help. You need to install [wbthomason/packer.nvim](https://github.com/wbthomason/packer.nvim) before installing Neovim. In order to install packer run the following command:-
 <br></br>
 On Windows:-
 ```shell
@@ -61,7 +61,7 @@ After installing the required things and the rquired version neovim, follow thes
 Now you can just use Neovim as you please.
 
 ## Tmux
-In order to install tmux you can follow [LinuxSetup](https://github.com/AxewBoTX/dotfiles-public/blob/main/LinuxSetup.md) file. After installing tmux copy the [.tmux.conf](https://github.com/AxewBoTX/dotfiles-public/blob/main/tmux/.tmux.conf) into your Home directory or copy the code from it into the .tmux.conf file in your Home directory. After that just follow the following steps to setup Tmux:-
+In order to install tmux you can follow [LinuxSetup](https://github.com/AxewBoTX/dotfiles-public/blob/main/Setup%20Guides/LinuxSetup.md) file. After installing tmux copy the [.tmux.conf](https://github.com/AxewBoTX/dotfiles-public/blob/main/tmux/.tmux.conf) into your Home directory or copy the code from it into the .tmux.conf file in your Home directory. After that just follow the following steps to setup Tmux:-
 - Launch tmux using `tmux` command. 
 - Run `tmux source-file ~/.tmux.conf` command.
 - Install [tmux-plugins/tpm](https://github.com/tmux-plugins/tpm) using following command:-
