@@ -11,7 +11,7 @@
 ## Contents
 - [Neovim](https://neovim.io/) Config
 - [Powershell](https://learn.microsoft.com/en-us/powershell/) Config
-- [Ubuntu(On WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) Config
+- [Linux(On WSL and Desktop)](https://learn.microsoft.com/en-us/windows/wsl/install) Config
 - [Tmux](https://github.com/tmux/tmux/wiki) Config
 - [Alacritty](https://github.com/alacritty/alacritty) Config
 - [Neofetch](https://github.com/dylanaraps/neofetch) Config
@@ -30,6 +30,8 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 - [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) - A blazing fast and easy to configure Neovim statusline written in Lua
 - [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - A collection of configurations for Neovim's built-in LSP
 - [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim) - Portable LSP Manager
+- [jayp0521/mason-null-ls.nvim](https://github.com/jay-babu/mason-null-ls.nvim) - Linters and formatters manager using Mason
+- [jose-elias-alvarez/null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim) - Plugin for converting Neovim into a language server to use formatting, code actions and much more.
 - [williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim) - Extionsion to use lspconfig for mason.nvim
 - [glepnir/lspsaga.nvim](https://github.com/glepnir/lspsaga.nvim) - A light-weight lsp plugin based on neovim's built-in lsp with a highly performant UI
 - [mfussenegger/nvim-jdtls](https://github.com/mfussenegger/nvim-jdtls) - LSP plugin specially for java.
@@ -57,7 +59,7 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 - [Oh My Posh](https://ohmyposh.dev/) - Prompt theme engine
 - [Terminal Icons](https://github.com/devblackops/Terminal-Icons) - Folder and file icons
 
-## Ubuntu Setup
+## Linux Setup
 >NOTE: The code inside .zshrc does not go inside the .config folder. You need to put the copy of this file in the home directory.
 - [Git](https://git-scm.com/)
 - [zsh](https://www.zsh.org/) --Bash but better
@@ -73,7 +75,7 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 
 ## How To Setup
 
-Check out [UbuntuSetup](https://github.com/AxewBoTX/dotfiles-public/blob/main/Setup%20Guides/UbuntuSetup.md) in order to setup Ubuntu/WSL. Also, check out [Setup](https://github.com/AxewBoTX/dotfiles-public/blob/main/Setup%20Guides/Setup.md) in order to know how to setup the components in a briefly explained manner.
+Check out [LinuxSetup](https://github.com/AxewBoTX/dotfiles-public/blob/main/Setup%20Guides/LinuxSetup.md) in order to setup Ubuntu/WSL. Also, check out [Setup](https://github.com/AxewBoTX/dotfiles-public/blob/main/Setup%20Guides/Setup.md) in order to know how to setup the components in a briefly explained manner.
 
 Watch These Video Tutorials:-
 
