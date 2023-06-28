@@ -194,3 +194,6 @@ bindsym $mod+space exec rofi -show run
 
 #Wallpaper
 exec --no-startup-id feh --bg-scale /home/love/.config/i3/pictures/cat_with_sunset.jpg
+
+#Picom For Transparent Backgrounds
+exec --no-startup-id picom
