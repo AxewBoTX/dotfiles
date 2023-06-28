@@ -9,7 +9,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod4
+set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -190,7 +190,7 @@ bar {
 }
 
 # Running Rofi
-bindsym $mod+space exec rofi -show run
+bindsym Mod4+space exec rofi -show run
 
 #Wallpaper
 exec --no-startup-id feh --bg-scale /home/love/.config/i3/pictures/cat_with_sunset.jpg
