@@ -5,4 +5,4 @@ configuration {
 	show-icons: true;
 }
 
-@theme "~/.config/rofi/themes/windows11-list-dark.rasi"
+@theme "~/.config/rofi/themes/spotlight-dark.rasi"

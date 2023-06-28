@@ -1,13 +1,11 @@
 live_config_reload: true
 font:
   size: 15
-  normal: 
+  normal:
     family: SF Mono
 
 window:
-  decorations: none
-  startup_mode: Windowed
-  padding: 
+  padding:
     x: 2
   dimensions:
     columns: 92
@@ -17,5 +15,5 @@ window:
 
 colors:
   primary:
-    background: '0x000000'
-    foreground: '0xffffff'
+    background: "0x000000"
+    foreground: "0xffffff"

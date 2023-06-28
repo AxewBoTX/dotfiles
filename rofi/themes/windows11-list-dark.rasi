@@ -21,10 +21,8 @@ element-icon, element-text, scrollbar {
 }
 
 window {
-  location : south;
   width    : 600px;
   height   : 600px;
-  y-offset : -4px;
 
   background-color : @bg1;
   border-radius    : 15px;
