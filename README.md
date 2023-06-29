@@ -15,6 +15,9 @@
 - [Tmux](https://github.com/tmux/tmux/wiki) Config
 - [Alacritty](https://github.com/alacritty/alacritty) Config
 - [Neofetch](https://github.com/dylanaraps/neofetch) Config
+- [i3WM](https://i3wm.org/) Config
+- [Rofi](https://github.com/davatorium/rofi) Config
+- [Polybar](https://github.com/polybar/polybar) Config
 
 ## Neovim Setup
 
