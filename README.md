@@ -1,8 +1,4 @@
-![Screenshot_20230214_011811](https://user-images.githubusercontent.com/84615670/218673342-6a23ade9-4202-4213-9b98-fb8fabdd5113.png)
-![Screenshot_20230214_012058](https://user-images.githubusercontent.com/84615670/218673353-25ab0298-3dc5-4d65-92e8-0cc2a8a2bc9e.png)
-![Screenshot_20230214_012137](https://user-images.githubusercontent.com/84615670/218673366-a1e9a433-ce8f-4e49-81f4-71a4886f882e.png)
-![Screenshot_20230214_012151](https://user-images.githubusercontent.com/84615670/218673381-c4cf5bec-2d8f-468c-a6c1-f475df1168ab.png)
-![Screenshot_20230214_012242](https://user-images.githubusercontent.com/84615670/218673397-fe650dc6-0a73-44fb-9d24-b35384472de2.png)
+
 
 # Axew's dotfiles
 
@@ -15,9 +11,13 @@
 - [Tmux](https://github.com/tmux/tmux/wiki) Config
 - [Alacritty](https://github.com/alacritty/alacritty) Config
 - [Neofetch](https://github.com/dylanaraps/neofetch) Config
-- [i3WM](https://i3wm.org/) Config
-- [Rofi](https://github.com/davatorium/rofi) Config
-- [Polybar](https://github.com/polybar/polybar) Config
+
+## Screenshots
+![Screenshot_20230214_011811](https://user-images.githubusercontent.com/84615670/218673342-6a23ade9-4202-4213-9b98-fb8fabdd5113.png)
+![Screenshot_20230214_012058](https://user-images.githubusercontent.com/84615670/218673353-25ab0298-3dc5-4d65-92e8-0cc2a8a2bc9e.png)
+![Screenshot_20230214_012137](https://user-images.githubusercontent.com/84615670/218673366-a1e9a433-ce8f-4e49-81f4-71a4886f882e.png)
+![Screenshot_20230214_012151](https://user-images.githubusercontent.com/84615670/218673381-c4cf5bec-2d8f-468c-a6c1-f475df1168ab.png)
+![Screenshot_20230214_012242](https://user-images.githubusercontent.com/84615670/218673397-fe650dc6-0a73-44fb-9d24-b35384472de2.png)
 
 ## Neovim Setup
 
