@@ -31,6 +31,7 @@ packer.startup(function(use)
 	use("norcalli/nvim-colorizer.lua") --Colorizer For Color Code Highlighting
 	use("windwp/nvim-autopairs") --Autopairs
 	use("VonHeikemen/searchbox.nvim") --Better Search And Replace
+	use("iamcco/markdown-preview.nvim") --Markdown Preview Plugin
 	use({
 		"nvim-lualine/lualine.nvim", -- LuaLine As The StatusLine
 		requires = { "kyazdani42/nvim-web-devicons", opt = true },
