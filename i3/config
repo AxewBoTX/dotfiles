@@ -182,4 +182,4 @@ for_window [class=".*"] border pixel 3
 gaps inner 10
 
 #Running Polaybar at stratup
-exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec_always --no-startup-id ~/.config/polybar/launch.sh &
