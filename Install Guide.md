@@ -68,7 +68,7 @@ Now you can refresh the Windows terminal config by either restarting it or runni
 
 ## Oh-My-Zsh
 
-- Run `sudo apt install zsh` in order to install zsh.
+- Run `sudo apt install zsh` or `sudo pacman -S zsh` in order to install zsh.
 - Run `chsh` and enther the code `/bin/zsh` after entering your password. Now restart your terminal and hit 2 if asked to config.
 
 In order to install oh-my-zsh run the following command:-
