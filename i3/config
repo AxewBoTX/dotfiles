@@ -114,7 +114,7 @@ font pango: SFMono 10
 for_window [class=".*"] border pixel 3
 gaps inner 10
 title_align center
-client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
+client.focused          #E2E8F0 #3F444E #ffffff #ffffff   #ffffff
 client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
