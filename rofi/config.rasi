@@ -1,8 +1,8 @@
 configuration {
 	display-drun: "Run:";
 	drun-display-format: "{icon} {name}";
-	font: "SFMono Nerd Font 12";
+	font: "SFMono Nerd Font 14";
 	show-icons: true;
 }
 
-@theme "~/.config/rofi/themes/spotlight-dark.rasi"
+@theme "~/.config/rofi/themes/simple-axew.rasi"

@@ -69,14 +69,15 @@ textbox {
 }
 
 listview {
-  columns       : 2;
+  columns       : 6;
   spacing       : 8px;
   fixed-height  : true;
   fixed-columns : true;
 }
 
 element {
-  spacing       : 1em;
+  orientation   : vertical;
+  spacing       : 4px;
   padding       : 8px;
   border-radius : 2px;
 }
@@ -98,9 +99,10 @@ element selected urgent {
 }
 
 element-icon {
-  size: 1.5em;
+  size: 2em;
 }
 
 element-text {
-  text-color: inherit;
+  text-color       : inherit;
+  horizontal-align : 0.5;
 }

@@ -5,6 +5,8 @@
  *******************************************************************************/
 
 * {
+    font:   "Roboto 12";
+
     background-color:   transparent;
     text-color:         @fg0;
 
@@ -38,7 +40,7 @@ inputbar {
 }
 
 prompt {
-    text-color: @fg0;
+    text-color: @fg2;
 }
 
 entry {
