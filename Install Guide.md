@@ -2,7 +2,7 @@
 
 Before proceeding to install anything, firstly make sure your system is completely update to it's respective latest version.
 <br></br>
-Please follow the steps in order and as they are mentioned below. ^_^
+Please follow the steps in order and as they are mentioned below. ^\_^
 
 ## WSL(System Drive)
 
@@ -120,6 +120,7 @@ npm install --global yarn
 ```
 
 ## C/C++ Full Package
+
 In order to install all the C/C++ related things run the following command:-
 <br></br>
 
@@ -138,7 +139,7 @@ sudo pacman -S gcc clang gdb cmake
 ## Java
 
 - If you are on windows then just go [Java Oracle](https://www.oracle.com/java/technologies/downloads/) website and download your desired version.
-<br></br>
+  <br></br>
 
 - If You are on Debian Based System then in order to install java firstly download `x64 Debian Package` from [Java Oracle](https://www.oracle.com/java/technologies/downloads/) website and put it in the home directory. The run the following commands to install it and configure it:-
 
@@ -189,19 +190,20 @@ In order to install Neovim run the following commands:-
 <br></br>
 
 - Debian Based Systems
-<br></br>
-`sudo add-apt-repository ppa:neovim-ppa/unstable`
-<br></br>
-`sudo apt-get update`
-<br></br>
-`sudo apt-get install neovim`
-<br></br>
+  <br></br>
+  `sudo add-apt-repository ppa:neovim-ppa/unstable`
+  <br></br>
+  `sudo apt-get update`
+  <br></br>
+  `sudo apt-get install neovim`
+  <br></br>
 
 - Arch Based Systems
 
 ```shell
 sudo pacman -S neovim
 ```
+
 You are going to need to install python,gcc and nodejs before configuring Neovim. In order to install [Neovim](https://neovim.io/) run the following commands:-
 <br></br>
 On Windows:-
@@ -209,39 +211,48 @@ On Windows:-
 ```shell
 git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
 ```
+
 On Unix,Linux:-
 
 ```shell
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
+
 Now install jdtls using the following command(Unix only):-
+
 ```shell
 curl https://raw.githubusercontent.com/eruizc-dev/jdtls-launcher/master/install.sh | bash
 ```
+
 Check out [eruizc-dev/jdtls-launcher](https://github.com/eruizc-dev/jdtls-launcher) for info on how to install jdtls on other OS.
 <br></br>
 
 Now install unzip using `sudo apt install unzip` or `sudo pacman -S unzip`
 
 After installing the required things and the rquired version neovim, follow these steps to setup Neovim:-
+
 - Open Neovim by using nvim command. This will start a process that will install some required things. Let it finish.
 - After that is finished you can just use `:PackerInstall` in Neovim to install Neovim plugins.
 - After all the plugins are installed, just do `:PackerSync` to make sure all the plugins are up to date.
-<br></br>
-Now you can just use Neovim as you please.
+  <br></br>
+  Now you can just use Neovim as you please.
 
 ## Tmux
+
 In order to install [Tmux](https://github.com/tmux/tmux/wiki) run `sudo apt-install tmux` or `sudo pacman -S tmux`
 <br><br>
 
 After installing tmux copy the [.tmux.conf](https://github.com/AxewBoTX/dotfiles-public/blob/main/tmux/.tmux.conf) into your Home directory or copy the code from it into the .tmux.conf file in your Home directory. After that just follow the following steps to setup Tmux:-
-- Launch tmux using `tmux` command. 
+
+- Launch tmux using `tmux` command.
 - Run `tmux source-file ~/.tmux.conf` command.
 - Install [tmux-plugins/tpm](https://github.com/tmux-plugins/tpm) using following command:-
+
 ```shell
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
+
 - Run `tmux source-file ~/.tmux.conf` command.
 - Exit tmux using `exit` command and enter it again using `tmux command`
 - Press `<Ctrl-s>` then `<Shift-i>` keys to install the plugins, this can take some time and nothing will show up on your screen for some time, you must wait atleast 2 mins for it install plugins. If it takes alot of time then exit tmux then repeat the process.
