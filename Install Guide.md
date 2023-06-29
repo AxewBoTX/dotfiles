@@ -28,10 +28,22 @@ wsl --import Name_For_Distro "/location/where/you/want/to/install/it" "path/to/.
 
 7. If you are installing Arch linux that you might also need to setep a user for that, you can check on youtube for how to do that.
 
+## Git
+
+In order to install git run the following commands if you are on Ubuntu:-
+
+1. `sudo apt remove git`
+2. `sudo apt autoremove`
+3. `sudo add-apt-repository ppa:git-core/ppa -y`
+4. `sudo apt-get update`
+5. `sudo apt-get install git -y`
+
+If you are on Arch based ditribution then run `sudo pacman -S git` command.
+
 ## Fonts
 The font that I use is the beautifull Appel's SF Mono font patched with nerd font patcher. It is called [SF Mono Nerd Font](https://github.com/epk/SF-Mono-Nerd-Font)
 
-## Powershell
+## Powershell And Oh-My-Posh
 After installing **powershell** from Microsoft Store, open its config by using following command:-
 ```shell
 notepad $PROFILE.CurrentUserCurrentHost
