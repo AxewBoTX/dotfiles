@@ -12,12 +12,12 @@
 - [Alacritty](https://github.com/alacritty/alacritty) Config
 - [Neofetch](https://github.com/dylanaraps/neofetch) Config
 
-## Screenshots
-![Screenshot_20230214_011811](https://user-images.githubusercontent.com/84615670/218673342-6a23ade9-4202-4213-9b98-fb8fabdd5113.png)
-![Screenshot_20230214_012058](https://user-images.githubusercontent.com/84615670/218673353-25ab0298-3dc5-4d65-92e8-0cc2a8a2bc9e.png)
-![Screenshot_20230214_012137](https://user-images.githubusercontent.com/84615670/218673366-a1e9a433-ce8f-4e49-81f4-71a4886f882e.png)
-![Screenshot_20230214_012151](https://user-images.githubusercontent.com/84615670/218673381-c4cf5bec-2d8f-468c-a6c1-f475df1168ab.png)
-![Screenshot_20230214_012242](https://user-images.githubusercontent.com/84615670/218673397-fe650dc6-0a73-44fb-9d24-b35384472de2.png)
+## About Me
+- [My Website](https://axewbotx-links.netlify.app/)
+- [Youtube](https://www.youtube.com/@AxewBoTX)
+- [Twitter](https://twitter.com/AxewBoTX)
+- [Discord](https://discord.com/invite/pTzFSvCYp2)
+- [Twitch](https://www.twitch.tv/axewbotx)
 
 ## Neovim Setup
 
@@ -75,20 +75,3 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 ## Tmux Setup
 >NOTE The code inside .tmux.conf does not go inside the .config folder. You need to put the copy of this file in the home directory.
 - [tmux-plugins/tpm](https://github.com/tmux-plugins/tpm) - Tmux Plugin Manager
-
-## How To Setup
-
-Check out [LinuxSetup](https://github.com/AxewBoTX/dotfiles-public/blob/main/Setup%20Guides/LinuxSetup.md) in order to setup Ubuntu/WSL. Also, check out [Setup](https://github.com/AxewBoTX/dotfiles-public/blob/main/Setup%20Guides/Setup.md) in order to know how to setup the components in a briefly explained manner.
-
-Watch These Video Tutorials:-
-
-- [How To Install Neovim On Windows](https://www.youtube.com/watch?v=7Yhd_sBD75E)
-- [How To Setup Neovim On Windows](https://www.youtube.com/watch?v=a7QWjlVhedw&t=1441s)
-- [How To Setup Windows Terminal With Powershell - DevAsLife](https://youtu.be/5-aK2_WwrmM?t=532)
-
-## About Me
-- [My Website](https://axewbotx-links.netlify.app/)
-- [Youtube](https://www.youtube.com/@AxewBoTX)
-- [Twitter](https://twitter.com/AxewBoTX)
-- [Discord](https://discord.com/invite/pTzFSvCYp2)
-- [Twitch](https://www.twitch.tv/axewbotx)
