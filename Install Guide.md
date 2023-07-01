@@ -275,4 +275,9 @@ You can install it on your respective system by following these simple steps: -
 
 ## Alacritty
 [Alacritty](https://github.com/alacritty/alacritty) is a Open Source Terminal for multiple Operating Systems. You can follow the fowlloing steps to install Alacritty on your respecting Systems:-
-- For Windows you can go to 
+- For Windows you can go to [Alacritty](https://alacritty.org/) website and following it's installation instructions to install Alacritty.
+- For Debian Based Systems you can follow the instructions on [Alacritty's Repo](https://github.com/alacritty/alacritty/blob/master/INSTALL.md) respective to your system.
+- For Arch Based Systems you just run the following command:-
+```shell
+sudo pacman -S alacritty
+```
