@@ -286,3 +286,5 @@ Polybar is just a statusbar for Linux Based Operating Systems. You can run the f
 ```shell
 sudo pacman -S alacritty
 ```
+## Neofetch
+Its just to show off. Run either `sudo apt install neofetch` or `sudo pacman -S neofetch` to install Neofetch.
