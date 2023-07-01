@@ -28,4 +28,5 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 ```
 
 - google-search
+<br></br>
 It comes alreaday installed.
