@@ -272,3 +272,7 @@ i3WM is a [Tiling Window Manager](https://en.wikipedia.org/wiki/Tiling_window_ma
 You can install it on your respective system by following these simple steps: -
 - If you are on a Debian Based System then you can refer to [this](https://youtu.be/j1I63wGcvU4) YouTube video for installing i3WM on your system.
 - For Arch Based Systems you can also follow the same video but using Arch based commands.
+
+## Alacritty
+[Alacritty](https://github.com/alacritty/alacritty) is a Open Source Terminal for multiple Operating Systems. You can follow the fowlloing steps to install Alacritty on your respecting Systems:-
+- For Windows you can go to 
