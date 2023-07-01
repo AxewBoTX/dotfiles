@@ -274,7 +274,7 @@ You can install it on your respective system by following these simple steps: -
 - For Arch Based Systems you can also follow the same video but using Arch based commands.
 
 ## Polybar
-Polybar is just a statusbar for Linux Based Operating Systems. You can run the following command to to install it on your respective systems:-
+[Polybar](https://github.com/polybar/polybar) is just a statusbar for Linux Based Operating Systems. You can run the following command to to install it on your respective systems:-
 - For Debain Based Systems run `sudo apt install polybar`
 - For Arch Based Systems run `sudo pamcan -S polybar`
 
