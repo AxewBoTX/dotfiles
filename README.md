@@ -6,10 +6,14 @@
 
 - [Neovim](https://neovim.io/) Config
 - [Powershell](https://learn.microsoft.com/en-us/powershell/) Config
-- [Linux(On WSL and Desktop)](https://learn.microsoft.com/en-us/windows/wsl/install) Config
+- [WSL(Windows Subsystem For Linux)](https://learn.microsoft.com/en-us/windows/wsl/install) Config
+- [i3WM](https://i3wm.org/) Config
+- [Polybar](https://github.com/polybar/polybar) Config
 - [Tmux](https://github.com/tmux/tmux/wiki) Config
 - [Alacritty](https://github.com/alacritty/alacritty) Config
 - [Neofetch](https://github.com/dylanaraps/neofetch) Config
+- [Alacritty](https://github.com/alacritty/alacritty) Config
+- [Rofi](https://github.com/davatorium/rofi) Config
 
 ## About Me
 
