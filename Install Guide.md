@@ -257,3 +257,15 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 - Exit tmux using `exit` command and enter it again using `tmux command`
 - Press `<Ctrl-s>` then `<Shift-i>` keys to install the plugins, this can take some time and nothing will show up on your screen for some time, you must wait atleast 2 mins for it install plugins. If it takes alot of time then exit tmux then repeat the process.
 - Now exit tmux and restart your Terminal.
+
+## Rofi
+
+You can install rofi using the following command based on your OS:-
+
+- Debian Based Systems: `sudo apt install rofi`
+- Arch Based Systems: `sudo pacman -S rofi`
+
+## i3WM
+
+i3WM is a [Tiling Window Manager](https://en.wikipedia.org/wiki/Tiling_window_manager) for Linux based operating systems.
+<br></br>
