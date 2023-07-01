@@ -273,6 +273,11 @@ You can install it on your respective system by following these simple steps: -
 - If you are on a Debian Based System then you can refer to [this](https://youtu.be/j1I63wGcvU4) YouTube video for installing i3WM on your system.
 - For Arch Based Systems you can also follow the same video but using Arch based commands.
 
+## Polybar
+Polybar is just a statusbar for Linux Based Operating Systems. You can run the following command to to install it on your respective systems:-
+- For Debain Based Systems run `sudo apt install polybar`
+- For Arch Based Systems run `sudo pamcan -S polybar`
+
 ## Alacritty
 [Alacritty](https://github.com/alacritty/alacritty) is a Open Source Terminal for multiple Operating Systems. You can follow the fowlloing steps to install Alacritty on your respecting Systems:-
 - For Windows you can go to [Alacritty](https://alacritty.org/) website and following it's installation instructions to install Alacritty.
