@@ -269,3 +269,6 @@ You can install rofi using the following command based on your OS:-
 
 i3WM is a [Tiling Window Manager](https://en.wikipedia.org/wiki/Tiling_window_manager) for Linux based operating systems.
 <br></br>
+You can install it on your respective system by following these simple steps: -
+- If you are on a Debian Based System then you can refer to [this](https://youtu.be/j1I63wGcvU4) YouTube video for installing i3WM on your system.
+- For Arch Based Systems you can also follow the same video but using Arch based commands.
