@@ -184,6 +184,46 @@ sudo update-alternatives --config jar
 sudo pacman -S jre-openjdk jdk-openjdk
 ```
 
+## Unzip
+
+It is just a required Linux dependancy for installation and functioning of various other programs on Linux.
+<br>
+You can run either `sudo apt install unzip` or `sudo pacman -S unzip` to install unzip on your System.
+
+## Rust
+
+If you are on a Linux Or Unix Based System then you can run the following command to install [Rust](https://www.rust-lang.org/) on your system:-
+
+```shell
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+If you are on Windows then you can download [Rust Installer](https://static.rust-lang.org/rustup/dist/i686-pc-windows-gnu/rustup-init.exe) to install rust on your system.
+
+## Deno
+
+Yes, it's name is [Deno](https://deno.land/). It is a modern runtime for Javascript and Typescript.
+<br>
+If you are Arch Based System then you can run the following command to install Deno:-
+
+```shell
+sudo pacman -S deno
+```
+
+If you are on Debian Based System then you can run the following command to install Deno:-
+
+```shell
+curl -fsSL https://deno.land/x/install/install.sh | sh
+```
+
+If you are on Windows then you can run the following command to install Deno:-
+
+> NOTE: This command only works on [Powershell](https://learn.microsoft.com/en-us/powershell/)
+
+```shell
+irm https://deno.land/install.ps1 | iex
+```
+
 ## Neovim
 
 In order to install Neovim run the following commands:-
@@ -228,8 +268,6 @@ curl https://raw.githubusercontent.com/eruizc-dev/jdtls-launcher/master/install.
 Check out [eruizc-dev/jdtls-launcher](https://github.com/eruizc-dev/jdtls-launcher) for info on how to install jdtls on other OS.
 <br></br>
 
-Now install unzip using `sudo apt install unzip` or `sudo pacman -S unzip`
-
 After installing the required things and the rquired version neovim, follow these steps to setup Neovim:-
 
 - Open Neovim by using nvim command. This will start a process that will install some required things. Let it finish.
@@ -270,21 +308,38 @@ You can install rofi using the following command based on your OS:-
 i3WM is a [Tiling Window Manager](https://en.wikipedia.org/wiki/Tiling_window_manager) for Linux based operating systems.
 <br></br>
 You can install it on your respective system by following these simple steps: -
+
 - If you are on a Debian Based System then you can refer to [this](https://youtu.be/j1I63wGcvU4) YouTube video for installing i3WM on your system.
 - For Arch Based Systems you can also follow the same video but using Arch based commands.
 
+<br>
+After installing i3WM there are various small things that need to be installed. You can install them using the following commands:-
+
+- For Arch Based Systems:-
+
+```shell
+sudo pacman -S i3-gaps feh picom
+```
+
 ## Polybar
+
 [Polybar](https://github.com/polybar/polybar) is just a statusbar for Linux Based Operating Systems. You can run the following command to to install it on your respective systems:-
+
 - For Debain Based Systems run `sudo apt install polybar`
 - For Arch Based Systems run `sudo pamcan -S polybar`
 
 ## Alacritty
+
 [Alacritty](https://github.com/alacritty/alacritty) is a Open Source Terminal for multiple Operating Systems. You can follow the fowlloing steps to install Alacritty on your respecting Systems:-
+
 - For Windows you can go to [Alacritty](https://alacritty.org/) website and following it's installation instructions to install Alacritty.
 - For Debian Based Systems you can follow the instructions on [Alacritty's Repo](https://github.com/alacritty/alacritty/blob/master/INSTALL.md) respective to your system.
 - For Arch Based Systems you just run the following command:-
+
 ```shell
 sudo pacman -S alacritty
 ```
+
 ## Neofetch
+
 Its just to show off. Run either `sudo apt install neofetch` or `sudo pacman -S neofetch` to install Neofetch.
