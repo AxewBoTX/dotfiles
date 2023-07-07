@@ -1,10 +1,10 @@
---Ensuring Packer Is Installed
+--Ensuring Packer Is Working
 local status, packer = pcall(require, "packer")
 if not status then
-	print("Packer is not installed")
+	print("Packer Is Not Working")
+	return
 end
-
---Adding Packer
+--Adding Packer To Neovim
 vim.cmd([[packadd packer.nvim]])
 
 --Packer Config For Floating Install Window
@@ -37,25 +37,15 @@ packer.startup(function(use)
 			vim.fn["mkdp#util#install"]()
 		end,
 	})
-	use({
-		"nvim-lualine/lualine.nvim", -- LuaLine As The StatusLine
-		requires = { "kyazdani42/nvim-web-devicons", opt = true },
-	})
+	use("CRAG666/code_runner.nvim") --Code-Runner For Compiling And Running Code
+	use("numToStr/Comment.nvim") --Commenting Plugin
 	use("nvim-tree/nvim-tree.lua") --NvimTree For File Explorer
-	use({ -- Make Sure To Install RipGrep Before Installing Telescope
-		"nvim-telescope/telescope.nvim",
-		tag = "0.1.0", --Telescope
-	})
+	use("nvim-lualine/lualine.nvim") --Lualine As The Statusline
 	use("akinsho/bufferline.nvim") --BufferLine For Tabs
+	use({ "nvim-telescope/telescope.nvim", tag = "0.1.2" }) --Telescope Fuzzy Finder
 	use({ --Treesitter For Syntax Highlighting
 		"nvim-treesitter/nvim-treesitter",
 		run = ":TSUpdate",
-	})
-	use({ --Code-Runner For Compiling And Running Code
-		"CRAG666/code_runner.nvim",
-	})
-	use({ --Git Related Plugins
-		"lewis6991/gitsigns.nvim", --Git Sign
 	})
 	use({ --Language Server Protocol; LSP
 		"williamboman/mason.nvim", --Mason
@@ -82,17 +72,18 @@ require("colorschemes/gruvbox")
 require("colorschemes/onemonokai")
 require("colorschemes/monokai")
 --Plugins Setup
+require("plugins/searchbox")
+require("plugins/colorizer")
+require("plugins/autopairs")
+require("plugins/code_runner")
+require("plugins/markdown-preview")
+require("plugins/comment")
+require("plugins/nvim_tree")
 require("plugins/lualine")
 require("plugins/telescope")
-require("plugins/treesitter")
 require("plugins/bufferline")
-require("plugins/code_runner")
+require("plugins/treesitter")
 require("plugins/mason")
 require("plugins/lsp")
-require("plugins/colorizer")
-require("plugins/nvim_tree")
-require("plugins/autopairs")
-require("plugins/searchbox")
-require("plugins/cmp")
 require("plugins/null_ls")
-require("plugins/markdown-preview")
+require("plugins/cmp")

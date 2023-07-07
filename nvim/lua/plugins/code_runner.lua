@@ -2,6 +2,7 @@
 local status, cr = pcall(require, "code_runner")
 if not status then
 	print("Code-Runner Is Not Working")
+	return
 end
 
 --Code-Runner Setup

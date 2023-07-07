@@ -244,7 +244,9 @@ In order to install Neovim run the following commands:-
 sudo pacman -S neovim
 ```
 
-You are going to need to install python,gcc and nodejs before configuring Neovim. In order to install [Neovim](https://neovim.io/) run the following commands:-
+You are going to need to install python,gcc and nodejs before configuring Neovim.
+<br>
+In order to install [Packer](https://github.com/wbthomason/packer.nvim) run the following commands:-
 <br></br>
 On Windows:-
 
