@@ -14,7 +14,7 @@ cr.setup({
 	mode = "float",
 	float = {
 		close_key = "q",
-		border = "single",
+		border = "rounded",
 		blend = 0,
 	},
 })
