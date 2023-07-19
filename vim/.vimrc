@@ -1,5 +1,6 @@
 "Base Options
 set number
+set nowrap
 set relativenumber
 set autoindent
 set encoding=utf-8
