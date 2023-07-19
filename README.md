@@ -15,6 +15,10 @@
 - [Alacritty](https://github.com/alacritty/alacritty) Config
 - [Rofi](https://github.com/davatorium/rofi) Config
 
+## Guides
+
+You can find the guides markdown files for configuring each software in their respective folders.
+
 ## About Me
 
 - [My Website](https://axewbotx.is-a.dev)
