@@ -36,3 +36,5 @@ xdg-terminals.list
 google-chrome/
 menus/
 eas-cli-nodejs/
+QtProject.conf
+sqlitebrowser/
