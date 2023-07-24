@@ -29,8 +29,18 @@ Please follow the steps in order and as they are mentioned below. ^\_^
 ```
 wsl --import Name_For_Distro "/location/where/you/want/to/install/it" "path/to/.tar.gz/file"
 ```
-
-7. If you are installing Arch linux that you might also need to setep a user for that, you can check on youtube for how to do that. You can also refer to [this](https://youtu.be/h0Wg_aknGdc) Youtube video for help.
+7. Run `wsl -d Name_For_Distro` to start the WSL.
+### For Arch Linux
+If you are installing Arch linux on WSL then you need to do some additional setup before using it. You can follow the following steps:-
+1. Now we need to setup a main user for the WSL distro. Firstly run `EDITOR=vim visudo` to enter the user config file.
+2. Now uncomment the line `%wheel ALL=(ALL:ALL) NOPASSWD: ALL`
+3. Now run `useradd -m -G wheel {user}` to add the user to wheel group that we just configured.
+4. Now exit Arch from WSL using `exit` command enter again via `wsl -u {user} -d Name_For_Distro` command.
+5. Now lets setup keyring for Arch linux. Run `sudo pacman-key --init` to initialise the keyring.
+6. Run `sudo pacman-key --populate` to append all the necesaary keys to the keyring and after that run `sudo pacman -S archlinux-keyring` to finsih the setup. It can take some while to install the keyring.
+7. Now make sure to run `sudo pacman -Syyu` to upgrade the whole system.
+<br>
+Now you can use Arch linux on WSL as you please.
 
 ## Git
 
