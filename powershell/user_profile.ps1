@@ -18,3 +18,7 @@ function which ($command) {
   Get-Command -Name $command -ErrorAction SilentlyContinue |
     Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
 }
+
+# Keybinds
+Set-PSReadLineKeyHandler -Key "Ctrl+l" -Function AcceptSuggestion #AutoComplete
+Set-PSReadLineKeyHandler -Key "Ctrl+Shift+k" -Function ClearScreen #Clear Screen
