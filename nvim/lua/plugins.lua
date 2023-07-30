@@ -25,12 +25,14 @@ packer.startup(function(use)
 		"cpea2506/one_monokai.nvim", --OneMonokai
 		"tanvirtin/monokai.nvim", --Monokai
 	})
+	use("tjdevries/colorbuddy.nvim") --Colorbuddy For Colorschemes
 	use("nvim-lua/plenary.nvim") --Plenary Includes Usefull Functions For Plugins
 	use("MunifTanjim/nui.nvim") --UI Component Library For Neovim
 	use("kyazdani42/nvim-web-devicons") --Web Dev Icons
 	use("norcalli/nvim-colorizer.lua") --Colorizer For Color Code Highlighting
 	use("windwp/nvim-autopairs") --Autopairs
 	use("VonHeikemen/searchbox.nvim") --Better Search And Replace
+	use("lewis6991/gitsigns.nvim") --Git Integration For Buffers
 	use({ --Markdown Preview Plugin
 		"iamcco/markdown-preview.nvim",
 		run = function()
@@ -87,3 +89,4 @@ require("plugins/mason")
 require("plugins/lsp")
 require("plugins/null_ls")
 require("plugins/cmp")
+require("plugins/gitsigns")

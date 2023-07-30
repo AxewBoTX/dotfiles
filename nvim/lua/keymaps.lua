@@ -10,3 +10,4 @@ keymap.set("n", ";q", ":RunCode <Return>", { silent = true }) --Running Code Wit
 --Keys for going to End and Start of the current line
 keymap.set({ "n", "v" }, "H", "^")
 keymap.set({ "n", "v" }, "L", "$")
+keymap.set({ "n" }, "gs", ":Gitsigns toggle_signs <Return>", { silent = true }) --Toggeling Git Signs In Sign Column
