@@ -24,6 +24,8 @@ packer.startup(function(use)
 		"ellisonleao/gruvbox.nvim", --Gruvbox
 		"cpea2506/one_monokai.nvim", --OneMonokai
 		"tanvirtin/monokai.nvim", --Monokai
+		"Mofiqul/vscode.nvim", --VSCode-Theme
+		"nyoom-engineering/oxocarbon.nvim", --Oxocarbon
 	})
 	use("tjdevries/colorbuddy.nvim") --Colorbuddy For Colorschemes
 	use("nvim-lua/plenary.nvim") --Plenary Includes Usefull Functions For Plugins
@@ -73,6 +75,8 @@ require("colorschemes/tokyonight")
 require("colorschemes/gruvbox")
 require("colorschemes/onemonokai")
 require("colorschemes/monokai")
+require("colorschemes/vscode")
+require("colorschemes/oxocarbon")
 --Plugins Setup
 require("plugins/searchbox")
 require("plugins/colorizer")
