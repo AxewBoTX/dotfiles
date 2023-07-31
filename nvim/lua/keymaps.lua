@@ -7,7 +7,7 @@ keymap.set("n", "<Tab>", ":tabnext <Return>", { silent = true }) --Switching To 
 keymap.set("n", "<S-Tab>", ":tabprevious <Return>", { silent = true }) --Switching To Previous TAB
 keymap.set("n", ";m", ":noh <Return>", { silent = true }) --Getting Rid Of Search Highlighting
 keymap.set("n", ";q", ":RunCode <Return>", { silent = true }) --Running Code With Code-Runner
---Keys for going to End and Start of the current line
-keymap.set({ "n", "v" }, "H", "^")
-keymap.set({ "n", "v" }, "L", "$")
-keymap.set({ "n" }, "gs", ":Gitsigns toggle_signs <Return>", { silent = true }) --Toggeling Git Signs In Sign Column
+keymap.set({ "n", "v" }, "H", "^") --Going To Start Of The Line
+keymap.set({ "n", "v" }, "L", "$") --Going To End Of The Line
+keymap.set("n", "gs", ":Gitsigns toggle_signs <Return>", { silent = true }) --Toggeling Git Signs In Sign Column
+keymap.set({ "n", "v" }, "cs", ":Cheatsheet <Return>", { silent = true })

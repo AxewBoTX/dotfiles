@@ -30,8 +30,10 @@ packer.startup(function(use)
 	use("tjdevries/colorbuddy.nvim") --Colorbuddy For Colorschemes
 	use("nvim-lua/plenary.nvim") --Plenary Includes Usefull Functions For Plugins
 	use("MunifTanjim/nui.nvim") --UI Component Library For Neovim
+	use("nvim-lua/popup.nvim") --Popup API For Neovim
 	use("kyazdani42/nvim-web-devicons") --Web Dev Icons
 	use("norcalli/nvim-colorizer.lua") --Colorizer For Color Code Highlighting
+	use("sudormrfbin/cheatsheet.nvim") --Cheatsheet For Neovim
 	use("windwp/nvim-autopairs") --Autopairs
 	use("VonHeikemen/searchbox.nvim") --Better Search And Replace
 	use("lewis6991/gitsigns.nvim") --Git Integration For Buffers
