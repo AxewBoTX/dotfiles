@@ -15,6 +15,7 @@ null_ls.setup({
 		formatting.prettier,
 		formatting.stylua,
 		formatting.clang_format,
+		formatting.pyink,
 		diagnostics.eslint_d,
 	},
 	on_attach = function(current_client, bufnr)

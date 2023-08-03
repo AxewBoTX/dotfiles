@@ -48,5 +48,6 @@ mason_null_ls.setup({
 		"stylua",
 		"eslint_d",
 		"clang-format",
+		"pyink",
 	},
 })
