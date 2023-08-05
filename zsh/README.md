@@ -1,7 +1,7 @@
 # Zsh Config
 
 Zsh is a mordern shell that includes many features which makes it super easy and user friendly to work with the Terminal.
-<br></br>
+<br>
 You can install zsh on your system by following the [Install Guide](https://github.com/AxewBoTX/dotfiles/blob/main/Install%20Guide.md) in this repo. First copy [.zshrc](https://github.com/AxewBoTX/dotfiles/blob/main/zsh/.zshrc) file from this repo into your home directory then follow the given steps in this guide.
 <br></br>
 Zsh can be integrated with a variaty of plugins that are super helpfull. I use the following plugin in my zsh config:-
