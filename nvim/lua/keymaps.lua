@@ -21,6 +21,6 @@ keymap.set("n", "n", "nzzzv", { silent = true })
 keymap.set("n", "N", "Nzzzv", { silent = true })
 --Gitsigns Keymaps
 keymap.set("n", "gs", ":Gitsigns toggle_signs <Return>", { silent = true }) --Toggeling Git Signs In Sign Column
-keymap.set("n", "gn", require("gitsigns").prev_hunk, { silent = true })
-keymap.set("n", "gp", require("gitsigns").next_hunk, { silent = true })
-keymap.set("n", "ph", require("gitsigns").preview_hunk, { silent = true })
+keymap.set("n", "gn", require("gitsigns").prev_hunk, { silent = true }) --Going To Next Git Hunk
+keymap.set("n", "gp", require("gitsigns").next_hunk, { silent = true }) --Going To Previous Git Hunk
+keymap.set("n", "tp", require("gitsigns").preview_hunk, { silent = true }) --Previewing Git Hunk On Current Line
