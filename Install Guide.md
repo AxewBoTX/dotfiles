@@ -365,3 +365,16 @@ Run either `sudo apt install neofetch` or `sudo pacman -S neofetch` to install N
 ### Cmatrix
 
 Run either `sudo apt install cmatrix` or `sudo pacman -S cmatrix` to install cmatrix.
+
+## Other Stuff
+
+I use various software in my daily life for programming and productivity purposes. These are as follows:-
+
+- [Windows Terminal](https://github.com/microsoft/terminal) - The best terminal for windows.
+- [Powershell](https://github.com/PowerShell/PowerShell) - Command line shell specifically for Windows.
+- [Gimp](https://www.gimp.org/) - Free and Opensource alternative to Adobe Photoshop.
+- [Davinci Resolve](https://www.blackmagicdesign.com/in/products/davinciresolve) - Opensouce alternative for Adobe Premier Pro and After Effects.
+- [Brave](https://brave.com/en-in/) - A seriously better and private browser with built-in adblocker.
+- [OBS](https://obsproject.com/) - Open source video recording or streaming software.
+- [Draw.io](https://www.drawio.com/) - Free diagraming and planning software.
+- [Lunacy](https://icons8.com/lunacy) - Free and Better alternative to Figma.
