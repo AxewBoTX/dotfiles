@@ -26,8 +26,7 @@
           "powerline_symbol": "\ue0b0",
           "properties": {
             "folder_icon": "\uf115",
-            "folder_separator_icon": " \ue0b1 ",
-            "style": "full"
+            "folder_separator_icon": " \ue0b1 "
           },
           "style": "powerline",
           "template": " {{ .Path }} ",
@@ -65,9 +64,9 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#007ACC",
+          "foreground": "#ffffff",
           "style": "plain",
-          "template": "\u276f ",
+          "template": " ",
           "type": "text"
         }
       ],
