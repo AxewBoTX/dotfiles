@@ -1,5 +1,5 @@
 #Powershell Prompt`
-oh-my-posh init pwsh --config 'C:\Users\Axew\.config\powershell\oh-my-posh-theme\stelbent.omp.json' | Invoke-Expression
+oh-my-posh init pwsh --config 'C:\Users\Axew\.config\powershell\oh-my-posh-theme\paradox.omp.json' | Invoke-Expression
 
 #Changing Neovim Config Directory
 $env:XDG_CONFIG_HOME = "$HOME/.config"
