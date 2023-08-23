@@ -36,3 +36,5 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 - google-search
   <br></br>
   It comes alreaday installed.
+
+I also use a little hack to view markdown files in my browser while I am editing them. It is called [md-live-server](https://github.com/arnaucube/md-live-server), and it entirely similar to VSCode live-server utility exept it runs markdown files in your browser. Info on how to install and use it is properly mentioned on it's Github repo.
