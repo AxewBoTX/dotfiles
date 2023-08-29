@@ -13,6 +13,7 @@ ts.setup({
 		"html",
 		"css",
 		"javascript",
+		"typescript",
 		"python",
 		"java",
 		"markdown",
