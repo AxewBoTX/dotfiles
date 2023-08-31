@@ -14,6 +14,7 @@ ts.setup({
 		"css",
 		"javascript",
 		"typescript",
+		"tsx",
 		"python",
 		"java",
 		"markdown",
