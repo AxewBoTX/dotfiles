@@ -46,6 +46,7 @@ lspkind.init({
 
 --Nvim-CMP Setup
 vim.opt.completeopt = "menu,menuone,noselect"
+require("luasnip.loaders.from_vscode").lazy_load()
 nvim_cmp.setup({
 	completion = {
 		autocomplete = false,

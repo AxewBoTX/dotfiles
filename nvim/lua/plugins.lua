@@ -69,6 +69,8 @@ packer.startup(function(use)
 		"L3MON4D3/LuaSnip", --Lua Snippets Engine
 		"hrsh7th/cmp-buffer", --Current Buffer Source
 		"hrsh7th/cmp-path", --Path Completion
+		"saadparwaiz1/cmp_luasnip", --Snippet Completion Engine
+		"rafamadriz/friendly-snippets", --Engine For VSCode Like Snippets
 	})
 end)
 
