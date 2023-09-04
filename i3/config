@@ -46,6 +46,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
 exec --no-startup-id feh --bg-scale /home/love/.config/i3/pictures/lonely_tree.jpg
+exec --no-startup-id picom
 
 #Volume Controls
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -111,7 +112,8 @@ mode "resize" {
 
 #Base Appearance
 font pango: SFMono 10
-for_window [class=".*"] border pixel 3
+hide_edge_borders both
+for_window [class=".*"] border pixel 0
 gaps inner 10
 title_align center
 client.focused          #E2E8F0 #3F444E #ffffff #ffffff   #ffffff
