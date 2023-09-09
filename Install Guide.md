@@ -133,6 +133,15 @@ Just run the following command to install yarn:-
 npm install --global yarn
 ```
 
+## Bun JS Runtime
+
+[Bun](https://bun.sh/) is a pretty damn fast Javascript runtime. It's like NodeJS but **wayyy** faster.<br>
+You can install Bun by running the following command:-
+
+```zsh
+curl -fsSL https://bun.sh/install | bash
+```
+
 ## C/C++ Full Package
 
 In order to install all the C/C++ related things run the following command:-
