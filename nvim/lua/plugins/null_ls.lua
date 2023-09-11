@@ -17,6 +17,7 @@ null_ls.setup({
 		formatting.clang_format,
 		formatting.pyink,
 		diagnostics.eslint_d,
+		formatting.prettierd,
 	},
 	on_attach = function(current_client, bufnr)
 		if current_client.supports_method("textDocument/formatting") then
