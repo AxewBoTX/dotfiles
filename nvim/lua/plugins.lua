@@ -53,13 +53,16 @@ packer.startup(function(use)
 		"nvim-treesitter/nvim-treesitter",
 		run = ":TSUpdate",
 	})
+	use({ --Linting And Formatting
+		"MunifTanjim/prettier.nvim", --Prettier
+		"jose-elias-alvarez/null-ls.nvim", --Use Neovim as an language server to inject various LSP functions, code actions and more
+	})
 	use({ --Language Server Protocol; LSP
 		"williamboman/mason.nvim", --Mason
 		"williamboman/mason-lspconfig.nvim", --Mason LSP Config
 		"neovim/nvim-lspconfig", --LSP Config
 		"kkharji/lspsaga.nvim", --LSP Saga
 		"mfussenegger/nvim-jdtls", -- JDTLS For Java
-		"jose-elias-alvarez/null-ls.nvim", --Use Neovim as an language server to inject various LSP functions, code actions and more
 		"jayp0521/mason-null-ls.nvim", --Mason For Linters and Formatters
 	})
 	use({ -- Code Completion
@@ -96,3 +99,4 @@ require("plugins/lsp")
 require("plugins/null_ls")
 require("plugins/cmp")
 require("plugins/gitsigns")
+require("plugins/prettier")

@@ -109,3 +109,8 @@ lsp_config.rust_analyzer.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 })
+--Svelte Setup
+lsp_config.svelte.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+})

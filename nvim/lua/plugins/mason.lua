@@ -37,6 +37,7 @@ mason_lsp.setup({
 		"tsserver",
 		"eslint",
 		"html",
+		"svelte",
 		"rust_analyzer",
 	},
 })
@@ -49,5 +50,6 @@ mason_null_ls.setup({
 		"eslint_d",
 		"clang-format",
 		"pyink",
+		"prettierd",
 	},
 })

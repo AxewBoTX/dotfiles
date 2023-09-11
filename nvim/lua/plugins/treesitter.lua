@@ -11,6 +11,7 @@ ts.setup({
 		"c",
 		"vim",
 		"html",
+		"svelte",
 		"css",
 		"javascript",
 		"typescript",
