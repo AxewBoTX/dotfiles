@@ -54,7 +54,6 @@ packer.startup(function(use)
 		run = ":TSUpdate",
 	})
 	use({ --Linting And Formatting
-		"MunifTanjim/prettier.nvim", --Prettier
 		"jose-elias-alvarez/null-ls.nvim", --Use Neovim as an language server to inject various LSP functions, code actions and more
 	})
 	use({ --Language Server Protocol; LSP
@@ -99,4 +98,3 @@ require("plugins/lsp")
 require("plugins/null_ls")
 require("plugins/cmp")
 require("plugins/gitsigns")
-require("plugins/prettier")

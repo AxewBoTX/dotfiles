@@ -50,6 +50,5 @@ mason_null_ls.setup({
 		"eslint_d",
 		"clang-format",
 		"pyink",
-		"prettierd",
 	},
 })
