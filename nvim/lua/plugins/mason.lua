@@ -46,6 +46,7 @@ mason_lsp.setup({
 mason_null_ls.setup({
 	ensure_installed = {
 		"prettier",
+		"prettierd",
 		"stylua",
 		"eslint_d",
 		"clang-format",
