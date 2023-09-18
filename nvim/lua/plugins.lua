@@ -37,7 +37,6 @@ packer.startup(function(use)
 	use("windwp/nvim-autopairs") --Autopairs
 	use("VonHeikemen/searchbox.nvim") --Better Search And Replace
 	use("lewis6991/gitsigns.nvim") --Git Integration For Buffers
-	use("kylechui/nvim-surround") --Surround Anything With Anything
 	use({ --Markdown Preview Plugin
 		"iamcco/markdown-preview.nvim",
 		run = function()
