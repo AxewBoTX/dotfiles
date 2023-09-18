@@ -39,6 +39,7 @@ mason_lsp.setup({
 		"html",
 		"svelte",
 		"rust_analyzer",
+		"tailwindcss",
 	},
 })
 
