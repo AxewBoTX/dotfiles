@@ -114,3 +114,8 @@ lsp_config.svelte.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 })
+--Tailwindcss Setup
+lsp_config.tailwindcss.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
