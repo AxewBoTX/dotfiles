@@ -20,4 +20,7 @@ colorizer.setup({
 	python = {
 		names = false,
 	},
+	svelte = {
+		names = false,
+	},
 })

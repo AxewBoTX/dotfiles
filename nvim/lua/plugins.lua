@@ -44,15 +44,17 @@ packer.startup(function(use)
 		end,
 	})
 	use("CRAG666/code_runner.nvim") --Code-Runner For Compiling And Running Code
+	use("numToStr/FTerm.nvim") --Floating Terminal Plugin
 	use("numToStr/Comment.nvim") --Commenting Plugin
 	use("nvim-tree/nvim-tree.lua") --NvimTree For File Explorer
 	use("nvim-lualine/lualine.nvim") --Lualine As The Statusline
 	use("akinsho/bufferline.nvim") --BufferLine For Tabs
-	use({ "nvim-telescope/telescope.nvim", tag = "0.1.2" }) --Telescope Fuzzy Finder
+	use({ "nvim-telescope/telescope.nvim" }) --Telescope Fuzzy Finder
 	use({ --Treesitter For Syntax Highlighting
 		"nvim-treesitter/nvim-treesitter",
 		run = ":TSUpdate",
 	})
+	use({ "nvim-treesitter/nvim-treesitter-textobjects" }) --Treesitter For Slecting And Moving Stuff
 	use({ --Linting And Formatting
 		"jose-elias-alvarez/null-ls.nvim", --Use Neovim as an language server to inject various LSP functions, code actions and more
 	})
@@ -98,3 +100,4 @@ require("plugins/lsp")
 require("plugins/null_ls")
 require("plugins/cmp")
 require("plugins/gitsigns")
+require("plugins/fterm")

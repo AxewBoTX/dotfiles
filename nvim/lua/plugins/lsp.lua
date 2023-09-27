@@ -47,6 +47,32 @@ end
 --Capabilities With Nvim-CMP
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
+local servers = {
+	"lua_ls",
+	"clangd",
+	"cssls",
+	"jsonls",
+	"pyright",
+	"tsserver",
+	"eslint",
+	"html",
+	"svelte",
+	"rust_analyzer",
+	"tailwindcss",
+}
+
+--Servers Setup
+for _, server in pairs(servers) do
+	if server == "lua_ls" then
+		goto continue
+	end
+	lsp_config[server].setup({
+		on_attach = on_attach,
+		capabilities = capabilities,
+	})
+	::continue::
+end
+
 --Lua Setup
 lsp_config.lua_ls.setup({
 	on_attach = on_attach,
@@ -68,54 +94,4 @@ lsp_config.lua_ls.setup({
 			},
 		},
 	},
-})
---C/C++ Setup
-lsp_config.clangd.setup({
-	on_attach = on_attach,
-	capabilities = capabilities,
-})
---CSS Setup
-lsp_config.cssls.setup({
-	on_attach = on_attach,
-	capabilities = capabilities,
-})
---JSON Setup
-lsp_config.jsonls.setup({
-	on_attach = on_attach,
-	capabilities = capabilities,
-})
---Python Setup
-lsp_config.pyright.setup({
-	on_attach = on_attach,
-	capabilities = capabilities,
-})
---Javascript/Typescript Setup
-lsp_config.tsserver.setup({
-	on_attach = on_attach,
-	capabilities = capabilities,
-})
---ESLINT Setup
-lsp_config.eslint.setup({
-	on_attach = on_attach,
-	capabilities = capabilities,
-})
---HTML Setup
-lsp_config.html.setup({
-	on_attach = on_attach,
-	capabilities = capabilities,
-})
---RUST Setup
-lsp_config.rust_analyzer.setup({
-	on_attach = on_attach,
-	capabilities = capabilities,
-})
---Svelte Setup
-lsp_config.svelte.setup({
-	on_attach = on_attach,
-	capabilities = capabilities,
-})
---Tailwindcss Setup
-lsp_config.tailwindcss.setup({
-	on_attach = on_attach,
-	capabilities = capabilities,
 })
