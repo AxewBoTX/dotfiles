@@ -59,6 +59,7 @@ local servers = {
 	"svelte",
 	"rust_analyzer",
 	"tailwindcss",
+	"prismals",
 }
 
 --Servers Setup

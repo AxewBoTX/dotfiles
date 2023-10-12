@@ -40,6 +40,7 @@ mason_lsp.setup({
 		"svelte",
 		"rust_analyzer",
 		"tailwindcss",
+		"prismals",
 	},
 })
 

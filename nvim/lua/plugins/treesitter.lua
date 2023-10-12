@@ -23,6 +23,7 @@ ts.setup({
 		"gdscript",
 		"cpp",
 		"rust",
+		"prisma",
 	},
 	highlight = {
 		enable = true,
