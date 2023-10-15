@@ -41,6 +41,7 @@ bindsym $mod+Return exec alacritty
 
 # Startup Programs
 exec --no-startup-id dmenu_run
+exec --no-startup-id redshift -P -O 5000  
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
