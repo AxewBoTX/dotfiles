@@ -26,6 +26,7 @@ packer.startup(function(use)
 		"tanvirtin/monokai.nvim", --Monokai
 		"Mofiqul/vscode.nvim", --VSCode-Theme
 		"nyoom-engineering/oxocarbon.nvim", --Oxocarbon
+		{ "catppuccin/nvim", as = "catppuccin" }, --Catppuccin
 	})
 	use("tjdevries/colorbuddy.nvim") --Colorbuddy For Colorschemes
 	use("nvim-lua/plenary.nvim") --Plenary Includes Usefull Functions For Plugins
@@ -83,6 +84,7 @@ require("colorschemes/onemonokai")
 require("colorschemes/monokai")
 require("colorschemes/vscode")
 require("colorschemes/oxocarbon")
+require("colorschemes/catppuccin")
 
 require("plugins/searchbox")
 require("plugins/colorizer")
