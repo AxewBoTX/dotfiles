@@ -60,6 +60,7 @@ local servers = {
 	"rust_analyzer",
 	"tailwindcss",
 	"prismals",
+	"gopls",
 }
 
 --Servers Setup

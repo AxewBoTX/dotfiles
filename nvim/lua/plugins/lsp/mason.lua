@@ -41,6 +41,7 @@ mason_lsp.setup({
 		"rust_analyzer",
 		"tailwindcss",
 		"prismals",
+		"gopls",
 	},
 })
 
