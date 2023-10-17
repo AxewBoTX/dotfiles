@@ -1,5 +1,7 @@
 return {
 	"neovim/nvim-lspconfig",
+	event = { "BufReadPost" },
+	cmd = { "LspInfo", "LspInstall", "LspUninstall" },
 	dependencies = {
 		"kkharji/lspsaga.nvim",
 		"mfussenegger/nvim-jdtls",

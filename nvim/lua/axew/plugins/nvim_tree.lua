@@ -1,7 +1,12 @@
 return {
 	"nvim-tree/nvim-tree.lua",
-	config = function()
-		local function on_attach(bufnr)
+	keys = {
+		{ "sf", "<cmd> NvimTreeFindFileToggle <Return>" },
+	},
+	opts = {
+		disable_netrw = true,
+		hijack_netrw = true,
+		on_attach = function(bufnr)
 			local api = require("nvim-tree.api")
 			local function opts(desc)
 				return { desc = "nvim-tree: " .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
@@ -60,28 +65,22 @@ return {
 			vim.keymap.set("n", "Y", api.fs.copy.relative_path, opts("Copy Relative Path"))
 			vim.keymap.set("n", "<2-LeftMouse>", api.node.open.edit, opts("Open"))
 			vim.keymap.set("n", "<2-RightMouse>", api.tree.change_root_to_node, opts("CD"))
-		end
-		require("nvim-tree").setup({
-			disable_netrw = true,
-			hijack_netrw = true,
-			on_attach = on_attach,
-			hijack_directories = {
-				enable = false,
-				auto_open = false,
+		end,
+		hijack_directories = {
+			enable = false,
+			auto_open = false,
+		},
+		diagnostics = {
+			enable = true,
+		},
+		git = {
+			enable = true,
+			ignore = true,
+		},
+		actions = {
+			open_file = {
+				quit_on_open = true,
 			},
-			diagnostics = {
-				enable = true,
-			},
-			git = {
-				enable = true,
-				ignore = true,
-			},
-			actions = {
-				open_file = {
-					quit_on_open = true,
-				},
-			},
-		})
-		vim.keymap.set("n", "sf", ":NvimTreeFindFileToggle <Return>", { silent = true })
-	end,
+		},
+	},
 }

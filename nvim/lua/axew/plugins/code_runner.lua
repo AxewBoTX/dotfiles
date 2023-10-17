@@ -15,4 +15,7 @@ return {
 			},
 		})
 	end,
+	keys = {
+		{ ";q", "<cmd>RunCode <CR>" },
+	},
 }

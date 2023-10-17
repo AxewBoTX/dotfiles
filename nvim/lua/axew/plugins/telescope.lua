@@ -14,11 +14,11 @@ return {
 				},
 			},
 		})
-
-		--Telescope Keybinds
-		vim.keymap.set("n", ";f", "<cmd>Telescope find_files<CR>", { silent = true })
-		vim.keymap.set("n", ";l", "<cmd>Telescope live_grep<CR>", { silent = true })
-		vim.keymap.set("n", ";b", "<cmd>Telescope buffers<CR>", { silent = true })
-		vim.keymap.set("n", ";h", "<cmd>Telescope help_tags<CR>", { silent = true })
 	end,
+	keys = {
+		{ ";f", "<cmd>Telescope find_files<CR>" },
+		{ ";l", "<cmd>Telescope live_grep<CR>" },
+		{ ";b", "<cmd>Telescope buffers<CR>" },
+		{ ";h", "<cmd>Telescope help_tags<CR>" },
+	},
 }

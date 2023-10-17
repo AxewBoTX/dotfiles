@@ -1,5 +1,6 @@
 return {
 	"jose-elias-alvarez/null-ls.nvim",
+	event = "InsertEnter",
 	config = function()
 		--null-ls Setup
 		local null_ls = require("null-ls")

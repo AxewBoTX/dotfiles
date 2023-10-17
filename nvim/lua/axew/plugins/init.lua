@@ -1,50 +1,50 @@
 return {
 	{
 		"norcalli/nvim-colorizer.lua",
-		config = function()
-			require("colorizer").setup({
-				"*",
-				java = {
-					names = false,
-				},
-				lua = {
-					names = false,
-				},
-				javascript = {
-					names = false,
-				},
-				python = {
-					names = false,
-				},
-				svelte = {
-					names = false,
-				},
-			})
-		end,
+		opts = {
+			"*",
+			java = {
+				names = false,
+			},
+			lua = {
+				names = false,
+			},
+			javascript = {
+				names = false,
+			},
+			python = {
+				names = false,
+			},
+			svelte = {
+				names = false,
+			},
+		},
 	},
 	{
 		"windwp/nvim-autopairs",
-		config = function()
-			require("nvim-autopairs").setup({
-				disable_filetypes = { "TelescopePrompt", "vim" },
-			})
-		end,
+		event = "InsertEnter",
+		opts = {
+			disable_filetypes = { "TelescopePrompt", "vim" },
+		},
 	},
 	{
 		"VonHeikemen/searchbox.nvim",
-		config = function()
-			require("searchbox").setup({})
-			vim.keymap.set("n", ";s", ":SearchBoxIncSearch<CR>", { silent = true })
-			vim.keymap.set("n", "sr", ":SearchBoxReplace<CR>", { silent = true })
-		end,
+		config = true,
+		keys = {
+			{ "sr", "<cmd>SearchBoxReplace <CR>" },
+		},
 	},
 	{
 		"lewis6991/gitsigns.nvim",
-		config = function()
-			require("gitsigns").setup({
-				signcolumn = false,
-			})
-		end,
+		opts = {
+			signcolumn = false,
+		},
+		keys = {
+			{ "gs", "<cmd>Gitsigns toggle_signs <CR>" },
+			{ "gp", "<cmd>Gitsigns prev_hunk <CR>" },
+			{ "gn", "<cmd>Gitsigns next_hunk <CR>" },
+			{ "tp", "<cmd>Gitsigns preview_hunk <CR>" },
+		},
 	},
 	{
 		"iamcco/markdown-preview.nvim",

@@ -4,5 +4,7 @@ return {
 	"MunifTanjim/nui.nvim",
 	"nvim-lua/popup.nvim",
 	"kyazdani42/nvim-web-devicons",
-	"sudormrfbin/cheatsheet.nvim",
+	{ "sudormrfbin/cheatsheet.nvim", keys = {
+		{ "cs", "<cmd>Cheatsheet <CR>" },
+	} },
 }
