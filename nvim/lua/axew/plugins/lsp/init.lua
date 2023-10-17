@@ -23,6 +23,9 @@ return {
 			diagnostic_header_icon = " ",
 			finder_definition_icon = " ",
 			finder_reference_icon = " ",
+			code_action_prompt = {
+				enable = false,
+			},
 			finder_action_keys = {
 				open = "<CR>",
 				vsplit = "v",
