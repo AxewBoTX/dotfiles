@@ -1,8 +1,2 @@
---Plugins
-require("plugins")
---Appearance
-require("looks")
---Basic Barebones Config
-require("base")
---Keymappings
-require("keymaps")
+require("axew.core")
+require("axew.lazy")
