@@ -25,6 +25,7 @@ return {
 				"cpp",
 				"rust",
 				"prisma",
+				"go",
 			},
 			highlight = {
 				enable = true,
