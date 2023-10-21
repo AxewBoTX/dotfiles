@@ -15,7 +15,7 @@ vim.opt.rtp:prepend(lazypath)
 --Lazy Setup
 require("lazy").setup({ { import = "axew.plugins" }, { import = "axew.plugins.lsp" } }, {
 	install = {
-		colorscheme = { "oxocarbon" },
+		-- colorscheme = { "oxocarbon" },
 	},
 	checker = {
 		enable = true,
