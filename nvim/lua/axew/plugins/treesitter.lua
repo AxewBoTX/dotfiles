@@ -26,6 +26,7 @@ return {
 				"rust",
 				"prisma",
 				"go",
+				"yaml",
 			},
 			highlight = {
 				enable = true,
