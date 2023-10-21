@@ -1,15 +1,15 @@
 return {
 	{
 		"nyoom-engineering/oxocarbon.nvim",
-		lazy = true,
+		lazy = false,
 		priority = 1000,
 		config = function()
-			-- vim.cmd([[colorscheme oxocarbon]])
+			vim.cmd([[colorscheme oxocarbon]])
 		end,
 	},
 	{
 		"rebelot/kanagawa.nvim",
-		lazy = false,
+		lazy = true,
 		priority = 1000,
 		config = function()
 			-- vim.cmd([[colorscheme kanagawa]])
@@ -17,10 +17,10 @@ return {
 	},
 	{
 		"kvrohit/mellow.nvim",
-		lazy = false,
+		lazy = true,
 		priority = 1000,
 		config = function()
-			vim.cmd([[colorscheme mellow]])
+			-- vim.cmd([[colorscheme mellow]])
 		end,
 	},
 }
