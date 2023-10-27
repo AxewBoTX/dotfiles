@@ -1,18 +1,18 @@
 return {
 	{
 		"nyoom-engineering/oxocarbon.nvim",
-		lazy = true,
+		lazy = false,
 		priority = 1000,
 		config = function()
-			-- vim.cmd([[colorscheme oxocarbon]])
+			vim.cmd([[colorscheme oxocarbon]])
 		end,
 	},
 	{
 		"Mofiqul/dracula.nvim",
-		lazy = false,
+		lazy = true,
 		priority = 1000,
 		config = function()
-			vim.cmd([[colorscheme dracula]])
+			-- vim.cmd([[colorscheme dracula]])
 		end,
 	},
 	-- {

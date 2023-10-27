@@ -1,6 +1,6 @@
 return {
 	"nvim-lualine/lualine.nvim",
-	lazy = true,
+	lazy = false,
 	opts = {
 		options = {
 			icons_enabled = true,
