@@ -1,5 +1,9 @@
 scoop/
 /coc
+nvim/plugin/
+nvim/plugins
+tmux/plugin
+tmux/plugins
 yarn/
 Min/
 dconf/
