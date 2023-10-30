@@ -1,10 +1,5 @@
 scoop/
-nvim/plugin/
-nvim/plugins
-nvim/lua/.luarc.json
 /coc
-tmux/plugin
-tmux/plugins
 yarn/
 Min/
 dconf/
