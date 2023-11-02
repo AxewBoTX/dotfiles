@@ -1,20 +1,31 @@
 return {
 	{
 		"nyoom-engineering/oxocarbon.nvim",
-		lazy = false,
-		priority = 1000,
-		config = function()
-			vim.cmd([[colorscheme oxocarbon]])
-		end,
-	},
-	{
-		"Mofiqul/dracula.nvim",
 		lazy = true,
 		priority = 1000,
 		config = function()
-			-- vim.cmd([[colorscheme dracula]])
+			-- vim.cmd([[colorscheme oxocarbon]])
 		end,
 	},
+	{
+		"EdenEast/nightfox.nvim",
+		lazy = false,
+		priority = 1000,
+		config = function()
+			vim.cmd([[colorscheme nightfox]])
+		end,
+	},
+	-- {
+	-- 	"Mofiqul/dracula.nvim",
+	-- 	lazy = true,
+	-- 	priority = 1000,
+	-- 	config = function()
+	-- 		require("dracula").setup({
+	-- 			transparent_bg = true,
+	-- 		})
+	-- 		-- vim.cmd([[colorscheme dracula]])
+	-- 	end,
+	-- },
 	-- {
 	-- 	"neanias/everforest-nvim",
 	-- 	lazy = true,
