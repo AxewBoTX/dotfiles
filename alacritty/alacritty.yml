@@ -2,9 +2,10 @@ live_config_reload: true
 font:
   size: 15
   normal:
-    family: SF Mono
+    family: JetBrains Mono NL
+    style: Bold
 
-window:
+windo:
   padding:
     x: 2
   dimensions:
