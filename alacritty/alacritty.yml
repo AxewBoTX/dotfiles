@@ -5,6 +5,8 @@ font:
     family: SF Mono
 
 window:
+  padding:
+    x: 3
   dimensions:
     columns: 92
     lines: 28
