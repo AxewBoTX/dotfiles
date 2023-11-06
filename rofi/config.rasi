@@ -1,7 +1,7 @@
 configuration {
 	display-drun: "Run:";
 	drun-display-format: "{icon} {name}";
-	font: "Jet Brains Mono NL SemiBold 14";
+	font: "SF Mono 14";
 	show-icons: true;
 }
 
