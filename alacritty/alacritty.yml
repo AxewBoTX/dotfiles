@@ -1,9 +1,9 @@
 live_config_reload: true
 font:
-  size: 15
+  size: 14 # With SF Mono its 15
   normal:
     family: JetBrains Mono NL
-    style: Bold
+    style: Regular
 
 windo:
   padding:
