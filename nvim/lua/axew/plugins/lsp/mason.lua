@@ -2,7 +2,7 @@ return {
 	"williamboman/mason.nvim",
 	dependencies = {
 		"williamboman/mason-lspconfig.nvim",
-		"jay-babu/mason-null-ls.nvim",
+		"WhoIsSethDaniel/mason-tool-installer.nvim",
 	},
 	config = function()
 		--Mason Setup
@@ -32,15 +32,15 @@ return {
 				"gopls",
 			},
 		})
-		require("mason-null-ls").setup({
+		require("mason-tool-installer").setup({
 			ensure_installed = {
+				"prettierd",
 				"prettier",
 				"stylua",
 				"black",
 				"pylint",
 				"eslint_d",
 				"isort",
-				"prettierd",
 			},
 		})
 	end,
