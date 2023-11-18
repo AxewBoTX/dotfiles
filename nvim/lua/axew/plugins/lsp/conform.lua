@@ -7,6 +7,7 @@ return {
 			formatters_by_ft = {
 				lua = { "stylua" },
 				python = { "isort", "black" },
+				go = { "golines", "goimports-reviser", "sql-formatter" },
 				javascript = { { "prettier", "prettierd" } },
 				typescript = { { "prettier", "prettierd" } },
 				javascriptreact = { { "prettier", "prettierd" } },

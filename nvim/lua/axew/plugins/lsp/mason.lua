@@ -41,6 +41,8 @@ return {
 				"pylint",
 				"eslint_d",
 				"isort",
+				"golines",
+				"goimports-reviser",
 			},
 		})
 	end,
