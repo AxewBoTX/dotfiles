@@ -7,14 +7,14 @@ return {
 			-- vim.cmd([[colorscheme oxocarbon]])
 		end,
 	},
-	{
-		"EdenEast/nightfox.nvim",
-		lazy = false,
-		priority = 1000,
-		config = function()
-			vim.cmd([[colorscheme carbonfox]])
-		end,
-	},
+	-- {
+	-- 	"EdenEast/nightfox.nvim",
+	-- 	lazy = true,
+	-- 	priority = 1000,
+	-- 	config = function()
+	-- 		-- vim.cmd([[colorscheme carbonfox]])
+	-- 	end,
+	-- },
 	-- {
 	-- 	"Mofiqul/dracula.nvim",
 	-- 	lazy = true,
@@ -42,14 +42,14 @@ return {
 	-- 		-- vim.cmd([[colorscheme kanagawa]])
 	-- 	end,
 	-- },
-	-- {
-	-- 	"kvrohit/mellow.nvim",
-	-- 	lazy = true,
-	-- 	priority = 1000,
-	-- 	config = function()
-	-- 		-- vim.cmd([[colorscheme mellow]])
-	-- 	end,
-	-- },
+	{
+		"kvrohit/mellow.nvim",
+		lazy = false,
+		priority = 1000,
+		config = function()
+			vim.cmd([[colorscheme mellow]])
+		end,
+	},
 	-- {
 	-- 	"ellisonleao/gruvbox.nvim",
 	-- 	lazy = false,
