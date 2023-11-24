@@ -27,6 +27,7 @@ return {
 				"prisma",
 				"go",
 				"yaml",
+				"sql",
 			},
 			highlight = {
 				enable = true,
