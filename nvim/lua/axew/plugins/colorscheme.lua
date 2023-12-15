@@ -1,12 +1,28 @@
 return {
+	-- {
+	-- 	"nyoom-engineering/oxocarbon.nvim",
+	-- 	lazy = true,
+	-- 	priority = 1000,
+	-- 	config = function()
+	-- 		-- vim.cmd([[colorscheme oxocarbon]])
+	-- 	end,
+	-- },
 	{
-		"nyoom-engineering/oxocarbon.nvim",
-		lazy = true,
+		"Mofiqul/vscode.nvim",
+		lazy = false,
 		priority = 1000,
 		config = function()
-			-- vim.cmd([[colorscheme oxocarbon]])
+			vim.cmd([[colorscheme vscode]])
 		end,
 	},
+	-- {
+	-- 	"folke/tokyonight.nvim",
+	-- 	lazy = false,
+	-- 	priority = 1000,
+	-- 	config = function()
+	-- 		vim.cmd([[colorscheme tokyonight-night]])
+	-- 	end,
+	-- },
 	-- {
 	-- 	"EdenEast/nightfox.nvim",
 	-- 	lazy = true,
@@ -42,14 +58,14 @@ return {
 	-- 		-- vim.cmd([[colorscheme kanagawa]])
 	-- 	end,
 	-- },
-	{
-		"kvrohit/mellow.nvim",
-		lazy = false,
-		priority = 1000,
-		config = function()
-			vim.cmd([[colorscheme mellow]])
-		end,
-	},
+	-- {
+	-- 	"kvrohit/mellow.nvim",
+	-- 	lazy = true,
+	-- 	priority = 1000,
+	-- 	config = function()
+	-- 		-- vim.cmd([[colorscheme mellow]])
+	-- 	end,
+	-- },
 	-- {
 	-- 	"ellisonleao/gruvbox.nvim",
 	-- 	lazy = false,
