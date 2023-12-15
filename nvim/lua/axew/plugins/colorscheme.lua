@@ -58,14 +58,14 @@ return {
 	-- 		-- vim.cmd([[colorscheme kanagawa]])
 	-- 	end,
 	-- },
-	{
-		"kvrohit/mellow.nvim",
-		lazy = false,
-		priority = 1000,
-		config = function()
-			vim.cmd([[colorscheme mellow]])
-		end,
-	},
+	-- {
+	-- 	"kvrohit/mellow.nvim",
+	-- 	lazy = false,
+	-- 	priority = 1000,
+	-- 	config = function()
+	-- 		vim.cmd([[colorscheme mellow]])
+	-- 	end,
+	-- },
 	-- {
 	-- 	"ellisonleao/gruvbox.nvim",
 	-- 	lazy = false,
@@ -74,4 +74,15 @@ return {
 	-- 		vim.cmd([[colorscheme gruvbox]])
 	-- 	end,
 	-- },
+	{
+		"navarasu/onedark.nvim",
+		lazy = false,
+		priority = 1000,
+		config = function()
+			require("onedark").setup({
+				style = "warmer",
+			})
+			vim.cmd([[colorscheme onedark]])
+		end,
+	},
 }
