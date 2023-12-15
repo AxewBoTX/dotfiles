@@ -7,14 +7,14 @@ return {
 	-- 		-- vim.cmd([[colorscheme oxocarbon]])
 	-- 	end,
 	-- },
-	{
-		"Mofiqul/vscode.nvim",
-		lazy = false,
-		priority = 1000,
-		config = function()
-			vim.cmd([[colorscheme vscode]])
-		end,
-	},
+	-- {
+	-- 	"Mofiqul/vscode.nvim",
+	-- 	lazy = false,
+	-- 	priority = 1000,
+	-- 	config = function()
+	-- 		vim.cmd([[colorscheme vscode]])
+	-- 	end,
+	-- },
 	-- {
 	-- 	"folke/tokyonight.nvim",
 	-- 	lazy = false,
@@ -58,14 +58,14 @@ return {
 	-- 		-- vim.cmd([[colorscheme kanagawa]])
 	-- 	end,
 	-- },
-	-- {
-	-- 	"kvrohit/mellow.nvim",
-	-- 	lazy = true,
-	-- 	priority = 1000,
-	-- 	config = function()
-	-- 		-- vim.cmd([[colorscheme mellow]])
-	-- 	end,
-	-- },
+	{
+		"kvrohit/mellow.nvim",
+		lazy = false,
+		priority = 1000,
+		config = function()
+			vim.cmd([[colorscheme mellow]])
+		end,
+	},
 	-- {
 	-- 	"ellisonleao/gruvbox.nvim",
 	-- 	lazy = false,
