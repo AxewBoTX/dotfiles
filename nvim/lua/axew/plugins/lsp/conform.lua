@@ -8,6 +8,7 @@ return {
 				lua = { "stylua" },
 				python = { "isort", "black" },
 				go = { "golines", "goimports-reviser" },
+				cpp = { "clang-format" },
 				javascript = { { "prettier", "prettierd" } },
 				typescript = { { "prettier", "prettierd" } },
 				javascriptreact = { { "prettier", "prettierd" } },

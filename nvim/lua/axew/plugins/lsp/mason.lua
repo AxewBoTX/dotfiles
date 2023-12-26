@@ -43,6 +43,7 @@ return {
 				"isort",
 				"golines",
 				"goimports-reviser",
+				"clang-format",
 			},
 		})
 	end,
