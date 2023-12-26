@@ -13,6 +13,7 @@ export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/go/bin
 export MESA_GLSL_VERSION_OVERRIDE=330
 export MESA_GL_VERSION_OVERRIDE=3.3
+export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
 
 #Ranger
 ranger-cd () {
