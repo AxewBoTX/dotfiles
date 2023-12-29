@@ -33,14 +33,14 @@ return {
 	-- 		vim.cmd([[colorscheme everforest]])
 	-- 	end,
 	-- },
-	-- {
-	-- 	"mellow-theme/mellow.nvim",
-	-- 	lazy = false,
-	-- 	priority = 1000,
-	-- 	config = function()
-	-- 		vim.cmd([[colorscheme mellow]])
-	-- 	end,
-	-- },
+	{
+		"mellow-theme/mellow.nvim",
+		lazy = false,
+		priority = 1000,
+		config = function()
+			vim.cmd([[colorscheme mellow]])
+		end,
+	},
 	-- {
 	-- 	"navarasu/onedark.nvim",
 	-- 	lazy = false,
@@ -68,12 +68,12 @@ return {
 	-- 		vim.cmd([[colorscheme citruszest]])
 	-- 	end,
 	-- },
-	{
-		"aktersnurra/no-clown-fiesta.nvim",
-		lazy = false,
-		priority = 1000,
-		config = function()
-			vim.cmd([[colorscheme no-clown-fiesta]])
-		end,
-	},
+	-- {
+	-- 	"aktersnurra/no-clown-fiesta.nvim",
+	-- 	lazy = false,
+	-- 	priority = 1000,
+	-- 	config = function()
+	-- 		vim.cmd([[colorscheme no-clown-fiesta]])
+	-- 	end,
+	-- },
 }
