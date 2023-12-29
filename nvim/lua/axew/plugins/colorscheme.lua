@@ -16,14 +16,6 @@ return {
 	-- 	end,
 	-- },
 	-- {
-	-- 	"folke/tokyonight.nvim",
-	-- 	lazy = false,
-	-- 	priority = 1000,
-	-- 	config = function()
-	-- 		vim.cmd([[colorscheme tokyonight-night]])
-	-- 	end,
-	-- },
-	-- {
 	-- 	"EdenEast/nightfox.nvim",
 	-- 	lazy = true,
 	-- 	priority = 1000,
@@ -32,34 +24,17 @@ return {
 	-- 	end,
 	-- },
 	-- {
-	-- 	"Mofiqul/dracula.nvim",
-	-- 	lazy = true,
-	-- 	priority = 1000,
-	-- 	config = function()
-	-- 		require("dracula").setup({
-	-- 			transparent_bg = true,
-	-- 		})
-	-- 		-- vim.cmd([[colorscheme dracula]])
-	-- 	end,
 	-- },
 	-- {
 	-- 	"neanias/everforest-nvim",
-	-- 	lazy = true,
+	-- 	lazy = false,
 	-- 	priority = 1000,
 	-- 	config = function()
-	-- 		-- vim.cmd([[colorscheme everforest]])
+	-- 		vim.cmd([[colorscheme everforest]])
 	-- 	end,
 	-- },
 	-- {
-	-- 	"rebelot/kanagawa.nvim",
-	-- 	lazy = true,
-	-- 	priority = 1000,
-	-- 	config = function()
-	-- 		-- vim.cmd([[colorscheme kanagawa]])
-	-- 	end,
-	-- },
-	-- {
-	-- 	"kvrohit/mellow.nvim",
+	-- 	"mellow-theme/mellow.nvim",
 	-- 	lazy = false,
 	-- 	priority = 1000,
 	-- 	config = function()
@@ -67,22 +42,38 @@ return {
 	-- 	end,
 	-- },
 	-- {
-	-- 	"ellisonleao/gruvbox.nvim",
+	-- 	"navarasu/onedark.nvim",
 	-- 	lazy = false,
 	-- 	priority = 1000,
 	-- 	config = function()
-	-- 		vim.cmd([[colorscheme gruvbox]])
+	-- 		require("onedark").setup({
+	-- 			style = "warmer",
+	-- 		})
+	-- 		vim.cmd([[colorscheme onedark]])
+	-- 	end,
+	-- },
+	-- {
+	-- 	"kvrohit/rasmus.nvim",
+	-- 	lazy = false,
+	-- 	priority = 1000,
+	-- 	config = function()
+	-- 		vim.cmd([[colorscheme rasmus]])
+	-- 	end,
+	-- },
+	-- {
+	-- 	"zootedb0t/citruszest.nvim",
+	-- 	lazy = false,
+	-- 	priority = 1000,
+	-- 	config = function()
+	-- 		vim.cmd([[colorscheme citruszest]])
 	-- 	end,
 	-- },
 	{
-		"navarasu/onedark.nvim",
+		"aktersnurra/no-clown-fiesta.nvim",
 		lazy = false,
 		priority = 1000,
 		config = function()
-			require("onedark").setup({
-				style = "warmer",
-			})
-			vim.cmd([[colorscheme onedark]])
+			vim.cmd([[colorscheme no-clown-fiesta]])
 		end,
 	},
 }
