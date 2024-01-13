@@ -24,6 +24,7 @@ return {
 				"gdscript",
 				"cpp",
 				"rust",
+				"zig",
 				"prisma",
 				"go",
 				"yaml",

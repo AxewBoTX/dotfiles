@@ -30,6 +30,7 @@ return {
 				"tailwindcss",
 				"prismals",
 				"gopls",
+				"zls",
 			},
 		})
 		require("mason-tool-installer").setup({
