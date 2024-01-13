@@ -73,6 +73,7 @@ return {
 			"tailwindcss",
 			"prismals",
 			"gopls",
+			"zls",
 		}
 
 		--Servers Setup
