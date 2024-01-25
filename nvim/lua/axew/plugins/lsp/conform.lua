@@ -20,6 +20,7 @@ return {
 				yaml = { { "prettier", "prettierd" } },
 				markdown = { { "prettier", "prettierd" } },
 				graphql = { { "prettier", "prettierd" } },
+				astro = { { "prettier", "prettierd" } },
 			},
 			format_on_save = {
 				lsp_fallback = true,
