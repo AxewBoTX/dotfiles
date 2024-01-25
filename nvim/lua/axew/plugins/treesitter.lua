@@ -29,6 +29,7 @@ return {
 				"go",
 				"yaml",
 				"sql",
+				"astro",
 			},
 			highlight = {
 				enable = true,

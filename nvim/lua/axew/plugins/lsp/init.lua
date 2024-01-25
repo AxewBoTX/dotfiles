@@ -74,6 +74,7 @@ return {
 			"prismals",
 			"gopls",
 			"zls",
+			"astro",
 		}
 
 		--Servers Setup

@@ -31,6 +31,7 @@ return {
 				"prismals",
 				"gopls",
 				"zls",
+				"astro",
 			},
 		})
 		require("mason-tool-installer").setup({
