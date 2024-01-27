@@ -5,4 +5,4 @@ polybar-msg cmd quit
 
 # Launch Polybar
 echo "---" | tee -a /tmp/polybar1.log 
-polybar topbar 2>&1 | tee -a /tmp/polybar1.log & disown
+polybar mainbar 2>&1 | tee -a /tmp/polybar1.log & disown
