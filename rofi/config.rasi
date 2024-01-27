@@ -1,8 +1,12 @@
-configuration {
-	display-drun: "Run:";
-	drun-display-format: "{icon} {name}";
-	font: "SF Mono 14";
-	show-icons: true;
+configuration{
+    modi: "run,drun,window";
+    icon-theme: "Oranchelo";
+    show-icons: true;
+    terminal: "alacritty";
+    drun-display-format: "{icon} {name}";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
 }
 
-@theme "~/.config/rofi/themes/simple-axew.rasi"
+@theme "~/.config/rofi/cp.rasi"
