@@ -1,0 +1,22 @@
+live_config_reload = true
+
+[font]
+size = 13.50
+
+[font.normal]
+family = "JetBrainsMonoNLNerdFontComplete"
+
+[window]
+opacity = 0.8
+title = "Terminal"
+
+[window.dimensions]
+columns = 92
+lines = 28
+
+[window.padding]
+x = 3
+
+[colors.primary]
+background = "0x000000"
+foreground = "0xffffff"
