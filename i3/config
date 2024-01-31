@@ -110,7 +110,7 @@ mode "resize" {
 }
 
 # ---------- Base Appearance ----------
-font pango: SF Mono 10
+font pango: JetBrainsMonoNLNerdFontComplete 10
 hide_edge_borders both
 for_window [class=".*"] border pixel 0
 gaps inner 10
