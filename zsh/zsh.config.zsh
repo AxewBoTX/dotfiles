@@ -1,6 +1,6 @@
 #Oh-My-Zsh
 export ZSH="$HOME/.oh-my-zsh"
-plugins=(git zsh-autosuggestions web-search zsh-interactive-cd)
+plugins=(git zsh-autosuggestions web-search)
 ZSH_THEME="powerlevel10k/powerlevel10k"
 source $ZSH/oh-my-zsh.sh
 
