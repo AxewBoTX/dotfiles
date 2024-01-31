@@ -60,7 +60,8 @@ If you are on Arch based ditribution then run `sudo pacman -S git` command.
 
 ## Fonts
 
-The font that I use is the beautifull Appel's SF Mono font patched with nerd font patcher. It is called [SF Mono Nerd Font](https://github.com/epk/SF-Mono-Nerd-Font)
+The font that I use is the beautifull Appel's SF Mono font patched with nerd font patcher. It is called [SF Mono Nerd Font](https://github.com/epk/SF-Mono-Nerd-Font). <br/>
+I also use, JetBrainsMono Nerd Font patched with [font-patcher](https://github.com/ryanoasis/nerd-fonts/blob/master/readme.md#font-patcher).
 
 ## Powershell And Oh-My-Posh
 
