@@ -18,6 +18,9 @@ return {
 			svelte = {
 				names = false,
 			},
+			go = {
+				names = false,
+			},
 		},
 	},
 	{
