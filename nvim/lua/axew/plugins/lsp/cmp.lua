@@ -26,33 +26,7 @@ return {
 		lspkind.init({
 			mode = "symbol_text",
 			preset = "codicons",
-			symbol_map = {
-				Text = "",
-				Method = "",
-				Function = "",
-				Constructor = "",
-				Field = "ﰠ",
-				Variable = "",
-				Class = "ﴯ",
-				Interface = "",
-				Module = "",
-				Property = "ﰠ",
-				Unit = "塞",
-				Value = "",
-				Enum = "",
-				Keyword = "",
-				Snippet = "",
-				Color = "",
-				File = "",
-				Reference = "",
-				Folder = "",
-				EnumMember = "",
-				Constant = "",
-				Struct = "פּ",
-				Event = "",
-				Operator = "",
-				TypeParameter = "",
-			},
+			symbol_map = {},
 		})
 
 		--Nvim-CMP Setup
@@ -60,6 +34,10 @@ return {
 		nvim_cmp.setup({
 			completion = {
 				autocomplete = false,
+			},
+			window = {
+				completion = nvim_cmp.config.window.bordered(),
+				documentation = nvim_cmp.config.window.bordered(),
 			},
 			snippet = {
 				expand = function(args)
