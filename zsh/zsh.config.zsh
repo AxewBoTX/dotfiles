@@ -14,18 +14,6 @@ export PATH=$PATH:$HOME/go/bin
 export MESA_GLSL_VERSION_OVERRIDE=330
 export MESA_GL_VERSION_OVERRIDE=3.3
 
-#Ranger
-ranger-cd () {
-	tmp="$(mktemp)"
-	ranger --choosedir="$tmp" "$@"
-	if [ -f "$tmp" ]; then
-		dir="$(cat "$tmp")"
-		rm -f "$tmp"
-		[ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
-	fi
-}
-alias ranger="ranger-cd"
-
 #Starship 
 # eval "$(starship init zsh)
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
