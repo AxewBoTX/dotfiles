@@ -3,16 +3,15 @@ add_newline = false
 # Format String
 format = """ 
 [┌](fg:color_text)\
-[](fg:color_red)\
-${custom.left_sq_bracket}$hostname\
-[@](fg:color_blue)\
+[](fg:color_mantle)\
+[ @](fg:color_red bg:color_mantle)\
 $username\
+[](fg:color_blue bg:color_mantle)\
 $directory\
-[ ](fg:color_red)\
-[](fg:color_red)\
+[](fg:color_mantle bg:color_green)\
 $git_branch\
 $git_status\
-[](fg:color_red)\
+[](fg:color_green)\
 $linebreak
 [└─](fg:color_text)$character
 """
@@ -49,49 +48,15 @@ color_mantle = "#181825"
 color_crust = "#11111b"
 color_white = "#ffffff"
 
-[os]
-disabled = false
-style = "bg:color_mantle fg:color_rosewater"
-
-[os.symbols]
-Windows = "󰍲"
-Ubuntu = "󰕈"
-SUSE = ""
-Raspbian = "󰐿"
-Mint = "󰣭"
-Macos = "󰀵"
-Manjaro = ""
-Linux = "󰌽"
-Gentoo = "󰣨"
-Fedora = "󰣛"
-Alpine = ""
-Amazon = ""
-Android = ""
-Arch = "󰣇"
-Artix = "󰣇"
-CentOS = ""
-Debian = "󰣚"
-Redhat = "󱄛"
-RedHatEnterprise = "󱄛"
-
-[custom.left_sq_bracket]
-when = "true"
-format = '[](fg:color_rosewater)'
-
-[hostname]
-ssh_only = false
-format = '[$hostname](fg:color_white)'
-disabled = false
-
 [username]
 show_always = true
-style_user = "fg:color_maroon"
-style_root = "fg:color_maroon"
+style_user = "fg:color_text bg:color_mantle"
+style_root = "fg:color_text bg:color_mantle"
 format = '[$user ]($style)'
 
 [directory]
-style = "fg:color_white"
-format = "[$path]($style)"
+style = "fg:color_text bg:color_mantle"
+format = "[ $path ]($style)"
 truncation_length = 1
 
 [directory.substitutions]
@@ -103,12 +68,12 @@ truncation_length = 1
 
 [git_branch]
 symbol = ""
-style = "bg:color_red"
-format = '[[ $symbol $branch ](fg:color_crust bg:color_red)]($style)'
+style = "bg:color_green"
+format = '[[ $symbol $branch ](fg:color_crust bg:color_green)]($style)'
 
 [git_status]
-style = "bg:color_red"
-format = '[[($all_status$ahead_behind)](fg:color_crust bg:color_red)]($style)'
+style = "bg:color_green"
+format = '[[($all_status$ahead_behind )](fg:color_crust bg:color_green)]($style)'
 
 [line_break]
 disabled = false
