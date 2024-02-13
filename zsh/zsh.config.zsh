@@ -1,12 +1,12 @@
 # #Oh-My-Zsh
-# export ZSH="$HOME/.oh-my-zsh"
-# plugins=(git zsh-autosuggestions web-search)
-# ZSH_THEME="powerlevel10k/powerlevel10k"
-# source $ZSH/oh-my-zsh.sh
+export ZSH="$HOME/.oh-my-zsh"
+plugins=(git zsh-autosuggestions web-search)
+ZSH_THEME="powerlevel10k/powerlevel10k"
+source $ZSH/oh-my-zsh.sh
 
-# #Powerlevel
-# export POWERLEVEL9K_SHORTEN_STRATEGY="truncate_to_last"
-# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs newline prompt_char)
+#Powerlevel
+export POWERLEVEL9K_SHORTEN_STRATEGY="truncate_to_last"
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs newline prompt_char)
 
 #Zsh Variables
 export PATH=$PATH:$HOME/.local/bin
@@ -15,7 +15,7 @@ export MESA_GLSL_VERSION_OVERRIDE=330
 export MESA_GL_VERSION_OVERRIDE=3.3
 
 #Starship 
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 export STARSHIP_CONFIG=~/.config/starship/config.toml
 
 #NVM (Node Version Manager)
