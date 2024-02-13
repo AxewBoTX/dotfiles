@@ -3,9 +3,13 @@ add_newline = false
 # Format String
 format = """ 
 [┌](fg:color_text)\
-[](fg:color_mantle)\
+[](fg:color_red)\
+${custom.left_sq_bracket}$hostname\
+[@](fg:color_blue)\
+$username\
 $directory\
-[](fg:color_mantle bg:color_red)\
+[ ](fg:color_red)\
+[](fg:color_red)\
 $git_branch\
 $git_status\
 [](fg:color_red)\
@@ -70,15 +74,24 @@ Debian = "󰣚"
 Redhat = "󱄛"
 RedHatEnterprise = "󱄛"
 
+[custom.left_sq_bracket]
+when = "true"
+format = '[](fg:color_rosewater)'
+
+[hostname]
+ssh_only = false
+format = '[$hostname](fg:color_white)'
+disabled = false
+
 [username]
 show_always = true
-style_user = "fg:color_rosewater bg:color_mantle"
-style_root = "fg:color_roseware bg:color_mantle"
-format = '[ $user ]($style)'
+style_user = "fg:color_maroon"
+style_root = "fg:color_maroon"
+format = '[$user ]($style)'
 
 [directory]
-style = "fg:color_white bg:color_mantle"
-format = "[ $path ]($style)"
+style = "fg:color_white"
+format = "[$path]($style)"
 truncation_length = 1
 
 [directory.substitutions]
