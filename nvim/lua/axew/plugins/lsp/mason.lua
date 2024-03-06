@@ -32,6 +32,7 @@ return {
 				"gopls",
 				"zls",
 				"astro",
+				"templ",
 			},
 		})
 		require("mason-tool-installer").setup({

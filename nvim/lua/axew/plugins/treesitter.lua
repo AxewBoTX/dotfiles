@@ -30,6 +30,7 @@ return {
 				"yaml",
 				"sql",
 				"astro",
+				"templ",
 			},
 			highlight = {
 				enable = true,

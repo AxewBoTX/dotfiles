@@ -75,6 +75,7 @@ return {
 			"gopls",
 			"zls",
 			"astro",
+			"templ",
 		}
 
 		--Servers Setup
