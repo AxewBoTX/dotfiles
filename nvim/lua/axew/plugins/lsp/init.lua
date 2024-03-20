@@ -76,6 +76,7 @@ return {
 			"zls",
 			"astro",
 			"templ",
+			"taplo",
 		}
 
 		--Servers Setup

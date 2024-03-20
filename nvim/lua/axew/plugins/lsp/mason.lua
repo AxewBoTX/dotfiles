@@ -33,6 +33,7 @@ return {
 				"zls",
 				"astro",
 				"templ",
+				"taplo",
 			},
 		})
 		require("mason-tool-installer").setup({
