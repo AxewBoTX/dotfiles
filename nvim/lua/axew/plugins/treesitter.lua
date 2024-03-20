@@ -38,6 +38,7 @@ return {
 				"sql",
 				"astro",
 				"templ",
+				"toml",
 			},
 			highlight = {
 				enable = true,
