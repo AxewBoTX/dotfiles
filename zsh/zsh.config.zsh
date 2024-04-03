@@ -1,8 +1,8 @@
 # #Oh-My-Zsh
 export ZSH="$HOME/.oh-my-zsh"
 plugins=(git zsh-autosuggestions web-search)
-ZSH_THEME="powerlevel10k/powerlevel10k"
 source $ZSH/oh-my-zsh.sh
+source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 #Powerlevel
 export POWERLEVEL9K_SHORTEN_STRATEGY="truncate_to_last"
