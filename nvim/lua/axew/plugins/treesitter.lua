@@ -6,13 +6,6 @@ return {
 		"nvim-treesitter/nvim-treesitter-textobjects",
 	},
 	config = function()
-		-- Set filetype to templ when entering .templ file
-		vim.cmd([[
-			augroup _templ 
-			autocmd!
-			autocmd BufRead,BufEnter *.templ set filetype=templ
-			augroup end
-		]])
 		require("nvim-treesitter.configs").setup({
 			ensure_installed = {
 				"lua",
@@ -64,5 +57,8 @@ return {
 				},
 			},
 		})
+
+		-- custom parser configurations
+		vim.treesitter.language.register("markdown", "mdx")
 	end,
 }
