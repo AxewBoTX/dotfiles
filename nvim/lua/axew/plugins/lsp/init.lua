@@ -77,6 +77,7 @@ return {
 			"astro",
 			"templ",
 			"taplo",
+			"yamlls",
 		}
 
 		--Servers Setup

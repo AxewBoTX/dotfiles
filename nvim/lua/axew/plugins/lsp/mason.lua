@@ -34,6 +34,7 @@ return {
 				"astro",
 				"templ",
 				"taplo",
+				"yamlls",
 			},
 		})
 		require("mason-tool-installer").setup({
