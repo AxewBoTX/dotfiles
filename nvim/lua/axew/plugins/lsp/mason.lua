@@ -25,6 +25,7 @@ return {
 				"tsserver",
 				"eslint",
 				"html",
+				"htmx",
 				"svelte",
 				"rust_analyzer",
 				"tailwindcss",
