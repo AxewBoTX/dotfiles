@@ -3,7 +3,7 @@ return {
 	event = { "BufReadPost" },
 	cmd = { "LspInfo", "LspInstall", "LspUninstall" },
 	dependencies = {
-		"kkharji/lspsaga.nvim",
+		"nvimdev/lspsaga.nvim",
 		"mfussenegger/nvim-jdtls",
 	},
 	config = function()
@@ -22,18 +22,16 @@ return {
 
 		--LSP Saga Setup
 		lsp_saga.setup({
-			diagnostic_header_icon = " ",
-			finder_definition_icon = " ",
-			finder_reference_icon = " ",
-			code_action_prompt = {
+			symbol_in_winbar = {
 				enable = false,
 			},
-			finder_action_keys = {
-				open = "<CR>",
-				vsplit = "v",
-				split = "s",
+			lightbulb = {
+				enable = false,
 			},
-			border_style = "round",
+			ui = {
+				border = "rounded",
+				title = false,
+			},
 		})
 		--Disabeling The Sign Column In Diagnostics
 		vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
@@ -47,10 +45,9 @@ return {
 			-- keybind Options
 			local opts = { noremap = true, silent = true, buffer = bufnr }
 			-- Keybinds
-			keymap.set("n", "gf", "<cmd>Lspsaga lsp_finder<CR>", opts) -- show definition, references
-			keymap.set("n", "gd", "<cmd>Lspsaga preview_definition<CR>", opts) -- see definition and make edits in window
-			keymap.set("n", ";D", "<cmd>Lspsaga show_line_diagnostics<CR>", opts) -- show  diagnostics for line
-			keymap.set("n", ";d", "<cmd>Lspsaga show_cursor_diagnostics<CR>", opts) -- show diagnostics for cursor
+			keymap.set("n", "gf", "<cmd>Lspsaga finder<CR>", opts) -- show definition, references
+			keymap.set("n", "go", "<cmd>Lspsaga outline<CR>", opts) -- show LSP outine of current buffer
+			keymap.set("n", "gd", "<cmd>Lspsaga peek_definition<CR>", opts) -- see definition and make edits in window
 			keymap.set("n", "[d", "<cmd>Lspsaga diagnostic_jump_prev<CR>", opts) -- jump to previous diagnostic in buffer
 			keymap.set("n", "]d", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts) -- jump to next diagnostic in buffer
 			keymap.set("n", ";.", "<cmd>Lspsaga hover_doc<CR>", opts) -- show documentation for what is under cursor
