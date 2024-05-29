@@ -74,7 +74,6 @@ return {
 			"zls",
 			"astro",
 			"templ",
-			"taplo",
 			"yamlls",
 		}
 
