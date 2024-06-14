@@ -13,7 +13,7 @@ export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/go/bin
 export MESA_GLSL_VERSION_OVERRIDE=330
 export MESA_GL_VERSION_OVERRIDE=3.3
-export PODMAN_IGNORE_CGROUPSV1_WARNING true
+export PODMAN_IGNORE_CGROUPSV1_WARNING=true
 
 #Starship 
 # eval "$(starship init zsh)"
