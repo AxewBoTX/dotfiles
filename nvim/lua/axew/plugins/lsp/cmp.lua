@@ -57,10 +57,11 @@ return {
 				}),
 			}),
 			sources = nvim_cmp.config.sources({
-				{ name = "nvim_lsp" }, --LSP Source
-				{ name = "luasnip" }, --Lua Snippet Engine
-				{ name = "buffer" }, --Current Buffer Source
-				{ name = "path" }, --Path Source
+				{ name = "nvim_lsp" }, -- LSP Source
+				{ name = "luasnip" }, -- Lua Snippet Engine
+				{ name = "buffer" }, -- Current Buffer Source
+				{ name = "path" }, -- Path Source
+				{ name = "vim-dadbod-completion" }, -- Vim dadbod source
 			}),
 			formatting = {
 				format = lspkind.cmp_format({

@@ -4,7 +4,6 @@ return {
 	cmd = { "LspInfo", "LspInstall", "LspUninstall" },
 	dependencies = {
 		"nvimdev/lspsaga.nvim",
-		"mfussenegger/nvim-jdtls",
 	},
 	config = function()
 		--Ensuring LSP-Config Is Working
