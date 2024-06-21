@@ -2,11 +2,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 plugins=(git zsh-autosuggestions web-search)
 source $ZSH/oh-my-zsh.sh
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-
-#Powerlevel
-export POWERLEVEL9K_SHORTEN_STRATEGY="truncate_to_last"
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs newline prompt_char)
 
 #Zsh Variables
 export PATH=$PATH:$HOME/.local/bin
@@ -15,9 +10,11 @@ export MESA_GLSL_VERSION_OVERRIDE=330
 export MESA_GL_VERSION_OVERRIDE=3.3
 export PODMAN_IGNORE_CGROUPSV1_WARNING=true
 
-#Starship 
-# eval "$(starship init zsh)"
-export STARSHIP_CONFIG=~/.config/starship/config.toml
+# mise setup
+eval "$(~/.local/bin/mise activate zsh)"
+
+# homebrew setup
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 #NVM (Node Version Manager)
 export NVM_DIR="$HOME/.nvm"
@@ -32,3 +29,6 @@ alias open="explorer.exe" #File Explorer alias(Windows only)
 #Keybindings
 bindkey '^l' autosuggest-accept
 bindkey '^K' clear-screen
+
+# theme
+source ~/.oh-my-zsh/themes/robbyrussell.zsh-theme
