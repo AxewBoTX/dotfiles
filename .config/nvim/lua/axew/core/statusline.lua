@@ -1,6 +1,5 @@
--- Custom Statusline
-
-function GetGitBranch() --Git repo status
+-- custom statusline setup
+function GetGitBranch() -- git repo status
 	local in_git_repo = vim.fn.system("git rev-parse --is-inside-work-tree 2>/dev/null") == "true\n"
 	if in_git_repo then
 		local branch = vim.fn.systemlist("git branch --show-current")[1]
@@ -10,4 +9,4 @@ function GetGitBranch() --Git repo status
 	end
 end
 
-vim.o.statusline = [[ %t %{v:lua.GetGitBranch()} %m %= [%l,%c] ]] --Statusline string
+vim.o.statusline = [[ %t %{v:lua.GetGitBranch()} %m %= [%l,%c] ]] -- Statusline string

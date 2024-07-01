@@ -32,6 +32,8 @@ return {
 				"astro",
 				"templ",
 				"toml",
+				"http",
+				"json",
 			},
 			highlight = {
 				enable = true,
