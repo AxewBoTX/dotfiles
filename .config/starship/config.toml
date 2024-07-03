@@ -1,7 +1,6 @@
 add_newline = false
 
-format = """[┌](fg:color_text)\
-[](fg:color_mantle)\
+format = """[┌ ](fg:color_text)\
 $username\
 [@](fg:color_red)\
 $hostname\
