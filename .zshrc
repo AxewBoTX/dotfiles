@@ -31,4 +31,8 @@ bindkey '^l' autosuggest-accept
 bindkey '^K' clear-screen
 
 # theme
-source ~/.oh-my-zsh/themes/robbyrussell.zsh-theme
+# source ~/.oh-my-zsh/themes/robbyrussell.zsh-theme
+#
+# starship setup
+export STARSHIP_CONFIG=~/.config/starship/config.toml
+eval "$(starship init zsh)"
