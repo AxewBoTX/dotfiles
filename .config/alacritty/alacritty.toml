@@ -1,7 +1,7 @@
 live_config_reload = true
 
 [font]
-size = 13.50
+size = 13.5
 
 [font.normal]
 family = "JetBrainsMonoNLNerdFontComplete"
@@ -16,6 +16,7 @@ lines = 28
 
 [window.padding]
 x = 3
+# y = 10
 
 [colors.primary]
 background = "0x000000"

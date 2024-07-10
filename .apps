@@ -1,0 +1,8 @@
+hyprctl
+waybar
+rofi-wayland
+alacritty
+thunar
+wlsunset
+hyprpaper
+pipewire,pipewire-pulse,pipewire-alsa,wireplumber
