@@ -6,3 +6,5 @@ thunar
 wlsunset
 hyprpaper
 pipewire,pipewire-pulse,pipewire-alsa,wireplumber
+docker,docker-compose
+obsidian

@@ -14,7 +14,7 @@ return {
 
 			--Keybinds
 			vim.keymap.set("n", "<C-]>", api.tree.change_root_to_node, opts("CD"))
-			vim.keymap.set("n", "<C-e>", api.node.open.replace_tree_buffer, opts("Open: In Place"))
+			-- vim.keymap.set("n", "<C-e>", api.node.open.replace_tree_buffer, opts("Open: In Place"))
 			vim.keymap.set("n", "<C-k>", api.node.show_info_popup, opts("Info"))
 			vim.keymap.set("n", "<C-r>", api.fs.rename_sub, opts("Rename: Omit Filename"))
 			vim.keymap.set("n", "<C-t>", api.node.open.tab, opts("Open: New Tab"))
@@ -35,8 +35,8 @@ return {
 			vim.keymap.set("n", "]c", api.node.navigate.git.next, opts("Next Git"))
 			vim.keymap.set("n", "d", api.fs.remove, opts("Delete"))
 			vim.keymap.set("n", "D", api.fs.trash, opts("Trash"))
-			vim.keymap.set("n", "E", api.tree.expand_all, opts("Expand All"))
-			vim.keymap.set("n", "e", api.fs.rename_basename, opts("Rename: Basename"))
+			-- vim.keymap.set("n", "E", api.tree.expand_all, opts("Expand All"))
+			-- vim.keymap.set("n", "e", api.fs.rename_basename, opts("Rename: Basename"))
 			vim.keymap.set("n", "]e", api.node.navigate.diagnostics.next, opts("Next Diagnostic"))
 			vim.keymap.set("n", "[e", api.node.navigate.diagnostics.prev, opts("Prev Diagnostic"))
 			vim.keymap.set("n", "F", api.live_filter.clear, opts("Clean Filter"))
