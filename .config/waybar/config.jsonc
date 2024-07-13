@@ -1,0 +1,37 @@
+{
+	"modules-left": [
+		"hyprland/workspaces"
+	],
+	"modules-center": [
+		"clock"
+	],
+	"modules-right": [
+		"pulseaudio",
+		"network"
+	],
+	"network": {
+		"format-wifi": "{essid}  ",
+		"format-ethernet": "{ifname} ",
+		"tooltip-format": "{ifname} via {gwaddr}",
+		"format-disconnected": "Disconnected ⚠",
+		"max-length": 50
+	},
+	"clock": {
+		"tooltip-format": "<big>{:%Y %B}</big>\n<tt>{calendar}</tt>",
+		"format": "{:%D - %A - %H:%M}",
+		"format-alt": "{:%D - %A - %H:%M:%S}"
+	},
+	"pulseaudio": {
+		"format": "{icon}  {volume}%",
+		"format-icons": {
+			"headphone": "",
+			"hands-free": "",
+			"headset": "",
+			"default": [
+				"",
+				"",
+				""
+			]
+		}
+	}
+}
