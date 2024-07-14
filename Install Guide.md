@@ -1,71 +1,230 @@
 # Install Guide
 
-Before proceeding to install anything, firstly make sure your system is completely update to it's respective latest version.
-<br></br>
-Please follow the steps in order and as they are mentioned below. ^\_^
-
 ## WSL(System Drive)
 
-1. Open **Turn Windows Features on or off**
-2. A dialog box will open, turn on **Virtual Machine Platform** and **Windows Subsystem For Linux** and click Ok.
+1. Open `Turn Windows Features on or off`
+2. A dialog box will open, turn on `Virtual Machine Platform` and `Windows Subsystem For Linux` and click Ok.
 3. Restart your computer.
-4. Open Microsoft Store and install Ubuntu.
-5. Install [wsl2kernel](https://aka.ms/wsl2kernel)
-6. Restart Your Computer
-7. Either open **Ubuntu** straight up by searching it or open it through Windows Terminal.
-8. Setup your profile and follow the next steps.
+4. Install [wsl2kernel](https://aka.ms/wsl2kernel)
+5. Restart your computer.
 
 ## WSL(Other Drive)
 
-> NOTE: Only Use This Method If You Havnt Already Installed Any WSL Distro On Your System
-
-1. Make a folder called **WSL** in whichever directory you want.
+1. Make a folder called `WSL` in whichever directory you want.
 2. Make a another folder and name it to the name of distro that you want to install.
-3. Go to [this](https://learn.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions) page and download whichever distro you want.
-4. Extract the downloaded file. You will see many files, just extract the the file with **x64** in its name into a new folder.
-5. Make sure there is a .tar.gz file in that folder.
-6. Run the Following command to install WSL on that drive:-
+3. Go to [this](https://learn.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions) page and download whichever distro you want. You can also download any other WSL compatible distro than mentioned in this list if you want, all you need is the `.tar.gz` file to install a distro.
+4. Exract the contents of the downloaded file untill you see the `.tar.gz`
+5. Move that `.tar.gz` file into the base of the distro folder that you created in the `WSL` directory.
+6. Run the Following command to install WSL on that drive.
 
-```
-wsl --import Name_For_Distro "/location/where/you/want/to/install/it" "path/to/.tar.gz/file"
-```
+   ```
+   wsl --import Name_For_Distro "/location/where/you/want/to/install/it" "path/to/.tar.gz/file"
+   ```
 
-7. Run `wsl -d Name_For_Distro` to start the WSL.
+7. Run `wsl -d Name_For_Distro` to start your WSL distro.
 
-### For Arch Linux
+### Arch WSL
 
-If you are installing Arch linux on WSL then you need to do some additional setup before using it. You can follow the following steps:-
+If you are installing Arch linux on WSL then you need to do some additional setup before using it. You can follow the following steps.
 
-1. Now we need to setup a main user for the WSL distro. Firstly run `EDITOR=vim visudo` to enter the user config file.
+1. Now we need to setup a main user for the WSL distro. Run the following command.
+   ```sh
+   EDITOR=vim visudo
+   ```
 2. Now uncomment the line `%wheel ALL=(ALL:ALL) NOPASSWD: ALL`
-3. Now run `useradd -m -G wheel {user}` to add the user to wheel group that we just configured.
-4. Now exit Arch from WSL using `exit` command enter again via `wsl -u {user} -d Name_For_Distro` command.
+3. Now run following command to add the user to wheel group that we just configured.
+   ```sh
+   useradd -m -G wheel {user}
+   ```
+4. Now exit Arch from WSL using `exit` command and enter again via the following command to start WSL with specific user.
+   ```sh
+   wsl -u {user} -d Name_For_Distro
+   ```
 5. Now lets setup keyring for Arch linux. Run `sudo pacman-key --init` to initialise the keyring.
 6. Run `sudo pacman-key --populate` to append all the necesaary keys to the keyring and after that run `sudo pacman -S archlinux-keyring` to finsih the setup. It can take some while to install the keyring.
 7. Now make sure to run `sudo pacman -Syyu` to upgrade the whole system.
    <br>
    Now you can use Arch linux on WSL as you please.
 
-## Git
+## Linux Shell
 
-In order to install git run the following commands if you are on Ubuntu:-
+Before we do anything, we need to setup our shell.<br/>
 
-1. `sudo apt remove git`
-2. `sudo apt autoremove`
-3. `sudo add-apt-repository ppa:git-core/ppa -y`
-4. `sudo apt-get update`
-5. `sudo apt-get install git -y`
+> Make sure you have [git](https://git-scm.com/) installed on your system.
 
-If you are on Arch based ditribution then run `sudo pacman -S git` command.
+1. You can install [zsh](<https://en.wikipedia.org/wiki/Z_shell#:~:text=The%20Z%20shell%20(Zsh)%20is,Z%20shell>) by running following command
+   > When you are asked for the shell, just enter `/bin/zsh`
+   ```sh
+   sudo pacman -S zsh && \
+   chsh
+   ```
+2. Make sure to delete any previous `~/.zshrc` files from your home directory.
+3. You can install the needed packages by running the following commands
+   ```sh
+   sudo pacman -S exa fd fzf stow starship curl unzip ripgrep python-virtualenv
+   ```
+   ```sh
+   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+   ```
+   ```sh
+   git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+   ```
+4. Now you need to clone my dotfiles repo into the home(~) directory of your linux system, cd into that directory and run the following command.
+   ```sh
+   stow .
+   ```
+5. Now just run the following command to source everything that we just installed.
+   ```sh
+   source ~/.zshrc
+   ```
 
-## Fonts
+## Yay
 
-The font that I use is the beautifull Appel's SF Mono font patched with nerd font patcher. It is called [SF Mono Nerd Font](https://github.com/epk/SF-Mono-Nerd-Font). <br/>
-I also use, JetBrainsMono Nerd Font patched with [font-patcher](https://github.com/ryanoasis/nerd-fonts/blob/master/readme.md#font-patcher).
+[yay](https://github.com/Jguer/yay) is an AUR helper for arch linux. It is pretty awesome and has the 2nd largest storage of latest packages after Nix.<br/>
+To install it just the following command
+
+```sh
+git clone https://aur.archlinux.org/yay-bin && \
+cd yay-bin && \
+makepkg -si
+```
+
+## Get the best Arch Linux mirrors
+
+1. Make sure you have [yay](https://github.com/Jguer/yay) installed on your system
+2. Following command installs the [rate-mirrors](https://github.com/westandskif/rate-mirrors) package
+   ```sh
+   yay -S rate-mirrors-bin
+   ```
+3. Following command fetches the best servers according to your location and then writes them to `/etc/pacman.d/mirrorlist`
+   ```sh
+   rate-mirrors arch | sudo tee /etc/pacman.d/mirrorlist
+   ```
+
+## Font
+
+It's always good to have a nice nerd font installed on your system. I use [Jet Brains Mono Nerd Font](https://www.nerdfonts.com/font-downloads) custom patched by [nerd font patcher](https://github.com/ryanoasis/nerd-fonts?tab=readme-ov-file#font-patcher).
+
+1. Install fontforge by using the following command
+   ```sh
+   yay -S fontforge
+   ```
+2. Create a folder name `FontPatcher` anywhere you like
+3. Go into that folder and run the following command
+   ```sh
+   curl -LO https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FontPatcher.zip && \
+   curl -LO https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip
+   ```
+4. Now run the following the following command to extract these
+   ```sh
+   mkdir -p JetBrains && \
+   unzip FontPatcher.zip && \
+   unzip -q JetBrainsMono.zip -d JetBrains
+   ```
+5. Now that we have all the files we need, just run the following command to patch the font
+   > For the name of the font, I personally like to use `JetBrainsMonoNLNerdFontComplete`
+   ```sh
+   fontforge -script font-patcher -c --name [name-that-you-want-for-font] ./JetBrains/JetBrainsMonoNLNerdFont-Regular.ttf
+   ```
+6. Now that we have the font ready, you can just run the following command to add it to your system's fonts
+   ```sh
+   sudo mkdir /usr/local/share/fonts && \
+   sudo mv [name-that-you-want-for-font] /usr/loacl/share/fonts
+   ```
+
+## Window Manager Setup
+
+You can follow this step according to the window manager that you have. My dotfiles are configured for [Hyprland](https://hyprland.org/) and [i3WM](https://i3wm.org/)
+
+<details>
+<summary>Hyprland</summary>
+
+> Make sure you have a `minimal` installation of Arch linux with no other window manager installed
+
+1. Install the dependencies
+   ```sh
+   yay -S base-devel cmake ninja meson wayland wayland-protocols libx11 libxkbcommon libinput pixman vulkan-icd-loader
+   ```
+2. Now according to your environment install and setup the needed drivers
+   <details>
+   <summary>Intel</summary>
+
+   ```sh
+   yay -S mesa intel-ucode vulkan-intel libva-intel-driver
+   ```
+
+   </details>
+   <details>
+   <summary>Virtual Box</summary>
+
+   ```sh
+   yay -S open-vm-tools xf86-video-vmware mesa virtualbox-guest-utils
+   ```
+
+   ```sh
+   sudo systemctl enable vmtoolsd.service && \
+   sudo systemctl start vmtoolsd.service && \
+   sudo systemctl enable vmware-vmblock-fuse.service && \
+   sudo systemctl start vmware-vmblock-fuse.service && \
+   sudo systemctl enable vboxservice.service && \
+   sudo systemctl start vboxservice.service
+   ```
+
+   </details>
+   <details>
+   <summary>Nvidia</summary>
+
+   > You are on your own.
+
+   </details>
+
+3. Install the audio drivers
+   ```sh
+   yay -S pipewire pipewire-pulse pipewire-alsa wireplumber
+   ```
+4. Install the required tools for a functional hyprland environment
+   ```sh
+   yay -S wayland-utils xdg-desktop-portal-hyprland dunst polkit-gnome wl-clipboard wlroots xorg-xwayland
+   ```
+5. Now we are going to install Hyprland itself
+   - If you are running a newer device
+     ```sh
+     yay -S hyprland-git
+     ```
+   - If you are running an old device then you need to build the hyprland from source using `legacryrenderer` build flag
+     ```sh
+     git clone --recursive https://github.com/hyprwm/Hyprland
+     ```
+     ```sh
+     cd Hyprland && \
+     make legacyrenderer && \
+     sudo cp ./build/Hyprland /usr/bin && \
+     sudo cp ./example/hyprland.desktop /usr/share/wayland-sessions
+     ```
+6. Now just run the following command to install my dotfiles related packages and applications
+   ```sh
+   yay -S waybar rofi-wayland alacritty wlsunset hyprpaper inotify-tools fastfetch cmatrix nyancat
+   ```
+7. You are all set, now you can just run the `Hyprland` command to start your Hyprland session and use the `Alt+m` keybind to exit that session whenever you want.
+
+</details>
+
+<details>
+<summary>i3WM</summary>
+
+> While installing Arch linux make sure to install `i3WM` window manager along with it.
+
+Just run the following command to install my dotfiles related packages and applications
+
+```sh
+yay -S rofi i3-gaps feh picom fastfetch cmatrix polybar alacritty redshift nyancat
+```
+
+</details>
 
 ## Powershell And Oh-My-Posh
 
-After installing **powershell** from Microsoft Store, open its config by using following command:-
+After installing **powershell** from Microsoft Store, open its config by using following command.
 
 ```shell
 notepad $PROFILE.CurrentUserCurrentHost
@@ -77,7 +236,7 @@ Now inside that file add the following code from [Microsoft.Powershell_Profile.p
 . $env:USERPROFILE\.config\powershell\user_profile.ps1
 ```
 
-Make sure that the current font in Windows Terminal is set to a [Nerd Font](https://www.nerdfonts.com/) in order to load all the icons and stuff. Now you can install the oh-my-posh using the following command:-
+Make sure that the current font in Windows Terminal is set to a [Nerd Font](https://www.nerdfonts.com/) in order to load all the icons and stuff. Now you can install the oh-my-posh using the following command.
 
 ```shell
 winget install JanDeDobbeleer.OhMyPosh -s winget
@@ -85,306 +244,87 @@ winget install JanDeDobbeleer.OhMyPosh -s winget
 
 Now you can refresh the Windows terminal config by either restarting it or running `.$PROFILE` command.
 
-## Oh-My-Zsh
+## Homebrew
 
-- Run `sudo apt install zsh` or `sudo pacman -S zsh` in order to install zsh.
-- Run `chsh` and enther the code `/bin/zsh` after entering your password. Now restart your terminal and hit 2 if asked to config.
-
-In order to install oh-my-zsh run the following command:-
-
-```shell
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-After doing that follow these steps to configure it:-
+## C++ Full Package
 
-- Install [exa](https://github.com/ogham/exa) using the command `sudo apt install exa` or `sudo pacman -S exa`
-- Install [zsh-users/zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) by running the following command:-
-
-```shell
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```sh
+yay -S gcc clang gdb cmake
 ```
 
-- Install [romkatv/powerlevel10k](https://github.com/romkatv/powerlevel10k) using the following command:-
+## Mise version manager
 
-```shell
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+[mise](https://mise.jdx.dev/) is an amazing way to both install and manage various version of various dev package.<br/>
+
+> You should refer to [mise documentation](https://mise.jdx.dev/getting-started.html) to properly understand how to use it
+
+You can install mise using the following command
+
+```sh
+curl https://mise.run | sh && \
 ```
 
-- Copy the [.zshrc](https://github.com/AxewBoTX/dotfiles-public/blob/main/zsh/.zshrc) from zsh folder into the Home directory or copy the code from it to the one that is already in your home directory.
-- After that just run `source ~/.zshrc`
-- Now you will be asked to configure powerlevel10 theme and if not then run `p10k configure` to configure it.
-- Now configure it according to your need.
-
-## NodeJs
-
-If you are on windows then you can just go to [NodeJS](https://nodejs.org/en) website and download whichever version you want from there. But if you are on Unix then you need to install [node-version-manager](https://github.com/nvm-sh/nvm) in order to install nodejs. You can install nvm using the following command:-
-
-```shell
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+```sh
+source ~/.zshrc
 ```
 
-After installing nvm run `source ~/.zshrc` and run the `nvm install latest` to install latest version or nodejs.
+Now just run the following command to install all the development tools with their specific versions as defined in my dotfiles
 
-## Yarn
-
-Just run the following command to install yarn:-
-
-```shell
-npm install --global yarn
+```sh
+mise install
 ```
 
-## Bun JS Runtime
+Now run the following commadn to install [yarn](https://yarnpkg.com/) and [live-server](https://www.npmjs.com/package/live-server)
 
-[Bun](https://bun.sh/) is a pretty damn fast Javascript runtime. It's like NodeJS but **wayyy** faster.<br>
-You can install Bun by running the following command:-
-
-```zsh
-curl -fsSL https://bun.sh/install | bash
+```sh
+npm install -g yarn live-server
 ```
 
-## C/C++ Full Package
+## Tmux
 
-In order to install all the C/C++ related things run the following command:-
-<br></br>
+You can install [tmux](https://github.com/tmux/tmux/wiki) via the command below
 
-- For Debian Based Systems
-
-```shell
-sudo apt install gcc g++ clang gdb cmake
+```sh
+yay -S tmux
 ```
 
-- For Arch Based Systems
+Then you need the [tmux plugin manager](https://github.com/tmux-plugins/tpm). You can install it using hte following command
 
-```shell
-sudo pacman -S gcc clang gdb cmake
+```sh
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
-## Java
-
-- If you are on windows then just go [Java Oracle](https://www.oracle.com/java/technologies/downloads/) website and download your desired version.
-  <br></br>
-
-- If You are on Debian Based System then in order to install java firstly download `x64 Debian Package` from [Java Oracle](https://www.oracle.com/java/technologies/downloads/) website and put it in the home directory. The run the following commands to install it and configure it:-
-
-```shell
-sudo apt install ~/jdk-19_linux-x64_bin.deb
-```
-
-This command will install Java 19 into your system.
-
-> NOTE:You can change the version according to your need.
-> Now run the follownig commands to configure it:-
-
-```shell
-sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk-19/bin/java 1
-```
-
-```shell
-sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk-19/bin/javac 1
-```
-
-```shell
-sudo update-alternatives --install /usr/bin/jar jar /usr/lib/jvm/jdk-19/bin/jar 1
-```
-
-Now run the following commands to update the shell according to Java 19:-
-
-```shell
-sudo update-alternatives --config java
-```
-
-```shell
-sudo update-alternatives --config javac
-```
-
-```shell
-sudo update-alternatives --config jar
-```
-
-- If you are on Arch Based System then run the following command to install java on your system:-
-
-```shell
-sudo pacman -S jre-openjdk jdk-openjdk
-```
-
-## Unzip
-
-It is just a required Linux dependancy for installation and functioning of various other programs on Linux.
-<br>
-You can run either `sudo apt install unzip` or `sudo pacman -S unzip` to install unzip on your System.
+Now just go run tmux and press `CTRl-s` followed by `SHIFT-i` to install the needed tmux packages.
 
 ## Rust
 
-If you are on a Linux Or Unix Based System then you can run the following command to install [Rust](https://www.rust-lang.org/) on your system:-
+You can install rust using the following command
 
-```shell
+```sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-If you are on Windows then you can download [Rust Installer](https://static.rust-lang.org/rustup/dist/i686-pc-windows-gnu/rustup-init.exe) to install rust on your system.
+Run the below command to install various important cargo packages that come in handy.
 
-## Deno
-
-Yes, it's name is [Deno](https://deno.land/). It is a modern runtime for Javascript and Typescript.
-<br>
-If you are Arch Based System then you can run the following command to install Deno:-
-
-```shell
-sudo pacman -S deno
-```
-
-If you are on Debian Based System then you can run the following command to install Deno:-
-
-```shell
-curl -fsSL https://deno.land/x/install/install.sh | sh
-```
-
-If you are on Windows then you can run the following command to install Deno:-
-
-> NOTE: This command only works on [Powershell](https://learn.microsoft.com/en-us/powershell/)
-
-```shell
-irm https://deno.land/install.ps1 | iex
+```sh
+cargo install sccache bacon cargo-info cargo-update
 ```
 
 ## Neovim
 
-In order to install Neovim run the following commands:-
-<br></br>
+[Neovim](https://neovim.io/) is an amazing code editor.
+You can install it using the following command:-
 
-- Debian Based Systems
-  <br></br>
-  `sudo add-apt-repository ppa:neovim-ppa/unstable`
-  <br></br>
-  `sudo apt-get update`
-  <br></br>
-  `sudo apt-get install neovim`
-  <br></br>
+> You also need to install [lazygit](https://github.com/jesseduffield/lazygit) for [lazygit.nvim](https://github.com/kdheepak/lazygit.nvim) plugin to work
 
-- Arch Based Systems
-
-```shell
-sudo pacman -S neovim
+```sh
+yay -S neovim lazygit
 ```
 
-You are going to need to install python,gcc and nodejs before configuring Neovim.
-<br>
-In order to install [Packer](https://github.com/wbthomason/packer.nvim) run the following commands:-
-<br></br>
-On Windows:-
+Now you just need to run neovim and it will install everything automatically.<br/>
 
-```shell
-git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
-```
-
-On Unix,Linux:-
-
-```shell
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\
- ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-```
-
-Now install jdtls using the following command(Unix only):-
-
-```shell
-curl https://raw.githubusercontent.com/eruizc-dev/jdtls-launcher/master/install.sh | bash
-```
-
-Check out [eruizc-dev/jdtls-launcher](https://github.com/eruizc-dev/jdtls-launcher) for info on how to install jdtls on other OS.
-<br></br>
-
-After installing the required things and the rquired version neovim, follow these steps to setup Neovim:-
-
-- Open Neovim by using nvim command. This will start a process that will install some required things. Let it finish.
-- After that is finished you can just use `:PackerInstall` in Neovim to install Neovim plugins.
-- After all the plugins are installed, just do `:PackerSync` to make sure all the plugins are up to date.
-  <br></br>
-  Now you can just use Neovim as you please.
-
-## Tmux
-
-In order to install [Tmux](https://github.com/tmux/tmux/wiki) run `sudo apt-install tmux` or `sudo pacman -S tmux`
-<br><br>
-
-After installing tmux copy the [.tmux.conf](https://github.com/AxewBoTX/dotfiles-public/blob/main/tmux/.tmux.conf) into your Home directory or copy the code from it into the .tmux.conf file in your Home directory. After that just follow the following steps to setup Tmux:-
-
-- Launch tmux using `tmux` command.
-- Run `tmux source-file ~/.tmux.conf` command.
-- Install [tmux-plugins/tpm](https://github.com/tmux-plugins/tpm) using following command:-
-
-```shell
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-```
-
-- Run `tmux source-file ~/.tmux.conf` command.
-- Exit tmux using `exit` command and enter it again using `tmux command`
-- Press `<Ctrl-s>` then `<Shift-i>` keys to install the plugins, this can take some time and nothing will show up on your screen for some time, you must wait atleast 2 mins for it install plugins. If it takes alot of time then exit tmux then repeat the process.
-- Now exit tmux and restart your Terminal.
-
-## Rofi
-
-You can install rofi using the following command based on your OS:-
-
-- Debian Based Systems: `sudo apt install rofi`
-- Arch Based Systems: `sudo pacman -S rofi`
-
-## i3WM
-
-i3WM is a [Tiling Window Manager](https://en.wikipedia.org/wiki/Tiling_window_manager) for Linux based operating systems.
-<br></br>
-You can install it on your respective system by following these simple steps: -
-
-- If you are on a Debian Based System then you can refer to [this](https://youtu.be/j1I63wGcvU4) YouTube video for installing i3WM on your system.
-- For Arch Based Systems you can also follow the same video but using Arch based commands.
-
-<br>
-After installing i3WM there are various small things that need to be installed. You can install them using the following commands:-
-
-- For Arch Based Systems:-
-
-```shell
-sudo pacman -S i3-gaps feh picom
-```
-
-## Polybar
-
-[Polybar](https://github.com/polybar/polybar) is just a statusbar for Linux Based Operating Systems. You can run the following command to to install it on your respective systems:-
-
-- For Debain Based Systems run `sudo apt install polybar`
-- For Arch Based Systems run `sudo pamcan -S polybar`
-
-## Alacritty
-
-[Alacritty](https://github.com/alacritty/alacritty) is a Open Source Terminal for multiple Operating Systems. You can follow the fowlloing steps to install Alacritty on your respecting Systems:-
-
-- For Windows you can go to [Alacritty](https://alacritty.org/) website and following it's installation instructions to install Alacritty.
-- For Debian Based Systems you can follow the instructions on [Alacritty's Repo](https://github.com/alacritty/alacritty/blob/master/INSTALL.md) respective to your system.
-- For Arch Based Systems you just run the following command:-
-
-```shell
-sudo pacman -S alacritty
-```
-
-## Misc (Not Much Usefull Stuff)
-
-### Neofetch
-
-Run either `sudo apt install neofetch` or `sudo pacman -S neofetch` to install Neofetch.
-
-### Cmatrix
-
-Run either `sudo apt install cmatrix` or `sudo pacman -S cmatrix` to install cmatrix.
-
-## Other Stuff
-
-I use various software in my daily life for programming and productivity purposes. These are as follows:-
-
-- [Windows Terminal](https://github.com/microsoft/terminal) - The best terminal for windows.
-- [Powershell](https://github.com/PowerShell/PowerShell) - Command line shell specifically for Windows.
-- [Gimp](https://www.gimp.org/) - Free and Opensource alternative to Adobe Photoshop.
-- [Davinci Resolve](https://www.blackmagicdesign.com/in/products/davinciresolve) - Opensouce alternative for Adobe Premier Pro and After Effects.
-- [Brave](https://brave.com/en-in/) - A seriously better and private browser with built-in adblocker.
-- [OBS](https://obsproject.com/) - Open source video recording or streaming software.
-- [Draw.io](https://www.drawio.com/) - Free diagraming and planning software.
-- [Lunacy](https://icons8.com/lunacy) - Free and Better alternative to Figma.
+> NOTE: It may take some time for it to install things so have some patience.
