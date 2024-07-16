@@ -4,8 +4,5 @@ return {
 	"MunifTanjim/nui.nvim",
 	"nvim-lua/popup.nvim",
 	"kyazdani42/nvim-web-devicons",
-	"stevearc/dressing.nvim", --Better UI
-	{ "sudormrfbin/cheatsheet.nvim", keys = {
-		{ "cs", "<cmd>Cheatsheet <CR>" },
-	} },
+	"stevearc/dressing.nvim",
 }

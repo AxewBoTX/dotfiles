@@ -1,13 +1,6 @@
-* {
-    bg-col:  #11111b;
-    bg-col-light: #11111b;
-    border-col: #1e1e2e;
-    selected-col: #1e1e2e;
-    blue: #89b4fa; 
-	fg-col: #cdd6f4;
-    fg-col2: #f38ba8;
-    grey: #6c7086;
+@import "colors"
 
+* {
     width: 600;
     font: "JetBrainsMonoNLNerdFontComplete 14";
 }
@@ -20,25 +13,25 @@ element-text, element-icon , mode-switcher {
 window {
     height: 360px;
     border: 3px;
-    border-color: @border-col;
-    background-color: @bg-col;
+    border-color: @color2;
+    background-color: @background;
 }
 
 mainbox {
-    background-color: @bg-col;
+    background-color: @background;
 }
 
 inputbar {
     children: [prompt,entry];
-    background-color: @bg-col;
+    background-color: @background;
     border-radius: 5px;
     padding: 2px;
 }
 
 prompt {
-    background-color: @blue;
+    background-color: @color3;
     padding: 6px;
-    text-color: @bg-col;
+    text-color: @foreground;
     border-radius: 3px;
     margin: 20px 0px 0px 20px;
 }
@@ -51,8 +44,8 @@ textbox-prompt-colon {
 entry {
     padding: 6px;
     margin: 20px 0px 0px 10px;
-    text-color: @fg-col;
-    background-color: @bg-col;
+    text-color: @color7;
+    background-color: @background;
 }
 
 listview {
@@ -61,13 +54,13 @@ listview {
     margin: 10px 0px 0px 20px;
     columns: 1;
     lines: 5;
-    background-color: @bg-col;
+    background-color: @background;
 }
 
 element {
     padding: 5px;
-    background-color: @bg-col;
-    text-color: @fg-col  ;
+    background-color: @background;
+    text-color: @color7;
 }
 
 element-icon {
@@ -75,8 +68,8 @@ element-icon {
 }
 
 element selected {
-    background-color:  @selected-col ;
-    text-color: @fg-col2  ;
+    background-color:  @color2;
+    text-color: #ffffff;
 }
 
 mode-switcher {
@@ -85,19 +78,19 @@ mode-switcher {
 
 button {
     padding: 10px;
-    background-color: @bg-col-light;
-    text-color: @grey;
-    vertical-align: 0.5; 
+    background-color: @background;
+    text-color: @color4;
+    vertical-align: 0.5;
     horizontal-align: 0.5;
 }
 
 button selected {
-  background-color: @bg-col;
-  text-color: @blue;
+  background-color: @background;
+  text-color: @color3;
 }
 
 message {
-    background-color: @bg-col-light;
+    background-color: @background;
     margin: 2px;
     padding: 2px;
     border-radius: 5px;
@@ -106,6 +99,6 @@ message {
 textbox {
     padding: 6px;
     margin: 20px 0px 0px 20px;
-    text-color: @blue;
-    background-color: @bg-col-light;
+    text-color: @color3;
+    background-color: @background;
 }

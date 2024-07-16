@@ -9,4 +9,4 @@ configuration{
     hide-scrollbar: true;
 }
 
-@theme "~/.config/rofi/cp.rasi"
+@theme "theme"
