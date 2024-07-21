@@ -22,7 +22,7 @@ window#waybar {
   margin: 2px 0 0 0;
 }
 .modules-left {
-  margin: 2px 0 0 5px;
+  margin: 2px 0 0 10px;
   background-color: @section_background;
 }
 

@@ -1,9 +1,9 @@
 {
 	"modules-left": [
-		"hyprland/workspaces"
+		"clock"
 	],
 	"modules-center": [
-		"clock"
+		"hyprland/workspaces"
 	],
 	"modules-right": [
 		"pulseaudio",
