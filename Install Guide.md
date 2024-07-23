@@ -184,23 +184,36 @@ You can follow this step according to the window manager that you have. My dotfi
    ```
 4. Install the required tools for a functional hyprland environment
    ```sh
-   yay -S wayland-utils xdg-desktop-portal-hyprland dunst polkit-gnome wl-clipboard wlroots xorg-xwayland
+   yay -S wayland-utils xdg-desktop-portal-hyprland dunst polkit-gnome wl-clipboard wlroots xorg-xwayland hyprcursor hyprutils
    ```
 5. Now we are going to install Hyprland itself
+
+   > [!Important]
+   > Hyprland moved from [wlroots](https://gitlab.freedesktop.org/wlroots/wlroots) to [aquamarine](https://github.com/hyprwm/aquamarine) recently but for me, aquamarine is not working properly and the hyprland version **0.41.2** is the latest release that uses wlroots instead of aquamarine
+
    - If you are running a newer device
+     > [!Note]
+     > If aquamarine is not working for you, then you can follow the next old-device guide and while building hyprland, instead of running `make lagacyrenderer` just run `make all`
      ```sh
      yay -S hyprland-git
      ```
    - If you are running an old device then you need to build the hyprland from source using `legacryrenderer` build flag
+
      ```sh
-     git clone --recursive https://github.com/hyprwm/Hyprland
+     CURL -LO https://github.com/hyprwm/Hyprland/releases/download/v0.41.2/source-v0.41.2.tar.gz
      ```
+
      ```sh
-     cd Hyprland && \
+     tar -xvzf source-v0.41.2.tar.gz
+     ```
+
+     ```sh
+     cd hyprland-source && \
      make legacyrenderer && \
-     sudo cp ./build/Hyprland /usr/bin && \
+     sudo cp ./build/Hyprland ./build/hyprctl/hyprctl /usr/bin && \
      sudo cp ./example/hyprland.desktop /usr/share/wayland-sessions
      ```
+
 6. Now just run the following command to install my dotfiles related packages and applications
    ```sh
    yay -S waybar rofi-wayland alacritty wlsunset hyprpaper inotify-tools fastfetch cmatrix nyancat
