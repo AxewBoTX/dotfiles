@@ -6,8 +6,8 @@ return {
 		conform.setup({
 			formatters_by_ft = {
 				lua = { "stylua", stop_after_first = true },
-				python = { "isort", "black", stop_after_first = true },
-				go = { "golines", "goimports-reviser", stop_after_first = true },
+				python = { "isort", "black", stop_after_first = false },
+				go = { "golines", "goimports-reviser", stop_after_first = false },
 				cpp = { "clang-format", stop_after_first = true },
 				javascript = { "prettier", "prettierd", stop_after_first = true },
 				typescript = { "prettier", "prettierd", stop_after_first = true },
