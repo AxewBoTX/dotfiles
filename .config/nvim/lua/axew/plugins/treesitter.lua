@@ -34,6 +34,7 @@ return {
 				"toml",
 				"http",
 				"json",
+				"hyprlang",
 			},
 			highlight = {
 				enable = true,

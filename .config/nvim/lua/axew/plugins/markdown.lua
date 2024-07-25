@@ -3,6 +3,10 @@ return {
 	name = "render-markdown",
 	dependencies = { "nvim-treesitter/nvim-treesitter" },
 	config = function()
-		require("render-markdown").setup({})
+		require("render-markdown").setup({
+			pipe_table = {
+				enabled = false,
+			},
+		})
 	end,
 }

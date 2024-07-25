@@ -9,6 +9,20 @@
 		"pulseaudio",
 		"network"
 	],
+	"hyprland/workspaces": {
+		"format": "{icon}",
+		"format-icons": {
+			"urgent": "",
+			"default": "",
+			"active": ""
+		},
+		"persistent-workspaces": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": []
+		}
+	},
 	"network": {
 		"format-wifi": "{essid}  ",
 		"format-ethernet": "{ifname} ",
@@ -23,6 +37,7 @@
 	},
 	"pulseaudio": {
 		"format": "{icon}  {volume}%",
+		"format-muted": "",
 		"format-icons": {
 			"headphone": "",
 			"hands-free": "",

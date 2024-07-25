@@ -20,6 +20,7 @@ window#waybar {
 .modules-center {
   background-color: @section_background;
   margin: 2px 0 0 0;
+  padding-right: 5px;
 }
 .modules-left {
   margin: 2px 0 0 10px;
