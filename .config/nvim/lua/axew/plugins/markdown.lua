@@ -7,6 +7,9 @@ return {
 			pipe_table = {
 				enabled = false,
 			},
+			latex = {
+				enabled = false,
+			},
 		})
 	end,
 }

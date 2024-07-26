@@ -294,7 +294,7 @@ mise install
 Now run the following commadn to install [yarn](https://yarnpkg.com/) and [live-server](https://www.npmjs.com/package/live-server)
 
 ```sh
-npm install -g yarn live-server
+npm install -g yarn live-server tree-sitter-cli
 ```
 
 ## Tmux
@@ -335,7 +335,7 @@ You can install it using the following command:-
 > You also need to install [lazygit](https://github.com/jesseduffield/lazygit) for [lazygit.nvim](https://github.com/kdheepak/lazygit.nvim) plugin to work
 
 ```sh
-yay -S neovim lazygit
+yay -S neovim lazygit python-pylatexenc
 ```
 
 Now you just need to run neovim and it will install everything automatically.<br/>

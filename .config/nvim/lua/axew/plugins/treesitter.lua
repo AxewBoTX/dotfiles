@@ -35,6 +35,7 @@ return {
 				"http",
 				"json",
 				"hyprlang",
+				"latex",
 			},
 			highlight = {
 				enable = true,
