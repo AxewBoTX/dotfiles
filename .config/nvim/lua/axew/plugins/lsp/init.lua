@@ -78,7 +78,7 @@ return {
 
 		--Servers Setup
 		for _, server in pairs(servers) do
-			if server == "lua_ls" then
+			if server == "lua_ls" or server == "rust_analyzer" then
 				goto continue
 			end
 			lsp_config[server].setup({
@@ -87,6 +87,27 @@ return {
 			})
 			::continue::
 		end
+
+		-- rust_analyzer setup
+		lsp_config.rust_analyzer.setup({
+			on_attach = on_attach,
+			capabilities = capabilities,
+			settings = {
+				["rust-analyzer"] = {
+					imports = {
+						merge = {
+							glob = false,
+						},
+					},
+					lru = {
+						capacity = 512,
+					},
+					files = {
+						excludeDirs = { "target", "node_modules" },
+					},
+				},
+			},
+		})
 
 		--Lua Setup
 		lsp_config.lua_ls.setup({
