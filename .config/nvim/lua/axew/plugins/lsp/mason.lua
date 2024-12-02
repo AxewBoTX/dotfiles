@@ -22,7 +22,7 @@ return {
 				"cssls",
 				"jsonls",
 				"pyright",
-				"tsserver",
+				"ts_ls",
 				"eslint",
 				"html",
 				"htmx",
