@@ -1,0 +1,104 @@
+@import "colors"
+
+* {
+    width: 600;
+    font: "JetBrainsMonoNLNerdFontComplete 14";
+}
+
+element-text, element-icon , mode-switcher {
+    background-color: inherit;
+    text-color:       inherit;
+}
+
+window {
+    height: 360px;
+    border: 3px;
+    border-color: @color2;
+    background-color: @background;
+}
+
+mainbox {
+    background-color: @background;
+}
+
+inputbar {
+    children: [prompt,entry];
+    background-color: @background;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+prompt {
+    background-color: @color3;
+    padding: 6px;
+    text-color: @foreground;
+    border-radius: 3px;
+    margin: 20px 0px 0px 20px;
+}
+
+textbox-prompt-colon {
+    expand: false;
+    str: ":";
+}
+
+entry {
+    padding: 6px;
+    margin: 20px 0px 0px 10px;
+    text-color: @color7;
+    background-color: @background;
+}
+
+listview {
+    border: 0px 0px 0px;
+    padding: 6px 0px 0px;
+    margin: 10px 0px 0px 20px;
+    columns: 1;
+    lines: 5;
+    background-color: @background;
+}
+
+element {
+    padding: 5px;
+    background-color: @background;
+    text-color: @color7;
+}
+
+element-icon {
+    size: 25px;
+}
+
+element selected {
+    background-color:  @color2;
+    text-color: #ffffff;
+}
+
+mode-switcher {
+    spacing: 0;
+  }
+
+button {
+    padding: 10px;
+    background-color: @background;
+    text-color: @color4;
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+}
+
+button selected {
+  background-color: @background;
+  text-color: @color3;
+}
+
+message {
+    background-color: @background;
+    margin: 2px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+textbox {
+    padding: 6px;
+    margin: 20px 0px 0px 20px;
+    text-color: @color3;
+    background-color: @background;
+}

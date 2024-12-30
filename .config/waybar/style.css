@@ -1,0 +1,58 @@
+@import "./theme.css";
+
+* {
+  border: none;
+  font-family: JetBrainsMonoNLNerdFontComplete;
+  font-size: 16px;
+  color: @foreground;
+  border-radius: 10px;
+}
+
+window#waybar {
+  background: @bar_background;
+}
+
+/*-----module groups----*/
+.modules-right {
+  background-color: @section_background;
+  margin: 2px 10px 0 0;
+}
+.modules-center {
+  background-color: @section_background;
+  margin: 2px 0 0 0;
+  padding-right: 5px;
+}
+.modules-left {
+  margin: 2px 0 0 10px;
+  background-color: @section_background;
+}
+
+#workspaces button {
+  padding: 1px 5px;
+}
+#workspaces button:hover {
+  box-shadow: inherit;
+  box-shadow: inherit;
+  text-shadow: inherit;
+  background: @bar_background;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#custom-power,
+#custom-menu,
+#idle_inhibitor {
+  padding: 0 10px;
+}
+
+#pulseaudio.muted {
+  color: #cc3436;
+}

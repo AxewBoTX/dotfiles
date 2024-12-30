@@ -1,0 +1,57 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "background": "#FFFFFF",
+          "foreground": "#000000",
+          "leading_diamond": "\ue0b6",
+          "properties": {
+            "style": "folder"
+          },
+          "style": "diamond",
+          "template": " \ue5ff {{ .Path }} ",
+          "trailing_diamond": "\ue0b0",
+          "type": "path"
+        },
+        {
+          "background": "#FFFFFF",
+          "foreground": "#000000",
+          "powerline_symbol": "\ue0b0",
+          "properties": {
+            "fetch_stash_count": true,
+            "fetch_upstream_icon": true
+          },
+          "style": "powerline",
+          "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
+          "type": "git"
+        },
+        {
+          "background": "#000000",
+          "foreground": "#FFFFFF",
+          "powerline_symbol": "\ue0b0",
+          "style": "powerline",
+          "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
+          "type": "python"
+        },
+        {
+          "background": "#FFFFFF",
+          "foreground": "#000000",
+          "powerline_symbol": "\ue0b0",
+          "style": "powerline",
+          "template": " \uf0e7 ",
+          "type": "root"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "transient_prompt": {
+	  "background": "transparent",	
+	  "foreground": "#ffffff"
+  },
+  "final_space": true,
+  "version": 2
+}

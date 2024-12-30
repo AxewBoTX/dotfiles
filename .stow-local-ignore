@@ -1,0 +1,10 @@
+/.gitignore
+/.git
+.*\.md$
+/.apps
+/nixos
+/justfile
+/home.nix
+/flake.nix
+/flake.lock
+

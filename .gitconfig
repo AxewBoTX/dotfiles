@@ -1,0 +1,7 @@
+[user]
+	name = AxewBoTX
+	email = lovedeepbrar54155@gmail.com
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim

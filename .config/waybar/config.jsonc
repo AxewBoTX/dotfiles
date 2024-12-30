@@ -1,0 +1,52 @@
+{
+	"modules-left": [
+		"clock"
+	],
+	"modules-center": [
+		"hyprland/workspaces"
+	],
+	"modules-right": [
+		"pulseaudio",
+		"network"
+	],
+	"hyprland/workspaces": {
+		"format": "{icon}",
+		"format-icons": {
+			"urgent": "",
+			"default": "",
+			"active": ""
+		},
+		"persistent-workspaces": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": []
+		}
+	},
+	"network": {
+		"format-wifi": "{essid}  ",
+		"format-ethernet": "{ifname} ",
+		"tooltip-format": "{ifname} via {gwaddr}",
+		"format-disconnected": "Disconnected ⚠",
+		"max-length": 50
+	},
+	"clock": {
+		"tooltip-format": "<big>{:%Y %B}</big>\n<tt>{calendar}</tt>",
+		"format": "{:%D - %A - %H:%M}",
+		"format-alt": "{:%D - %A - %H:%M:%S}"
+	},
+	"pulseaudio": {
+		"format": "{icon}  {volume}%",
+		"format-muted": "",
+		"format-icons": {
+			"headphone": "",
+			"hands-free": "",
+			"headset": "",
+			"default": [
+				"",
+				"",
+				""
+			]
+		}
+	}
+}
