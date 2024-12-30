@@ -37,6 +37,7 @@ return {
 				"hyprlang",
 				"latex",
 				"nix",
+				"just",
 			},
 			highlight = {
 				enable = true,

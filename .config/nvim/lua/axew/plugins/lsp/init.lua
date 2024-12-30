@@ -59,12 +59,10 @@ return {
 			"lua_ls",
 			"clangd",
 			"cssls",
-			"jsonls",
 			"pyright",
 			"ts_ls",
 			"eslint",
 			"html",
-			"htmx",
 			"svelte",
 			"rust_analyzer",
 			"tailwindcss",
@@ -73,7 +71,7 @@ return {
 			"zls",
 			"astro",
 			"templ",
-			"yamlls",
+			"nil_ls",
 		}
 
 		--Servers Setup

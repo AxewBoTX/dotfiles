@@ -8,7 +8,7 @@ in
   news.display = "silent";
 
   home.packages = with pkgs; [
-    zsh which eza fd fzf starship curl unzip ripgrep virtualenv 
+    zsh which eza fd fzf starship curl unzip ripgrep virtualenv openssh
     fontforge 
     clang gdb cmake 
     nodejs go bun deno live-server
