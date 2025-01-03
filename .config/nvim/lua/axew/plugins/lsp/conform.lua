@@ -21,7 +21,6 @@ return {
 				markdown = { "prettier", "prettierd", stop_after_first = true },
 				graphql = { "prettier", "prettierd", stop_after_first = true },
 				astro = { "prettier", "prettierd", stop_after_first = true },
-				rust = { "ast-grep", stop_after_first = true },
 				nix = { "nixpkgs-fmt", stop_after_first = true },
 			},
 			format_on_save = {

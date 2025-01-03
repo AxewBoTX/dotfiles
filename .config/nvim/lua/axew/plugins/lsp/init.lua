@@ -72,11 +72,12 @@ return {
 			"astro",
 			"templ",
 			"nil_ls",
+			"bacon-ls",
 		}
 
 		--Servers Setup
 		for _, server in pairs(servers) do
-			if server == "lua_ls" or server == "rust_analyzer" then
+			if server == "lua_ls" or server == "rust_analyzer" or server == "bacon-ls" then
 				goto continue
 			end
 			lsp_config[server].setup({
@@ -86,12 +87,24 @@ return {
 			::continue::
 		end
 
+		-- bacon-ls setup
+		lsp_config.bacon_ls.setup({
+			init_options = {
+				updateOnSave = true,
+				updateOnSaveWaitMillis = 1000,
+				updateOnChange = false,
+			},
+		})
+
 		-- rust_analyzer setup
 		lsp_config.rust_analyzer.setup({
 			on_attach = on_attach,
 			capabilities = capabilities,
 			settings = {
 				["rust-analyzer"] = {
+					diagnostics = {
+						enable = false,
+					},
 					imports = {
 						merge = {
 							glob = false,
