@@ -1,4 +1,4 @@
-{ lib, pkgs, flake_inputs, ... }:
+{ pkgs, flake_inputs, ... }:
 let
   username = "axew";
 in
