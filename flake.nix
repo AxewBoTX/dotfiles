@@ -8,8 +8,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     minimal-tmux = {
-	    url = "github:niksingh710/minimal-tmux-status";
-	    inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:niksingh710/minimal-tmux-status";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
   outputs = { nixpkgs, home-manager, flake-utils, ... }@inputs:
@@ -22,12 +22,12 @@
       homeConfigurations = {
         axew = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
-	  extraSpecialArgs = {
-	  	flake_inputs = inputs;
-	  };
-          modules = [ 
-	  ./home.nix 
-	  ];
+          extraSpecialArgs = {
+            flake_inputs = inputs;
+          };
+          modules = [
+            ./home.nix
+          ];
         };
       };
     };
