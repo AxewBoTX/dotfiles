@@ -8,11 +8,11 @@ in
   news.display = "silent";
 
   imports = [
-	./home/starship.nix
-	./home/tmux.nix
-	./home/zsh.nix
-	flake_inputs.nixvim.homeManagerModules.nixvim
-	./home/nixvim
+    ./home/starship.nix
+    ./home/tmux.nix
+    ./home/zsh.nix
+    flake_inputs.nixvim.homeManagerModules.nixvim
+    ./home/nixvim
   ];
 
   home.packages = with pkgs; [

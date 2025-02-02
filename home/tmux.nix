@@ -1,4 +1,4 @@
-{flake_inputs,...}:
+{ flake_inputs, ... }:
 {
   programs.tmux = {
     enable = true;

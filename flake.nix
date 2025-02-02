@@ -12,13 +12,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nixvim = {
-        url = "github:nix-community/nixvim";
-        inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
-	mellow-nvim = {
-		url = "github:mellow-theme/mellow.nvim";
-		flake = false;
-	};
+    mellow-nvim = {
+      url = "github:mellow-theme/mellow.nvim";
+      flake = false;
+    };
   };
   outputs = { nixpkgs, home-manager, flake-utils, ... }@inputs:
     let
