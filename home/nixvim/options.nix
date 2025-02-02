@@ -1,4 +1,4 @@
-{self,...}:
+{...}:
 {
 	programs.nixvim = {
 		globals = {
@@ -18,12 +18,16 @@
 			shiftwidth = 4;
 			tabstop = 4;
 			ai = true;
-			si = true;
+			# si = true;
 			smartcase = true;
 			ignorecase = true;
 			swapfile = false; 
 			updatetime = 300;
 			writebackup = false;
+			termguicolors = true;
+			background = "dark";
+			winblend = 0;
+			laststatus = 2;
 		};
 		clipboard = {
 			# providers = {

@@ -210,6 +210,22 @@
         "type": "github"
       }
     },
+    "mellow-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1729357792,
+        "narHash": "sha256-Lr4+KxQRsTJrqwGtRMcxBwDZq84v6Pl4NUcfu+5XhRs=",
+        "owner": "mellow-theme",
+        "repo": "mellow.nvim",
+        "rev": "434a02d5f7637a24824569426176f37473205053",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mellow-theme",
+        "repo": "mellow.nvim",
+        "type": "github"
+      }
+    },
     "minimal-tmux": {
       "inputs": {
         "nixpkgs": [
@@ -322,6 +338,7 @@
       "inputs": {
         "flake-utils": "flake-utils",
         "home-manager": "home-manager",
+        "mellow-nvim": "mellow-nvim",
         "minimal-tmux": "minimal-tmux",
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim"
