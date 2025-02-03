@@ -34,7 +34,7 @@
             flake_inputs = inputs;
           };
           modules = [
-            ./home.nix
+            ./home
           ];
         };
       };

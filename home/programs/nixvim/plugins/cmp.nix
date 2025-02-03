@@ -8,11 +8,10 @@
         enable = true;
         cmp.enable = true;
         cmp.maxWidth = 50;
-        extraOptions = {
-          wirth_text = false;
-        };
       };
-      luasnip.enable = true;
+      luasnip = {
+        enable = true;
+      };
       cmp-buffer.enable = true;
       cmp-path.enable = true;
       cmp = {
@@ -20,10 +19,6 @@
         luaConfig.content = ''vim.opt.completeopt = "menu,menuone,noselect"'';
         settings = {
           completion.autocomplete = false;
-          window = {
-            completion.border = "rounded";
-            doucmentation.border = "rounded";
-          };
           snippets.expand = {
             __raw = ''
               					  function(args)

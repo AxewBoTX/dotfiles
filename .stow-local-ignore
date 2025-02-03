@@ -2,7 +2,6 @@
 /.git
 .*\.md$
 /.apps
-/nixos
 /justfile
 /home.nix
 /flake.nix

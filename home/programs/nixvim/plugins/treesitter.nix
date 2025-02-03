@@ -3,6 +3,12 @@
   programs.nixvim = {
     plugins.treesitter = {
       enable = true;
+      lazyLoad = {
+        enable = true;
+        settings = {
+          event = [ "BufReadPre" ];
+        };
+      };
       settings = {
         ensure_installed = [
           "rust"

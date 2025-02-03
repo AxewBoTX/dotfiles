@@ -2,9 +2,14 @@
 {
   programs.nixvim = {
     plugins = {
+      lz-n.enable = true;
       web-devicons.enable = true;
       colorizer = {
         enable = true;
+        lazyLoad = {
+          enable = true;
+          settings.event = [ "BufReadPre" ];
+        };
         settings = {
           filetypes = {
             lua.names = false;
@@ -20,6 +25,10 @@
       };
       nvim-autopairs = {
         enable = true;
+        lazyLoad = {
+          enable = true;
+          settings.event = [ "BufReadPre" ];
+        };
         settings = {
           disable_filetype = [
             "TelescopePrompt"
@@ -41,6 +50,13 @@
       dressing.enable = true;
       gitsigns = {
         enable = true;
+        lazyLoad = {
+          enable = true;
+          settings = {
+            cmd = [ "Gitsigns" ];
+            keys = [ [ "gs" "<cmd>Gitsigns toggle_signs <CR>" ] ];
+          };
+        };
         settings = {
           signcolumn = false;
         };
@@ -48,6 +64,12 @@
       lazygit.enable = true;
       render-markdown = {
         enable = true;
+        lazyLoad = {
+          enable = true;
+          settings = {
+            ft = [ "md" ];
+          };
+        };
         settings = {
           pipe_table.enable = false;
           latex.enable = false;
@@ -63,7 +85,7 @@
     ];
     keymaps = [
       # gitsigns
-      { key = "gs"; action = "<cmd>Gitsigns toggle_signs <CR>"; options = { silent = true; noremap = true; }; }
+      # { key = "gs"; action = "<cmd>Gitsigns toggle_signs<CR>"; options = { silent = true; noremap = true; }; }
       { key = "gp"; action = "<cmd>Gitsigns prev_hunk <CR>"; options = { silent = true; noremap = true; }; }
       { key = "gn"; action = "<cmd>Gitsigns next_hunk <CR>"; options = { silent = true; noremap = true; }; }
       { key = "tp"; action = "<cmd>Gitsigns preview_hunk <CR>"; options = { silent = true; noremap = true; }; }
