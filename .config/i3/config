@@ -46,6 +46,7 @@ exec --no-startup-id nm-applet
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
 exec --no-startup-id feh --bg-fill ~/dotfiles/wallpaper.jpg
 exec --no-startup-id picom
+exec --no-startup-id xremap ~/.config/xremap.yml
 
 # ---------- Volume Controls ----------
 set $refresh_i3status killall -SIGUSR1 i3status

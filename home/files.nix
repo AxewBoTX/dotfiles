@@ -1,5 +1,8 @@
 { ... }:
 {
+  home.file.".config/xremap.yml" = {
+  	source = ../.config/xremap.yml;
+  };
   # home.file.".config/alacritty" = {
   #   source = ../.config/alacritty;
   #   recursive = true;

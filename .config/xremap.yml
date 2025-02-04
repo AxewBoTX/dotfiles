@@ -1,0 +1,6 @@
+modmap:
+  - name: Global
+    remap:
+      CTRL_L: reserved
+      CAPSLOCK: CTRL_L
+      ALT_R: CAPSLOCK
