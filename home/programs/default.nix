@@ -23,17 +23,17 @@
     fastfetch = {
       enable = true;
       settings = {
-	  	"$schema" = "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json";
+        "$schema" = "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json";
         logo.type = "small";
-        modules = [ 
-		"title" 
-		"seprator" 
-		"os" 
-		"host" 
-		"shell" 
-		"wm" 
-		"terminal" 
-		];
+        modules = [
+          "title"
+          "seprator"
+          "os"
+          "host"
+          "shell"
+          "wm"
+          "terminal"
+        ];
       };
     };
     lazygit = {

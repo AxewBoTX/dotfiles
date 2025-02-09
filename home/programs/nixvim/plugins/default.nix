@@ -1,8 +1,46 @@
 { pkgs, flake_inputs, ... }:
 {
   programs.nixvim = {
+    colorscheme = "mellow";
+    extraPlugins = [
+      (pkgs.vimUtils.buildVimPlugin {
+        name = "mellow";
+        src = flake_inputs.mellow-nvim;
+      })
+      (pkgs.vimUtils.buildVimPlugin {
+        name = "helpview";
+        src = flake_inputs.helpview-nvim;
+      })
+      (pkgs.vimUtils.buildVimPlugin {
+        name = "nvim-gomove";
+        src = flake_inputs.nvim-gomove;
+      })
+    ];
     plugins = {
-      lz-n.enable = true;
+      lz-n = {
+        enable = true;
+        plugins = [
+          {
+            __unkeyed-1 = "nvim-gomove";
+            enabled = ''
+              				function()
+              					return true
+              				end
+              				'';
+            after = ''
+              				function()
+              					require("gomove").setup({
+              						map_defaults = true,
+              						reindent = true,
+              						undojoin = false,
+              						move_past_end_col = false
+              					});
+              				end
+              				'';
+            event = [ "BufReadPre" ];
+          }
+        ];
+      };
       web-devicons.enable = true;
       colorizer = {
         enable = true;
@@ -23,19 +61,6 @@
           };
         };
       };
-      nvim-autopairs = {
-        enable = true;
-        lazyLoad = {
-          enable = true;
-          settings.event = [ "BufReadPre" ];
-        };
-        settings = {
-          disable_filetype = [
-            "TelescopePrompt"
-          ];
-        };
-      };
-      comment.enable = true;
       markdown-preview = {
         enable = true;
         settings = {
@@ -64,34 +89,31 @@
       lazygit.enable = true;
       render-markdown = {
         enable = true;
-        lazyLoad = {
-          enable = true;
-          settings = {
-            ft = [ "md" ];
-          };
-        };
         settings = {
           pipe_table.enable = false;
           latex.enable = false;
         };
       };
+      comment = {
+        enable = true;
+        # lazyLoad = {
+        #   enable = true;
+        #   settings.event = [ "BufReadPre" ];
+        # };
+      };
+      nvim-autopairs = {
+        enable = true;
+        lazyLoad = {
+          enable = true;
+          settings.event = [ "BufReadPre" ];
+        };
+        settings = {
+          disable_filetype = [
+            "TelescopePrompt"
+          ];
+        };
+      };
     };
-    colorscheme = "mellow";
-    extraPlugins = [
-      (pkgs.vimUtils.buildVimPlugin {
-        name = "mellow";
-        src = flake_inputs.mellow-nvim;
-      })
-    ];
-    keymaps = [
-      # gitsigns
-      # { key = "gs"; action = "<cmd>Gitsigns toggle_signs<CR>"; options = { silent = true; noremap = true; }; }
-      { key = "gp"; action = "<cmd>Gitsigns prev_hunk <CR>"; options = { silent = true; noremap = true; }; }
-      { key = "gn"; action = "<cmd>Gitsigns next_hunk <CR>"; options = { silent = true; noremap = true; }; }
-      { key = "tp"; action = "<cmd>Gitsigns preview_hunk <CR>"; options = { silent = true; noremap = true; }; }
-      # lazygit
-      { key = ";g"; action = ":LazyGit<CR>"; options = { silent = true; noremap = true; }; }
-    ];
   };
   imports = [
     ./nvim-tree.nix

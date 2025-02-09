@@ -140,6 +140,22 @@
         "type": "github"
       }
     },
+    "helpview-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1738904411,
+        "narHash": "sha256-Gdf1zQGVfOqvuw6abumDwtwLPn3+HX91ZA4FclLhLbY=",
+        "owner": "OXY2DEV",
+        "repo": "helpview.nvim",
+        "rev": "30d3104fc44ea0dc50ccc4a68e7e65e70c34a2a4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "OXY2DEV",
+        "repo": "helpview.nvim",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -334,14 +350,32 @@
         "type": "github"
       }
     },
+    "nvim-gomove": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1658230593,
+        "narHash": "sha256-9YLJm/L13gTktb6VIkz2W/60cothFtF7feiKd26R5lo=",
+        "owner": "booperlv",
+        "repo": "nvim-gomove",
+        "rev": "2b44ae7ac0804f4e3959228122f7c85bef1964e3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "booperlv",
+        "repo": "nvim-gomove",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
+        "helpview-nvim": "helpview-nvim",
         "home-manager": "home-manager",
         "mellow-nvim": "mellow-nvim",
         "minimal-tmux": "minimal-tmux",
         "nixpkgs": "nixpkgs",
-        "nixvim": "nixvim"
+        "nixvim": "nixvim",
+        "nvim-gomove": "nvim-gomove"
       }
     },
     "systems": {

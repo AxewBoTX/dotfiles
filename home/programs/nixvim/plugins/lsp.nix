@@ -14,12 +14,12 @@
           ''
             			local keymap = vim.keymap
             			local opts = { noremap = true, silent = true, buffer = bufnr }
-            			keymap.set("n", "gf", "<cmd>Lspsaga finder<CR>", opts) -- show definition, references
-            			keymap.set("n", "go", "<cmd>Lspsaga outline<CR>", opts) -- show LSP outine of current buffer
-            			keymap.set("n", "gd", "<cmd>Lspsaga peek_definition<CR>", opts) -- see definition and make edits in window
-            			keymap.set("n", "[d", "<cmd>Lspsaga diagnostic_jump_prev<CR>", opts) -- jump to previous diagnostic in buffer
-            			keymap.set("n", "]d", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts) -- jump to next diagnostic in buffer
-            			keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts) -- show documentation for what is under cursor
+            			keymap.set("n", "<leader>gf", "<cmd>Lspsaga finder<CR>", opts) -- show definition, references
+            			keymap.set("n", "<leader>go", "<cmd>Lspsaga outline<CR>", opts) -- show LSP outine of current buffer
+            			keymap.set("n", "<leader>gd", "<cmd>Lspsaga peek_definition<CR>", opts) -- see definition and make edits in window
+            			keymap.set("n", "<leader>[d", "<cmd>Lspsaga diagnostic_jump_prev<CR>", opts) -- jump to previous diagnostic in buffer
+            			keymap.set("n", "<leader>]d", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts) -- jump to next diagnostic in buffer
+            			keymap.set("n", "<leader>K", "<cmd>Lspsaga hover_doc<CR>", opts) -- show documentation for what is under cursor
             		'';
         servers = {
           lua_ls = {

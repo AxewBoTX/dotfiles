@@ -10,7 +10,6 @@
     yamlfmt
     isort
     black
-    mdformat
     shfmt
   ];
   programs.nixvim = {
@@ -53,7 +52,7 @@
           json = [ "jq" ];
           yaml = [ "yamlfmt" ];
           python = [ "isort" "black" ];
-          markdown = [ "mdformat" ];
+          markdown = [ "prettierd" "prettier" ];
           sh = [ "shfmt" ];
         };
       };

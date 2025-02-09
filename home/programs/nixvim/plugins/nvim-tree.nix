@@ -1,9 +1,6 @@
 { ... }:
 {
   programs.nixvim = {
-    keymaps = [
-      { mode = "n"; key = "sf"; action = ":NvimTreeFindFileToggle<CR>"; options = { silent = true; noremap = true; }; }
-    ];
     plugins = {
       nvim-tree = {
         enable = true;

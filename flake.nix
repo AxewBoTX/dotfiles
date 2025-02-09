@@ -19,6 +19,14 @@
       url = "github:mellow-theme/mellow.nvim";
       flake = false;
     };
+    helpview-nvim = {
+      url = "github:OXY2DEV/helpview.nvim";
+      flake = false;
+    };
+    nvim-gomove = {
+      url = "github:booperlv/nvim-gomove";
+      flake = false;
+    };
   };
   outputs = { nixpkgs, home-manager, flake-utils, ... }@inputs:
     let
