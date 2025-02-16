@@ -30,7 +30,7 @@
             after = ''
               				function()
               					require("gomove").setup({
-              						map_defaults = true,
+              						map_defaults = false,
               						reindent = true,
               						undojoin = false,
               						move_past_end_col = false
