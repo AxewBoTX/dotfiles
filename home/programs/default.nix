@@ -27,7 +27,7 @@
         logo.type = "small";
         modules = [
           "title"
-          "seprator"
+          "separator"
           "os"
           "host"
           "shell"

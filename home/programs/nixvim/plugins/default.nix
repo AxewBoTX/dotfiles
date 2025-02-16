@@ -1,46 +1,8 @@
-{ pkgs, flake_inputs, ... }:
+{ ... }:
 {
   programs.nixvim = {
     colorscheme = "mellow";
-    extraPlugins = [
-      (pkgs.vimUtils.buildVimPlugin {
-        name = "mellow";
-        src = flake_inputs.mellow-nvim;
-      })
-      (pkgs.vimUtils.buildVimPlugin {
-        name = "helpview";
-        src = flake_inputs.helpview-nvim;
-      })
-      (pkgs.vimUtils.buildVimPlugin {
-        name = "nvim-gomove";
-        src = flake_inputs.nvim-gomove;
-      })
-    ];
     plugins = {
-      lz-n = {
-        enable = true;
-        plugins = [
-          {
-            __unkeyed-1 = "nvim-gomove";
-            enabled = ''
-              				function()
-              					return true
-              				end
-              				'';
-            after = ''
-              				function()
-              					require("gomove").setup({
-              						map_defaults = false,
-              						reindent = true,
-              						undojoin = false,
-              						move_past_end_col = false
-              					});
-              				end
-              				'';
-            event = [ "BufReadPre" ];
-          }
-        ];
-      };
       web-devicons.enable = true;
       colorizer = {
         enable = true;
@@ -113,6 +75,13 @@
           ];
         };
       };
+      nvim-surround = {
+        enable = true;
+        lazyLoad = {
+          enable = true;
+          settings.event = [ "BufReadPre" ];
+        };
+      };
     };
   };
   imports = [
@@ -123,5 +92,7 @@
     ./lsp.nix
     ./cmp.nix
     ./conform.nix
+    ./extra.nix
+    ./lz-n.nix
   ];
 } 

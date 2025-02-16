@@ -36,7 +36,7 @@
     { key = "<leader>;g"; action = ":LazyGit<CR>"; options = { silent = true; noremap = true; }; }
     # (nvim-tree)
     { key = "<leader>sf"; mode = "n"; action = ":NvimTreeFindFileToggle<CR>"; options = { silent = true; noremap = true; }; }
-	# (nvim-gomove)
+    # (nvim-gomove)
     { key = "<A-C-H>"; mode = "v"; action = "<Plug>GoVSMLeft"; options = { silent = true; noremap = true; }; }
     { key = "<A-C-J>"; mode = "v"; action = "<Plug>GoVSMDown"; options = { silent = true; noremap = true; }; }
     { key = "<A-C-K>"; mode = "v"; action = "<Plug>GoVSMUp"; options = { silent = true; noremap = true; }; }
