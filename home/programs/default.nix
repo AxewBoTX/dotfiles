@@ -1,10 +1,18 @@
 { pkgs, ... }: {
   imports = [
-    ./alacritty.nix
-    ./zsh.nix
-    ./tmux.nix
-    ./starship.nix
+    ./alacritty
+    ./hypr
+    ./i3
     ./nixvim
+    ./picom
+    ./polybar
+    ./powershell
+    ./rofi
+    ./starship
+    ./tmux
+    ./waybar
+    ./xremap
+    ./zsh
   ];
 
   programs = {

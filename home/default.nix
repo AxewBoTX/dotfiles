@@ -10,7 +10,6 @@ in
   imports = [
     flake_inputs.nixvim.homeManagerModules.nixvim
     ./programs
-    ./files.nix
   ];
 
   home.packages = with pkgs; [
