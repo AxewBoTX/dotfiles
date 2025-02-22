@@ -69,15 +69,6 @@
           title = false;
         };
       };
-      otter = {
-        enable = true;
-        lazyLoad = {
-          enable = true;
-          settings = {
-            event = [ "BufReadPre" ];
-          };
-        };
-      };
     };
   };
 }
