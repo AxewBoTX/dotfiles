@@ -52,8 +52,8 @@
       render-markdown = {
         enable = true;
         settings = {
-          pipe_table.enable = false;
-          latex.enable = false;
+          pipe_table.enabled = false;
+          latex.enabled = false;
         };
       };
       comment = {

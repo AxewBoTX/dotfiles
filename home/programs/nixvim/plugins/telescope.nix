@@ -5,12 +5,15 @@
       enable = true;
       lazyLoad = {
         enable = true;
-        settings.keys = [
-          [ "<leader>;f" "<cmd>Telescope find_files<CR>" ]
-          [ "<leader>;l" "<cmd>Telescope live_grep<CR>" ]
-          [ "<leader>;b" "<cmd>Telescope buffers<CR>" ]
-          [ "<leader>;h" "<cmd>Telescope help_tags<CR>" ]
-        ];
+        settings = {
+          keys = [
+            [ "<leader>;f" "<cmd>Telescope find_files<CR>" ]
+            [ "<leader>;l" "<cmd>Telescope live_grep<CR>" ]
+            [ "<leader>;b" "<cmd>Telescope buffers<CR>" ]
+            [ "<leader>;h" "<cmd>Telescope help_tags<CR>" ]
+          ];
+          ft = [ "markdown" ];
+        };
       };
       settings.defaults = {
         mappings = {
