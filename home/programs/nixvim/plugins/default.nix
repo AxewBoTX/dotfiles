@@ -94,5 +94,6 @@
     ./conform.nix
     ./extra.nix
     ./lz-n.nix
+    ./obsidian.nix
   ];
 } 

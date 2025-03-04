@@ -41,5 +41,7 @@
     { key = "<A-C-J>"; mode = "v"; action = "<Plug>GoVSMDown"; options = { silent = true; noremap = true; }; }
     { key = "<A-C-K>"; mode = "v"; action = "<Plug>GoVSMUp"; options = { silent = true; noremap = true; }; }
     { key = "<A-C-L>"; mode = "v"; action = "<Plug>GoVSMRight"; options = { silent = true; noremap = true; }; }
+	# (obsidian)
+    { key = "<leader>ogf"; mode = ["n"]; action = "<cmd>ObsidianFollowLink<CR>"; options = { silent = true; noremap = true; }; }
   ];
 }
