@@ -3,4 +3,8 @@ modmap:
     remap:
       CTRL_L: reserved
       CAPSLOCK: CTRL_L
-      ALT_R: CAPSLOCK
+      CTRL_R-\: CAPSLOCK
+      ALT_R-h: left
+      ALT_R-j: down
+      ALT_R-k: up
+      ALT_R-l: right
