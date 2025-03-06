@@ -3,7 +3,10 @@ modmap:
     remap:
       CTRL_L: reserved
       CAPSLOCK: CTRL_L
-      CTRL_R-\: CAPSLOCK
+keymap:
+  - name: Global
+    remap:
+      CTRL_R-BACKSLASH: CAPSLOCK
       ALT_R-h: left
       ALT_R-j: down
       ALT_R-k: up
