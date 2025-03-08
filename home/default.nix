@@ -1,7 +1,4 @@
-{ pkgs, flake_inputs, ... }:
-let
-  username = "axew";
-in
+{ pkgs, flake_inputs,username, ... }:
 {
   home.username = username;
   home.homeDirectory = "/home/${username}";
@@ -33,10 +30,7 @@ in
     live-server
     zig
     jdk
-    rustc
-    rustfmt
-    cargo
-    clippy
+	rust-bin.stable."1.82.0".default
     cargo-binstall
     sccache
     bacon
@@ -48,7 +42,6 @@ in
     tree-sitter
     cmatrix
     nyancat
-    # xclip
   ];
 
   home.stateVersion = "24.11";
