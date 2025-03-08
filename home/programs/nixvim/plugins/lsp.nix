@@ -43,7 +43,10 @@
               files.excludeDirs = [ "target" "node_modules" ];
             };
           };
-          clangd.enable = true;
+          clangd = {
+            enable = true;
+            filetypes = [ "cpp" "c" "objc" "objcpp" ];
+          };
           cssls.enable = true;
           ts_ls.enable = true;
           eslint.enable = true;
